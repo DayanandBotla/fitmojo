@@ -1,0 +1,86 @@
+$gutterGap:20px;
+
+.nav {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    background:#273c75;
+    padding: $gutterGap;
+    border-radius: 40px;
+
+    &--list {
+        margin: 16px 0;
+
+        &,
+        .icon,
+        .txt {
+            display: inline-flex;
+            align-items: center;
+
+        }
+
+        .icon {
+            color: #fff;
+            font-size: 24px;
+            width: 36px;
+            height: 36px;
+            background: rgba(#192a56, 0.3);
+            border-radius: 12px;
+            padding: 8px;
+            justify-content: center;
+            &:hover{
+                &.connect{
+                    color: #00a8ff;
+                }
+                &.bell{
+                    color: #fbc531;
+                }
+                &.user{
+                    color: #9c88ff;
+                }
+                &.challenge{
+                    color: #4cd137;
+                }
+                &.leaderboard{
+                    color:#e84118;
+                }
+                
+            }
+
+    
+
+
+        }
+
+        .txt {
+            display: none;
+            margin-left: 16px;
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(#FFF, 0.3);
+        }
+
+        &.active i{
+            &.connect{
+                background: #00a8ff;
+            }
+            &.bell{
+                background: #fbc531;
+            }
+            &.user{
+                background: #9c88ff;
+            }
+            &.challenge{
+                background: #4cd137;
+            }
+            &.leaderboard{
+                background:#e84118;
+            }
+            
+        }
+        
+    }
+
+}

@@ -1,0 +1,63 @@
+<h1 class="page-title">Leader board</h1>
+
+
+<div class="best3">
+    <img class="bg-svg" src="../assets/img/bg-color-anime.svg">
+    <div class="cta-wrap">
+        <button class="active">All time</button>
+        <button>This week</button>
+        <button>This month</button>
+    </div>
+    <div class="best3__wrapper">
+        <div class="top3  best3--c small-c">
+            <div class="inner">
+                <img src="../assets/img/lb/avatar/5.jpeg">
+            </div>
+            <div class="scrore">998</div>
+            <div class="name">Seeta</div>
+        </div>
+
+        <div class="top1 best3--c big-c">
+            <div class="inner">
+                <img src="../assets/img/lb/avatar/2.jpeg">
+            </div>
+            <div class="scrore">2233</div>
+            <div class="name">Anvesh</div>
+        </div>
+        <div class="top2 best3--c small-c">
+            <div class="inner">
+                <img src="../assets/img/lb/avatar/3.jpeg">
+            </div>
+            <div class="scrore">557</div>
+            <div class="name">Rama</div>
+        </div>
+    </div>
+</div>
+
+<div class="lb">
+    <div class=" lb--row" *ngFor="let item of leaderBoardData">
+        <div class="lb--avatar">
+            <img src="../assets/img/lb/avatar/{{item.avatar}}" alt="{{item.name}}" title="{{item.name}}">
+        </div>
+        <div >
+        <div class="name">
+            {{item.name}}
+        </div>
+        <div class="empid">
+            EMPID {{item.empid}}
+        </div>
+        </div>
+        <div class="challenge">
+            <img src="../assets/icon-font/foot-prints.svg" class="icons">
+            <div class="challengetype">
+            {{item.challengeType}}
+            </div>
+            <div class="score">
+                {{item.scrore}}
+            </div>
+        </div>
+        <div class="latest">
+            {{item.lastUpdated}}
+        </div>
+    </div>
+</div>

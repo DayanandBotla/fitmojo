@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?bde72f15156352d487ba7d8f30127ac0#iefix") format("embedded-opentype"),
+url("./icons.woff2?bde72f15156352d487ba7d8f30127ac0") format("woff2"),
+url("./icons.woff?bde72f15156352d487ba7d8f30127ac0") format("woff");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-activity:before {
+    content: "\f101";
+}
+.icon-arrow-left:before {
+    content: "\f102";
+}
+.icon-arrow-right:before {
+    content: "\f103";
+}
+.icon-bell:before {
+    content: "\f104";
+}
+.icon-check:before {
+    content: "\f105";
+}
+.icon-chevron-down:before {
+    content: "\f106";
+}
+.icon-chevron-left:before {
+    content: "\f107";
+}
+.icon-chevron-right:before {
+    content: "\f108";
+}
+.icon-chevron-up:before {
+    content: "\f109";
+}
+.icon-connect:before {
+    content: "\f10a";
+}
+.icon-connect2:before {
+    content: "\f10b";
+}
+.icon-eye-off:before {
+    content: "\f10c";
+}
+.icon-eye:before {
+    content: "\f10d";
+}
+.icon-gift:before {
+    content: "\f10e";
+}
+.icon-heart:before {
+    content: "\f10f";
+}
+.icon-home:before {
+    content: "\f110";
+}
+.icon-home1:before {
+    content: "\f111";
+}
+.icon-image:before {
+    content: "\f112";
+}
+.icon-info:before {
+    content: "\f113";
+}
+.icon-leaderboard:before {
+    content: "\f114";
+}
+.icon-log-in:before {
+    content: "\f115";
+}
+.icon-log-out:before {
+    content: "\f116";
+}
+.icon-login:before {
+    content: "\f117";
+}
+.icon-logout:before {
+    content: "\f118";
+}
+.icon-mail:before {
+    content: "\f119";
+}
+.icon-map-pin:before {
+    content: "\f11a";
+}
+.icon-power:before {
+    content: "\f11b";
+}
+.icon-settings:before {
+    content: "\f11c";
+}
+.icon-smile:before {
+    content: "\f11d";
+}
+.icon-star:before {
+    content: "\f11e";
+}
+.icon-thumb_up:before {
+    content: "\f11f";
+}
+.icon-thumbs-up:before {
+    content: "\f120";
+}
+.icon-trello:before {
+    content: "\f121";
+}
+.icon-user:before {
+    content: "\f122";
+}
+.icon-x-circle:before {
+    content: "\f123";
+}
+.icon-x:before {
+    content: "\f124";
+}
