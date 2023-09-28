@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { GetInComponent } from './get-in/get-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
+    GetInComponent
   ],
   imports: [
     BrowserModule,
