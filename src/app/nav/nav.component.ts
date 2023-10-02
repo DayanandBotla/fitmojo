@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -42,4 +43,10 @@ export class NavComponent {
     }
   
   ];
+
+  constructor(private router:Router){}
+
+  login(){
+    this.router.navigate(['/get-in/login'])
+  }
 }

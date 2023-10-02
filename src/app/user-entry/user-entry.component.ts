@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 
 @Component({
@@ -13,7 +14,8 @@ export class UserEntryComponent {
 
   constructor(
     private router:Router,
-    private route:ActivatedRoute
+    private route:ActivatedRoute,
+    public ngxSmartModalService: NgxSmartModalService
   ){
     this.router.url.includes('/register') 
     ? this.isSignup = true 
@@ -39,6 +41,10 @@ export class UserEntryComponent {
       }
     })
     
+  }
+
+  ngAfterViewInit() {
+    this.ngxSmartModalService.getModal('myModal').open()
   }
 
 
