@@ -16,21 +16,22 @@
         <div class="form__fields"> 
 
             <div class="form__container">
-                <form class="" [formGroup]="registerForm">
+                <form class="" [formGroup]="loginForm">
                     <h3 class="form--greet">Welcome back!</h3>
                 
                     <div class="error">
                         please check given details
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" [ngClass]="getFormFiledClass('name',loginForm)">
                         <label for="email">Email</label>
                         <input id="email" class="form-control" type="email"
                             placeholder="Please enter your email" formControlName="emailId" name="emailId" required>
                             <p class="errortxt">Email id doesnot exist</p>
+                            <p class="errortxt" *ngIf="shouldShowErrors('name',loginForm)">{{getErrorMessage('name',loginForm)}}</p>
                         </div>
                     
 
-                    <div class="form-group">
+                    <div class="form-group" [ngClass]="getFormFiledClass('password',loginForm)">
                         <label for="password">Password</label>
                         <div class="inpwrap">
                         <input id="password" class="form-control" type="password"
@@ -41,7 +42,7 @@
                             <i  [className]="!showPassword ? 'icon-eye-off' : 'icon-eye'" (click)="showPassword = !showPassword"> </i>
                             
                         </div>
-                        <p class="errortxt">Password did not match</p>
+                        <p class="errortxt" *ngIf="shouldShowErrors('password',loginForm)">{{getErrorMessage('password',loginForm)}}</p>
                     </div>
 
                 

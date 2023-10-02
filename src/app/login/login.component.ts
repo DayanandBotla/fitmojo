@@ -4,6 +4,7 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
 
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/api.service';
+import { FormValidators } from '../FormValidators';
 
 
 @Component({
@@ -11,11 +12,11 @@ import { ApiService } from 'src/app/api.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent extends FormValidators {
   
   showPassword: boolean = true;
 
-  registerForm = new FormGroup({
+  loginForm = new FormGroup({
     emailId: new FormControl('', [Validators.required]),
     password: new FormControl('', [Validators.required]),
   });
@@ -25,7 +26,9 @@ export class LoginComponent {
   constructor(
     private router:Router,
     private apiService:ApiService,
-    public ngxSmartModalService: NgxSmartModalService) {}
+    public ngxSmartModalService: NgxSmartModalService) {
+      super()
+    }
 
   ngAfterViewInit() {
     this.ngxSmartModalService.getModal('LoginModal').open()
@@ -36,7 +39,7 @@ export class LoginComponent {
   }
 
   login(){
-    this.apiService.post("loginUser",this.registerForm.value).subscribe(apiResponse=>{
+    this.apiService.post("loginUser",this.loginForm.value).subscribe(apiResponse=>{
       console.log(apiResponse);
     })
   }
