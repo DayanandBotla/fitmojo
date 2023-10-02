@@ -18,4 +18,8 @@ export class NavComponent {
   register(){
     this.router.navigate(['/register'])
   }
+
+  myProfile(){
+    this.router.navigate(['/myprofile'])
+  }
 }
