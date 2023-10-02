@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { TeamSelectionComponent } from './team-selection/team-selection.component';
 import { HomeComponent } from './home/home.component';
+import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HomeComponent } from './home/home.component';
     RegistrationComponent,
     MyProfileComponent,
     TeamSelectionComponent,
-    HomeComponent
+    HomeComponent,
+    ConnectWellnessComponent
   ],
   imports: [
     BrowserModule,
