@@ -1,16 +1,25 @@
 <section class="nav">
-    <div class="nav--list" title="Login">
-        <i class="icon-login icon"></i>
+    <div class="nav--list" >
+    <!-- <i class="icon-leaderboard"></i> -->
+    <i class="icon-medal"></i>
+    <span>Leaderboard</span>
     </div>
-    <ng-container *ngFor="let item of myNavMenu">
-        <div class="nav--list"   title="{{item.navText}}">
-            <i class="icon {{item.icon}} {{item.class}}"></i>
-            <span class="txt">{{item.navText}}</span>
-        </div>
-    </ng-container>
 
-    <div class="nav--list" title="icon-logout">
-        <i class="icon-logout icon"></i>
+    <div class="nav--list" >
+        <i class="icon-account"></i>
+        <span>Profile</span>
     </div>
+
+    <div class="nav--list" >
+        <i class="icon-goal"></i>
+        <span>Challenges</span>
+    </div>
+        
+    <div class="nav--list" >
+        <i class="icon-exit"></i>
+        <span>Logout</span>
+    </div>
+        
+ 
 
 </section>

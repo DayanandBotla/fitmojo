@@ -1,0 +1,1034 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#0a3d62;display:block;z-index:1;position:relative" width="1084" height="322" preserveAspectRatio="xMidYMid" viewBox="0 0 1084 322">
+<defs>
+  <pattern id="pid-0.34821607800841337" x="0" y="0" width="529.92" height="529.92" patternUnits="userSpaceOnUse">
+    <g transform="scale(2.07)"><g transform="translate(88.95374948432442,1.840001880356624)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g></g><g transform="translate(88.95374948432442,257.8400018803566)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5052533792085677s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5052533792085677s"></animateTransform>
+</g>
+</g></g><g transform="translate(48.56050656451407,180.1331815928841)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.7892692818895506s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.7892692818895506s"></animateTransform>
+</g>
+</g></g><g transform="translate(3.174751694049064,129.9996784519301)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g></g><g transform="translate(259.17475169404906,129.9996784519301)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.22950662783663234s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.22950662783663234s"></animateTransform>
+</g>
+</g></g><g transform="translate(216.07287966956613,15.945543404383216)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g></g><g transform="translate(-39.927120330433866,15.945543404383216)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g></g><g transform="translate(216.07287966956613,271.9455434043832)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.14516026331447263s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.14516026331447263s"></animateTransform>
+</g>
+</g></g><g transform="translate(191.56825597099737,118.90575855973401)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.8202752019073044s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.8202752019073044s"></animateTransform>
+</g>
+</g></g><g transform="translate(53.23885319200525,55.40087846549329)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6023959405874845s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6023959405874845s"></animateTransform>
+</g>
+</g></g><g transform="translate(109.56219106171119,116.43599360866278)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.31320225820358105s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.31320225820358105s"></animateTransform>
+</g>
+</g></g><g transform="translate(120.25233234998404,141.36882258696227)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.08137461789602259s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.08137461789602259s"></animateTransform>
+</g>
+</g></g><g transform="translate(61.05382268457754,245.80012444857692)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g></g><g transform="translate(61.05382268457754,-10.199875551423077)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.5828057331638034s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.5828057331638034s"></animateTransform>
+</g>
+</g></g><g transform="translate(170.85049194978342,41.50717829157554)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.6082896601948854s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.6082896601948854s"></animateTransform>
+</g>
+</g></g><g transform="translate(155.30188162655907,187.704150746298)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.37961610424728015s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.37961610424728015s"></animateTransform>
+</g>
+</g></g><g transform="translate(211.2895237697387,83.66943233742518)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#12cbc4" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.34962724304681775s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.34962724304681775s"></animateTransform>
+</g>
+</g></g><g transform="translate(103.385661187155,132.93855474800142)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#ffc312" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.0035762673473037s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.0035762673473037s"></animateTransform>
+</g>
+</g></g><g transform="translate(55.33846124876669,164.4158194248351)"><g transform="rotate(0)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(40)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(80)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(120)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(160)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(200)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(240)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(280)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g><g transform="rotate(320)"><g>
+<line x1="-5" x2="5" y1="0" y2="0" stroke="#c4e538" stroke-linecap="round" stroke-width="2">
+<animateTransform attributeName="transform" type="scale" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0;1;0" begin="-0.32566815055355025s"></animateTransform>
+</line>
+<animateTransform attributeName="transform" type="translate" dur="0.8264462809917356s" repeatCount="indefinite" keyTimes="0;1" values="0 0;40 0" begin="-0.32566815055355025s"></animateTransform>
+</g>
+</g></g></g>
+  </pattern>
+</defs>
+<rect x="0" y="0" width="1084" height="322" fill="url(#pid-0.34821607800841337)"></rect>
+</svg>

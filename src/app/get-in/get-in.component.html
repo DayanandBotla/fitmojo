@@ -1,84 +1,90 @@
-<!-- <section class="blurbg overlay-backdrop fadeIn ">
+
+<ngx-smart-modal #myModal identifier="myModal" customClass="getin-modal" >
+    <button class="close-btn" (click)="myModal.close()"><i class="icon-close"></i></button>
+
+    <div class="form form__row">
+        <div class="form__img">
+            <img
+                src="https://images.unsplash.com/photo-1644456654239-3c036c0c28fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80">
+            <div class="form--quote">
+                Stop<br />wishing.<br />
+                start<br /> <span>doing</span>
+
+            </div>
+        </div>
+        <div class="form__fields">
+            <div class="form__type">
+                <button [class.active]="isLogin" (click)="openLogin()">Login</button>
+                <button [class.active]="isSignup" (click)="openSignup()">Connect us</button>
+            </div>
+
+            <div class="form__container">
+                <form class="" *ngIf="isLogin">
+                    <h3 class="form--greet">Welcome back!</h3>
+
+                    <div class="error">
+                        please check given details
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="email"
+                            placeholder="Please enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" class="form-control" type="password"
+                            placeholder="Please enter your password" required>
+                    </div>
+
+                    <button class="btn-1 btn-md submit-btn">
+                        Logn to Wellness <i class="icon-arrow_forward2"></i>
+                    </button>
+                </form>
+
+
+                <form class="" *ngIf="isSignup">
+                    <h3 class="form--greet">Let's go</h3>
+
+                    <div class="form-group">
+                        <label for="fullName">Full name</label>
+                        <input id="fullName" class="form-control" type="text"
+                            placeholder="Please enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="email"
+                            placeholder="Please enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" class="form-control" type="password"
+                            placeholder="Please enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imgupload">Your profile image</label>
+                        <label class="custom-file-upload form-control">
+                            <i class="icon-img"></i>
+                            <input id="imgupload" class="form-control" type="file"
+                                placeholder="Please upload your profile image"></label>
+                    </div>
+
+                    <button class="btn-1 btn-md submit-btn">
+                        Step in <i class="icon-arrow_forward2 "></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</ngx-smart-modal>
+<!-- 
+<section class="blurbg overlay-backdrop fadeIn "></section>
     <section class="overlay">
 
         <div class="overlay__body fadeIn">
-            <button class="close-btn"><i class="icon-x"></i></button>
-            <div class="form form__row">
-                <div class="form__img">
-                    <img
-                        src="https://images.unsplash.com/photo-1644456654239-3c036c0c28fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80">
-                    <div class="form--quote">
-                        Stop<br />wishing.<br />
-                        start<br /> <span>doing</span>
-
-                    </div>
-                </div>
-                <div class="form__fields">
-                    <div class="form__type">
-                        <button [class.active]="isLogin" (click)="openLogin()">Login</button>
-                        <button [class.active]="isSignup" (click)="openSignup()">Connect us</button>
-                    </div>
-
-                    <div class="form__container">
-                        <form class="" *ngIf="isLogin">
-                            <h3 class="form--greet">Welcome back!</h3>
-
-                            <div class="error">
-                                please check given details
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email" class="form-control" type="email"
-                                    placeholder="Please enter your email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input id="password" class="form-control" type="password"
-                                    placeholder="Please enter your password" required>
-                            </div>
-
-                            <button class="btn-1 btn-md submit-btn">
-                                Logn to Wellness <i class="icon-arrow-right "></i>
-                            </button>
-                        </form>
-
-
-                        <form class="" *ngIf="isSignup">
-                            <h3 class="form--greet">Let's go</h3>
-
-                            <div class="form-group">
-                                <label for="fullName">Full name</label>
-                                <input id="fullName" class="form-control" type="text"
-                                    placeholder="Please enter your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email" class="form-control" type="email"
-                                    placeholder="Please enter your email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input id="password" class="form-control" type="password"
-                                    placeholder="Please enter your password" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="imgupload">Your profile image</label>
-                                <label class="custom-file-upload form-control">
-                                    <i class="icon-image"></i>
-                                    <input id="imgupload" class="form-control" type="file"
-                                        placeholder="Please upload your profile image"></label>
-                            </div>
-
-                            <button class="btn-1 btn-md submit-btn">
-                                Step in <i class="icon-arrow-right "></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            
+        
         </div>
 
 
 
-    </section>
-</section> -->
+    </section> -->

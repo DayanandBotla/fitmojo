@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-get-in',
@@ -9,6 +10,17 @@ export class GetInComponent {
 //   isLogin:boolean=true;
 //   isSignup:boolean=false;
 
+  constructor(public ngxSmartModalService: NgxSmartModalService) {
+
+    
+
+    
+  }
+  ngAfterViewInit() {
+    this.ngxSmartModalService.getModal('myModal').open()
+  }
+
+  
 
 //     openLogin(){
 // this.isLogin = true;

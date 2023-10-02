@@ -7,6 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { GetInComponent } from './get-in/get-in.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSmartModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

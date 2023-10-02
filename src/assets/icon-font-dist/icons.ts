@@ -1,153 +1,141 @@
 export type IconsId =
-  | "activity"
-  | "arrow-left"
-  | "arrow-right"
-  | "bell"
-  | "check"
-  | "chevron-down"
-  | "chevron-left"
-  | "chevron-right"
-  | "chevron-up"
-  | "connect"
-  | "connect2"
+  | "account"
+  | "arrow_forward"
+  | "arrow_forward2"
+  | "bike"
+  | "calendar"
+  | "category"
+  | "celebration"
+  | "change_circle"
+  | "close"
+  | "error"
+  | "event"
+  | "exit"
   | "eye-off"
   | "eye"
-  | "gift"
-  | "heart"
+  | "foot"
+  | "goal"
+  | "heart_plus"
+  | "help"
   | "home"
-  | "home1"
-  | "image"
+  | "img"
   | "info"
+  | "key"
   | "leaderboard"
-  | "log-in"
-  | "log-out"
+  | "leaderboard2"
+  | "lock"
   | "login"
   | "logout"
   | "mail"
-  | "map-pin"
-  | "power"
-  | "settings"
-  | "smile"
-  | "star"
-  | "thumb_up"
-  | "thumbs-up"
-  | "trello"
-  | "user"
-  | "x-circle"
-  | "x";
+  | "medal"
+  | "steps"
+  | "upload_file"
+  | "verified"
+  | "water_drop";
 
 export type IconsKey =
-  | "Activity"
-  | "ArrowLeft"
-  | "ArrowRight"
-  | "Bell"
-  | "Check"
-  | "ChevronDown"
-  | "ChevronLeft"
-  | "ChevronRight"
-  | "ChevronUp"
-  | "Connect"
-  | "Connect2"
+  | "Account"
+  | "ArrowForward"
+  | "ArrowForward2"
+  | "Bike"
+  | "Calendar"
+  | "Category"
+  | "Celebration"
+  | "ChangeCircle"
+  | "Close"
+  | "Error"
+  | "Event"
+  | "Exit"
   | "EyeOff"
   | "Eye"
-  | "Gift"
-  | "Heart"
+  | "Foot"
+  | "Goal"
+  | "HeartPlus"
+  | "Help"
   | "Home"
-  | "Home1"
-  | "Image"
+  | "Img"
   | "Info"
+  | "Key"
   | "Leaderboard"
-  | "LogIn"
-  | "LogOut"
+  | "Leaderboard2"
+  | "Lock"
   | "Login"
   | "Logout"
   | "Mail"
-  | "MapPin"
-  | "Power"
-  | "Settings"
-  | "Smile"
-  | "Star"
-  | "ThumbUp"
-  | "ThumbsUp"
-  | "Trello"
-  | "User"
-  | "XCircle"
-  | "X";
+  | "Medal"
+  | "Steps"
+  | "UploadFile"
+  | "Verified"
+  | "WaterDrop";
 
 export enum Icons {
-  Activity = "activity",
-  ArrowLeft = "arrow-left",
-  ArrowRight = "arrow-right",
-  Bell = "bell",
-  Check = "check",
-  ChevronDown = "chevron-down",
-  ChevronLeft = "chevron-left",
-  ChevronRight = "chevron-right",
-  ChevronUp = "chevron-up",
-  Connect = "connect",
-  Connect2 = "connect2",
+  Account = "account",
+  ArrowForward = "arrow_forward",
+  ArrowForward2 = "arrow_forward2",
+  Bike = "bike",
+  Calendar = "calendar",
+  Category = "category",
+  Celebration = "celebration",
+  ChangeCircle = "change_circle",
+  Close = "close",
+  Error = "error",
+  Event = "event",
+  Exit = "exit",
   EyeOff = "eye-off",
   Eye = "eye",
-  Gift = "gift",
-  Heart = "heart",
+  Foot = "foot",
+  Goal = "goal",
+  HeartPlus = "heart_plus",
+  Help = "help",
   Home = "home",
-  Home1 = "home1",
-  Image = "image",
+  Img = "img",
   Info = "info",
+  Key = "key",
   Leaderboard = "leaderboard",
-  LogIn = "log-in",
-  LogOut = "log-out",
+  Leaderboard2 = "leaderboard2",
+  Lock = "lock",
   Login = "login",
   Logout = "logout",
   Mail = "mail",
-  MapPin = "map-pin",
-  Power = "power",
-  Settings = "settings",
-  Smile = "smile",
-  Star = "star",
-  ThumbUp = "thumb_up",
-  ThumbsUp = "thumbs-up",
-  Trello = "trello",
-  User = "user",
-  XCircle = "x-circle",
-  X = "x",
+  Medal = "medal",
+  Steps = "steps",
+  UploadFile = "upload_file",
+  Verified = "verified",
+  WaterDrop = "water_drop",
 }
 
 export const ICONS_CODEPOINTS: { [key in Icons]: string } = {
-  [Icons.Activity]: "61697",
-  [Icons.ArrowLeft]: "61698",
-  [Icons.ArrowRight]: "61699",
-  [Icons.Bell]: "61700",
-  [Icons.Check]: "61701",
-  [Icons.ChevronDown]: "61702",
-  [Icons.ChevronLeft]: "61703",
-  [Icons.ChevronRight]: "61704",
-  [Icons.ChevronUp]: "61705",
-  [Icons.Connect]: "61706",
-  [Icons.Connect2]: "61707",
-  [Icons.EyeOff]: "61708",
-  [Icons.Eye]: "61709",
-  [Icons.Gift]: "61710",
-  [Icons.Heart]: "61711",
-  [Icons.Home]: "61712",
-  [Icons.Home1]: "61713",
-  [Icons.Image]: "61714",
-  [Icons.Info]: "61715",
-  [Icons.Leaderboard]: "61716",
-  [Icons.LogIn]: "61717",
-  [Icons.LogOut]: "61718",
-  [Icons.Login]: "61719",
-  [Icons.Logout]: "61720",
-  [Icons.Mail]: "61721",
-  [Icons.MapPin]: "61722",
-  [Icons.Power]: "61723",
-  [Icons.Settings]: "61724",
-  [Icons.Smile]: "61725",
-  [Icons.Star]: "61726",
-  [Icons.ThumbUp]: "61727",
-  [Icons.ThumbsUp]: "61728",
-  [Icons.Trello]: "61729",
-  [Icons.User]: "61730",
-  [Icons.XCircle]: "61731",
-  [Icons.X]: "61732",
+  [Icons.Account]: "61697",
+  [Icons.ArrowForward]: "61698",
+  [Icons.ArrowForward2]: "61699",
+  [Icons.Bike]: "61700",
+  [Icons.Calendar]: "61701",
+  [Icons.Category]: "61702",
+  [Icons.Celebration]: "61703",
+  [Icons.ChangeCircle]: "61704",
+  [Icons.Close]: "61705",
+  [Icons.Error]: "61706",
+  [Icons.Event]: "61707",
+  [Icons.Exit]: "61708",
+  [Icons.EyeOff]: "61709",
+  [Icons.Eye]: "61710",
+  [Icons.Foot]: "61711",
+  [Icons.Goal]: "61712",
+  [Icons.HeartPlus]: "61713",
+  [Icons.Help]: "61714",
+  [Icons.Home]: "61715",
+  [Icons.Img]: "61716",
+  [Icons.Info]: "61717",
+  [Icons.Key]: "61718",
+  [Icons.Leaderboard]: "61719",
+  [Icons.Leaderboard2]: "61720",
+  [Icons.Lock]: "61721",
+  [Icons.Login]: "61722",
+  [Icons.Logout]: "61723",
+  [Icons.Mail]: "61724",
+  [Icons.Medal]: "61725",
+  [Icons.Steps]: "61726",
+  [Icons.UploadFile]: "61727",
+  [Icons.Verified]: "61728",
+  [Icons.WaterDrop]: "61729",
 };
