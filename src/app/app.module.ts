@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
-import { GetInComponent } from './get-in/get-in.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -13,8 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     NavComponent,
-    LeaderboardComponent,
-    GetInComponent
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
