@@ -1,0 +1,21 @@
+<form class="" [formGroup]="registerForm">
+    <h3 class="form--greet">Welcome back!</h3>
+
+    <div class="error">
+        please check given details
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" class="form-control" type="email"
+            placeholder="Please enter your email" formControlName="emailId" name="emailId" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" class="form-control" type="password"
+            placeholder="Please enter your password" formControlName="password" name="password" required>
+    </div>
+
+    <button class="btn-1 btn-md submit-btn" (click)="login()">
+        Logn to Wellness <i class="icon-arrow-right "></i>
+    </button>
+</form>

@@ -1,0 +1,143 @@
+
+.btn-1 {
+    
+    background:linear-gradient(90deg,#00d191,#00ad91 100%);
+    color: #ffffff;
+    box-shadow: rgba(0, 209, 145, .5) 0px 3px 10px;
+    // border:2px solid #00ad91;
+    border:2px solid transparent;
+    &:hover{
+        background: #00d191;
+    }
+
+}
+
+.btn-md{
+    $b-m-f:14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+        font-size: calc(#{$b-m-f} + 6px);
+        margin-left: 5px;
+        &::before{
+            font-weight: 700!important;
+        }
+    }
+}
+
+
+.btn-2 {
+    background: #706fd3;
+    color: #474787;
+    box-shadow: 5px 15px #706fd3;
+}
+.error{
+    background: rgba(#ff6b6b, .1) ;
+    color: #ee5253;
+    font-size: 14px;
+    border: 2px solid rgba(#ee5253, .5) ;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form {
+
+    &--greet{
+        margin: 0 auto 20px;
+        font-size: 24px;
+        color: #8395a7;
+        text-align: center;
+    }
+    &__row {
+        display: flex;
+        width: 100%;
+        height: 100%
+    }
+
+    &__img {
+        background: #706fd3;
+        width: 40%;
+        position: relative;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__fields {
+        width: 60%;
+        // background: #474787;
+        background: #fff;
+        padding: 30px 40px;
+    }
+
+    &--quote {
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: 'Impact', serif;
+        line-height: 1;
+        letter-spacing: 1px;
+        text-align: center;
+
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        color: #fff;
+        mix-blend-mode: plus-lighter;
+        opacity: .2;
+
+        span {
+            font-size: 50px;
+        }
+    }
+
+    &__type {
+        display: flex;
+        padding: 8px;
+        box-shadow: rgba(#00d191, 0.2) 0px 8px 24px;
+        background: #FFFFFF;
+        border-radius: 40px;
+        margin-bottom: 40px;
+        button {
+            cursor: pointer;
+            color: #00d191;
+            background: transparent;
+            width: 100%;
+            border-radius: 30px;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 700;
+            border: 0;
+            &.active,
+            &:hover{
+                background: #00d191;
+                color: #FFFFFF;
+            }
+        }
+
+        button+button {
+            margin-left: 8px;
+        }
+
+    }
+
+    .submit-btn{
+        min-width: 200px;
+        margin: 24px auto;
+    
+    }
+}

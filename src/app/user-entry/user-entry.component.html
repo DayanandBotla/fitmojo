@@ -1,0 +1,33 @@
+<section class="blurbg overlay-backdrop fadeIn ">
+    <section class="overlay">
+
+        <div class="overlay__body fadeIn">
+            <button class="close-btn" (click)="closeEntry()"><i class="icon-x"></i></button>
+            <div class="form form__row">
+                <div class="form__img">
+                    <img
+                        src="https://images.unsplash.com/photo-1644456654239-3c036c0c28fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80">
+                    <div class="form--quote">
+                        Stop<br />wishing.<br />
+                        start<br /> <span>doing</span>
+
+                    </div>
+                </div>
+                <div class="form__fields">
+                    <div class="form__type">
+                        <button [class.active]="isLogin" (click)="openLogin()">Login</button>
+                        <button [class.active]="isSignup" (click)="openSignup()">Connect us</button>
+                    </div>
+                    
+
+                    <div class="form__container">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+</section>
