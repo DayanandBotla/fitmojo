@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -8,38 +9,13 @@ import { Component } from '@angular/core';
 
 export class NavComponent {
 
-   myNavMenu = [
-    {
-      icon: 'icon-bell',
-      navText:'Notifications',
-      routeTo: 'notifications',
-      class:'bell'
-    },
-    {
-      icon: 'icon-leaderboard',
-      navText:'Leader board',
-      routeTo: 'leader-board',
-      class:'leaderboard'
-    },
-  
-    {
-      icon: 'icon-user',
-      navText:'User info',
-      routeTo: 'user-info',
-      class:'user'
-    },
-    {
-      icon: 'icon-thumbs-up',
-      navText:'Challenges',
-      routeTo: 'challenges',
-      class:'challenge'
-    },
-    {
-      icon: 'icon-connect2',
-      navText:'Opt Fitmojo',
-      routeTo: 'optinout',
-      class:'connect'
-    }
-  
-  ];
+  constructor(private router:Router){}
+
+  login(){
+    this.router.navigate(['/login'])
+  }
+
+  register(){
+    this.router.navigate(['/register'])
+  }
 }

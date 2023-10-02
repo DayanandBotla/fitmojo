@@ -7,6 +7,10 @@ import { NavComponent } from './nav/nav.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { GetInComponent } from './get-in/get-in.component';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import {  ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -14,11 +18,15 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
     AppComponent,
     NavComponent,
     LeaderboardComponent,
-    GetInComponent
+    GetInComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     NgxSmartModalModule.forRoot()
 
 

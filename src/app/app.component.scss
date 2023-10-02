@@ -5,10 +5,8 @@ $gutterGap:20px;
 .container{
     width: 100%;
     max-width: 1600px;
-    max-height: 100vh;
     display: flex;
     position: relative;
-    overflow: hidden;
 
 }
 
@@ -31,6 +29,9 @@ header{
     position: sticky;
     top: 0;
 
+    background: #0a3d62;
+    z-index: 5;
+
     .right{
         display: inline-flex;
         align-items: center;
@@ -46,7 +47,6 @@ main,
 main{
     // border-radius: $gutterGap;
     // background: #273c75;
-    overflow: hidden;
 }
 .appbody{
     overflow: auto;

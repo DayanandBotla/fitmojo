@@ -2,63 +2,12 @@
 @import "./assets/_variables.scss";
 
 @import "./assets/css/_components/_reset.scss";
+@import "./assets/css/_components/_modal.scss";
 @import "./assets/css/_components/_form.scss";
 @import "./assets/css/_components/_animations.scss";
 @import "./assets/icon-font-dist/icons.css";
 
 
-// @import "node_modules/ngx-smart-modal/styles/ngx-smart-modal.scss";
-
-
-body.dialog-open{
-  overflow-x: hidden;
-  
-
-
-  .overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    outline: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: rgba(#0a3d62, .7);
-  }
-  .nsm-dialog{
-    position: relative;
-    width: auto;
-    margin: 16px;
-    pointer-events: none;
-  }
-  .nsm-content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: initial;
-    background-clip: padding-box;
-    outline: 0;
-  }
-
-  .nsm-dialog-btn-close,
-  .nsm-content > button{
-    display: none;
-    border: 0;
-    visibility: hidden;
-
-  }
-  .getin-modal{
-    width: 100%;
-    max-width: 600px;
-  }
-}
 
 
 
@@ -69,7 +18,6 @@ body{
     // background: #FFFFFF;
     background: #0a3d62;
     
-    overflow: hidden;
     width: 100%;
     // &::after{
     //   content: '';

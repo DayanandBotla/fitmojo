@@ -1,23 +1,27 @@
 <section class="nav">
     <div class="nav--list" >
-    <!-- <i class="icon-leaderboard"></i> -->
     <i class="icon-medal"></i>
     <span>Leaderboard</span>
     </div>
 
-    <div class="nav--list" >
+    <!-- <div class="nav--list" >
         <i class="icon-account"></i>
         <span>Profile</span>
-    </div>
+    </div> -->
 
     <div class="nav--list" >
         <i class="icon-goal"></i>
         <span>Challenges</span>
     </div>
         
-    <div class="nav--list" >
-        <i class="icon-exit"></i>
-        <span>Logout</span>
+    <div class="nav--list" (click)="login()">
+        <i class="icon-login"></i>
+        <span>Login</span>
+    </div>
+
+    <div class="nav--list" (click)="register()">
+        <i class="icon-account"></i>
+        <span>Register</span>
     </div>
         
  

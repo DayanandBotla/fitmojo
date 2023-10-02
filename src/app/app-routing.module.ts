@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GetInComponent } from './get-in/get-in.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
-  { path: 'get-in', component: GetInComponent }
+  {
+    path: 'login', component: LoginComponent
+  },
+  {
+    path: 'register', component: RegistrationComponent
+  }
 ];
 
 
