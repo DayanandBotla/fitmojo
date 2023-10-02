@@ -80,4 +80,8 @@ export class RegistrationComponent extends FormValidators{
       this.validateAllFormFields(this.registerForm);
     }
   }
+
+  gotoLogin(){
+    this.router.navigate(['/login'])
+  }
 }

@@ -199,3 +199,19 @@ input[type="file"] {
 
 
     
+
+  button.close-btn i:before{
+    font-weight: 700!important;
+  }
+
+  .linkTxt{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(10, 61, 98, 0.8);
+    text-align: center;
+    line-height: 20px;
+
+    a{
+        color: #1289A7;
+    }
+  }

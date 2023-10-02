@@ -5,12 +5,18 @@ $circle-m-w: 100px;
 .lb-row{
     display: flex;
     margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
 
     .heros{
         width: 50%;
     }
     .charts{
         width: 50%;
+    }
+    .heros,
+    .charts{
+        padding: 20px;
     }
 
 
