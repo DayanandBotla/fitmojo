@@ -8,6 +8,7 @@ export type IconsId =
   | "celebration"
   | "change_circle"
   | "close"
+  | "connect"
   | "error"
   | "event"
   | "exit"
@@ -43,6 +44,7 @@ export type IconsKey =
   | "Celebration"
   | "ChangeCircle"
   | "Close"
+  | "Connect"
   | "Error"
   | "Event"
   | "Exit"
@@ -78,6 +80,7 @@ export enum Icons {
   Celebration = "celebration",
   ChangeCircle = "change_circle",
   Close = "close",
+  Connect = "connect",
   Error = "error",
   Event = "event",
   Exit = "exit",
@@ -114,28 +117,29 @@ export const ICONS_CODEPOINTS: { [key in Icons]: string } = {
   [Icons.Celebration]: "61703",
   [Icons.ChangeCircle]: "61704",
   [Icons.Close]: "61705",
-  [Icons.Error]: "61706",
-  [Icons.Event]: "61707",
-  [Icons.Exit]: "61708",
-  [Icons.EyeOff]: "61709",
-  [Icons.Eye]: "61710",
-  [Icons.Foot]: "61711",
-  [Icons.Goal]: "61712",
-  [Icons.HeartPlus]: "61713",
-  [Icons.Help]: "61714",
-  [Icons.Home]: "61715",
-  [Icons.Img]: "61716",
-  [Icons.Info]: "61717",
-  [Icons.Key]: "61718",
-  [Icons.Leaderboard]: "61719",
-  [Icons.Leaderboard2]: "61720",
-  [Icons.Lock]: "61721",
-  [Icons.Login]: "61722",
-  [Icons.Logout]: "61723",
-  [Icons.Mail]: "61724",
-  [Icons.Medal]: "61725",
-  [Icons.Steps]: "61726",
-  [Icons.UploadFile]: "61727",
-  [Icons.Verified]: "61728",
-  [Icons.WaterDrop]: "61729",
+  [Icons.Connect]: "61706",
+  [Icons.Error]: "61707",
+  [Icons.Event]: "61708",
+  [Icons.Exit]: "61709",
+  [Icons.EyeOff]: "61710",
+  [Icons.Eye]: "61711",
+  [Icons.Foot]: "61712",
+  [Icons.Goal]: "61713",
+  [Icons.HeartPlus]: "61714",
+  [Icons.Help]: "61715",
+  [Icons.Home]: "61716",
+  [Icons.Img]: "61717",
+  [Icons.Info]: "61718",
+  [Icons.Key]: "61719",
+  [Icons.Leaderboard]: "61720",
+  [Icons.Leaderboard2]: "61721",
+  [Icons.Lock]: "61722",
+  [Icons.Login]: "61723",
+  [Icons.Logout]: "61724",
+  [Icons.Mail]: "61725",
+  [Icons.Medal]: "61726",
+  [Icons.Steps]: "61727",
+  [Icons.UploadFile]: "61728",
+  [Icons.Verified]: "61729",
+  [Icons.WaterDrop]: "61730",
 };

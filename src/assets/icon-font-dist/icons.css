@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.eot?9501b7cb9c03e828c0d20c4e65fc761c#iefix") format("embedded-opentype"),
-url("./icons.woff2?9501b7cb9c03e828c0d20c4e65fc761c") format("woff2"),
-url("./icons.woff?9501b7cb9c03e828c0d20c4e65fc761c") format("woff");
+    src: url("./icons.eot?9bc1263df75b802775e432b62a446ced#iefix") format("embedded-opentype"),
+url("./icons.woff2?9bc1263df75b802775e432b62a446ced") format("woff2"),
+url("./icons.woff?9bc1263df75b802775e432b62a446ced") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -43,75 +43,78 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-close:before {
     content: "\f109";
 }
-.icon-error:before {
+.icon-connect:before {
     content: "\f10a";
 }
-.icon-event:before {
+.icon-error:before {
     content: "\f10b";
 }
-.icon-exit:before {
+.icon-event:before {
     content: "\f10c";
 }
-.icon-eye-off:before {
+.icon-exit:before {
     content: "\f10d";
 }
-.icon-eye:before {
+.icon-eye-off:before {
     content: "\f10e";
 }
-.icon-foot:before {
+.icon-eye:before {
     content: "\f10f";
 }
-.icon-goal:before {
+.icon-foot:before {
     content: "\f110";
 }
-.icon-heart_plus:before {
+.icon-goal:before {
     content: "\f111";
 }
-.icon-help:before {
+.icon-heart_plus:before {
     content: "\f112";
 }
-.icon-home:before {
+.icon-help:before {
     content: "\f113";
 }
-.icon-img:before {
+.icon-home:before {
     content: "\f114";
 }
-.icon-info:before {
+.icon-img:before {
     content: "\f115";
 }
-.icon-key:before {
+.icon-info:before {
     content: "\f116";
 }
-.icon-leaderboard:before {
+.icon-key:before {
     content: "\f117";
 }
-.icon-leaderboard2:before {
+.icon-leaderboard:before {
     content: "\f118";
 }
-.icon-lock:before {
+.icon-leaderboard2:before {
     content: "\f119";
 }
-.icon-login:before {
+.icon-lock:before {
     content: "\f11a";
 }
-.icon-logout:before {
+.icon-login:before {
     content: "\f11b";
 }
-.icon-mail:before {
+.icon-logout:before {
     content: "\f11c";
 }
-.icon-medal:before {
+.icon-mail:before {
     content: "\f11d";
 }
-.icon-steps:before {
+.icon-medal:before {
     content: "\f11e";
 }
-.icon-upload_file:before {
+.icon-steps:before {
     content: "\f11f";
 }
-.icon-verified:before {
+.icon-upload_file:before {
     content: "\f120";
 }
-.icon-water_drop:before {
+.icon-verified:before {
     content: "\f121";
+}
+.icon-water_drop:before {
+    content: "\f122";
 }
