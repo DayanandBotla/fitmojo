@@ -1,3 +1,11 @@
+
+.text-center{
+    text-align: center;
+}
+
+.w-100{
+    width: 100%;
+}
 body.dialog-open {
     overflow: hidden;
 
@@ -81,5 +89,6 @@ body.dialog-open {
     background: #FFFFFF;
     padding: 30px;
     border-radius: 8px;
+    min-width: 300px;
   }
 }

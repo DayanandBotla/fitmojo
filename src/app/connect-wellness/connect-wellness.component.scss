@@ -1,0 +1,32 @@
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0a3d62;
+}
+.applist{
+    padding: 10px;
+    background: #f1f2f6;
+    margin: 10px auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(.active){
+        opacity: .3;
+        cursor: not-allowed;
+    }
+
+    img{
+        height: 40px;
+        object-fit: contain;
+        &.small{
+            height: 33px;
+        }
+
+    } 
+}
