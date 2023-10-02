@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import {  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MyProfileComponent } from './my-profile/my-profile.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     LeaderboardComponent,
     GetInComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,

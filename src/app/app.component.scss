@@ -69,3 +69,15 @@ main,
         object-fit: contain;
     }
 }
+
+
+footer{
+    padding: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    img{
+        height: 30px;
+        margin-left: 10px;
+    }
+}
