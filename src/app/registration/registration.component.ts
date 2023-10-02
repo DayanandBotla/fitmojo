@@ -55,7 +55,7 @@ export class RegistrationComponent {
   register(){
     const formData = new FormData();
     formData.append("name",(this.registerForm?.get('name')?.value || ""))
-    formData.append("email",(this.registerForm?.get('email')?.value || ""))
+    formData.append("emailId",(this.registerForm?.get('email')?.value || ""))
     formData.append("password",(this.registerForm?.get('password')?.value || ""))
     formData.append('image', (this.registerForm?.get('image')?.value || ""));
     this.apiService.post("createUser",formData).subscribe(apiResponse=>{
