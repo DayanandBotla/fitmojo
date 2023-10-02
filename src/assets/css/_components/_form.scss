@@ -26,6 +26,11 @@ input:-webkit-autofill:active {
     overflow: hidden;
     text-overflow: ellipsis;
     border: 2px solid #c8d6e5;
+    transition:  all .25s ease-in-out;
+
+    &.pwd{
+        padding-right: 35px;
+    }
 
     &:focus {
         color: #0a3d62;
@@ -75,9 +80,20 @@ input[type="file"] {
 }
 
 
-.ng-invalid.ng-touched input.ng-touched{
-    border-color: #ff6b6b;
-}
+
+    input{
+        
+        .has-error &{
+            border-color:  rgba(#ff6b6b, .2) ;;
+            background: rgba(#ff6b6b, .1) ;
+        }
+        .has-success &{
+            border-color:  rgba(#00b894, .2) ;;
+            background: rgba(#00b894, .1) ;
+        }
+    }
+    
+
 
 
 .error{
@@ -199,3 +215,19 @@ input[type="file"] {
 
 
     
+
+  button.close-btn i:before{
+    font-weight: 700!important;
+  }
+
+  .linkTxt{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(10, 61, 98, 0.8);
+    text-align: center;
+    line-height: 20px;
+
+    a{
+        color: #1289A7;
+    }
+  }

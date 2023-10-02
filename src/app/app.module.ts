@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service';
+import { ProgressChartComponent } from './progress-chart/progress-chart.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { TokenInterceptorService } from './token-interceptor.service';
     MyProfileComponent,
     TeamSelectionComponent,
     HomeComponent,
-    ConnectWellnessComponent
+    ConnectWellnessComponent,
+    ProgressChartComponent
   ],
   imports: [
     BrowserModule,

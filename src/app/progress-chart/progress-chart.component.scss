@@ -1,0 +1,29 @@
+.userchart{
+    position: relative;
+    .userchart-time{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 4px;
+    }
+    .btn-chart{
+        border-radius: 20px;
+        padding: 4px 8px;
+        font-size: 12px;
+        display: inline-flex;
+        background: rgba(255, 255, 255, 0.5);
+        color: #fff;
+        cursor: pointer;
+        &.active, &:hover{
+            background: linear-gradient(0deg, rgb(186, 220, 88), #6ab04c 50%);
+        }
+    }
+    .btn-chart + .btn-chart{
+        margin-left: 4px;
+    }
+
+    .userChartCanvas{
+        width: 100%!important;
+        height: 100%!important;
+    }
+}

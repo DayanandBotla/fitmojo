@@ -6,6 +6,12 @@
 .w-100{
     width: 100%;
 }
+
+.entryModal .overlay{
+background:rgba(#0a3d62, .7) url('../../img/mascot.svg')!important;
+background-blend-mode: luminosity;
+
+}
 body.dialog-open {
     overflow: hidden;
 
@@ -54,8 +60,8 @@ body.dialog-open {
 
     }
 
-    .entryModal {
-        width: 100%;
+    .entryModal, .LoginModal {
+        min-width: 600px;
         max-width: 600px;
     }
 }

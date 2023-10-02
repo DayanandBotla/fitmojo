@@ -65,6 +65,10 @@ export class LoginComponent extends FormValidators {
     }
   }
 
+
+  gotoSignUp(){
+    this.router.navigate(['/register'])
+  }
   
 
 }

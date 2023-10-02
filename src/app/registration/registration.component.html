@@ -1,5 +1,5 @@
 
-<ngx-smart-modal #SignUpModal identifier="SignUpModal" customClass="SignUpModal entryModal" [dismissable] = "false" >
+<ngx-smart-modal #SignUpModal identifier="SignUpModal" class="entryModal" customClass="SignUpModal entryModal" [dismissable] = "false" >
     <button class="close-btn" (click)="closeEntry()"><i class="icon-close"></i></button>
     <div class="form form__row">
         <div class="form__img">
@@ -31,8 +31,12 @@
                     </div>
                     <div class="form-group" [ngClass]="getFormFiledClass('password',registerForm)">
                         <label for="password">Password</label>
-                        <input id="password" class="form-control" type="password"
-                            placeholder="Please enter your password" formControlName="password" name="password" required>
+                        <div class="inpwrap">
+                        <input id="password" class="form-control pwd" type="password"
+                            placeholder="Please enter your password" formControlName="password" name="password" required 
+                            [type]="showPassword ? 'password' : 'text'">
+                            <i  [className]="!showPassword ? 'icon-eye-off' : 'icon-eye'" (click)="showPassword = !showPassword"> </i>
+                        </div>    
                             <p class="errortxt" *ngIf="shouldShowErrors('password',registerForm)">{{getErrorMessage('password',registerForm)}}</p>
                     </div>
                     <div class="form-group">
@@ -48,6 +52,8 @@
                         Step in <i class="icon-arrow_forward2"></i>
                     </button>
                 </form>
+
+                <p class="linkTxt">You already have an account please <br/><a (click)="gotoLogin()" href="javascript:void(0)"  ><strong>Login</strong></a></p>
             </div>
         </div>
     </div>
