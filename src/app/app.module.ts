@@ -15,6 +15,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { TeamSelectionComponent } from './team-selection/team-selection.component';
 import { HomeComponent } from './home/home.component';
 import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.component';
+import { ProgressChartComponent } from './progress-chart/progress-chart.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.co
     MyProfileComponent,
     TeamSelectionComponent,
     HomeComponent,
-    ConnectWellnessComponent
+    ConnectWellnessComponent,
+    ProgressChartComponent
   ],
   imports: [
     BrowserModule,
