@@ -1,86 +1,108 @@
-$gutterGap:20px;
-
 .nav {
-    box-sizing: border-box;
-
     display: flex;
-    flex-direction: column;
 
-    background:#273c75;
-    padding: $gutterGap;
-    border-radius: 40px;
-
-    &--list {
-        margin: 16px 0;
-
-        &,
-        .icon,
-        .txt {
-            display: inline-flex;
-            align-items: center;
-
+    &--list{
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 4px;
+        color: #ffffff;
+        background: linear-gradient(0deg, rgba(186, 220, 88, 1), #6ab04c 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        i{
+            font-size: 32px;
+            margin-bottom: 4px;
         }
+        span{
+            font-size: 14px;
+        }
+    }
+    &--list + &--list{
+        margin-left: 15px;
+    }
+}
 
-        .icon {
-            color: #fff;
-            font-size: 24px;
-            width: 36px;
-            height: 36px;
-            background: rgba(#192a56, 0.3);
-            border-radius: 12px;
-            padding: 8px;
-            justify-content: center;
-            &:hover{
-                &.connect{
-                    color: #00a8ff;
-                }
-                &.bell{
-                    color: #fbc531;
-                }
-                &.user{
-                    color: #9c88ff;
-                }
-                &.challenge{
-                    color: #4cd137;
-                }
-                &.leaderboard{
-                    color:#e84118;
-                }
+// $gutterGap:20px;
+
+// .nav {
+//     box-sizing: border-box;
+
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: $gutterGap;
+
+//     &--list {
+//         margin: 16px 0;
+
+//         &,
+//         .icon,
+//         .txt {
+//             display: inline-flex;
+//             align-items: center;
+
+//         }
+
+//         .icon {
+//             color: #fff;
+//             font-size: 32px;
+//             width: 36px;
+//             height: 36px;
+//             border-radius: 12px;
+//             padding: 8px;
+//             justify-content: center;
+//             // &:hover{
+//             //     &.connect{
+//             //         color: #00a8ff;
+//             //     }
+//             //     &.bell{
+//             //         color: #fbc531;
+//             //     }
+//             //     &.user{
+//             //         color: #9c88ff;
+//             //     }
+//             //     &.challenge{
+//             //         color: #4cd137;
+//             //     }
+//             //     &.leaderboard{
+//             //         color:#e84118;
+//             //     }
                 
-            }
+//             // }
 
     
 
 
-        }
+//         }
 
-        .txt {
-            display: none;
-            margin-left: 16px;
-            font-size: 16px;
-            font-weight: 300;
-            color: rgba(#FFF, 0.3);
-        }
+//         .txt {
+//             margin-left: 16px;
+//             font-size: 16px;
+//             font-weight: 300;
+//             color: rgba(#FFF, 0.3);
+//         }
 
-        &.active i{
-            &.connect{
-                background: #00a8ff;
-            }
-            &.bell{
-                background: #fbc531;
-            }
-            &.user{
-                background: #9c88ff;
-            }
-            &.challenge{
-                background: #4cd137;
-            }
-            &.leaderboard{
-                background:#e84118;
-            }
+//         // &.active i{
+//         //     &.connect{
+//         //         background: #00a8ff;
+//         //     }
+//         //     &.bell{
+//         //         background: #fbc531;
+//         //     }
+//         //     &.user{
+//         //         background: #9c88ff;
+//         //     }
+//         //     &.challenge{
+//         //         background: #4cd137;
+//         //     }
+//         //     &.leaderboard{
+//         //         background:#e84118;
+//         //     }
             
-        }
+//         // }
         
-    }
+//     }
 
-}
+// }

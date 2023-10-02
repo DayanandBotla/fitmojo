@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { GetInComponent } from './get-in/get-in.component';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { GetInComponent } from './get-in/get-in.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSmartModalModule.forRoot()
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

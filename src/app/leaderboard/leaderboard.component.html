@@ -1,63 +1,90 @@
-<h1 class="page-title">Leader board</h1>
+<h1 class="page-title" title="Leaderboard">Leaderboard</h1>
+
+<section class="lb-row">
+    <div class="heros">
+        
+        <div class="heros__inner best3">
+
+            <div class="best3__wrapper">
+                <div class="top3  best3--c small-c">
+                    <div class="inner">
+                        <img src="../assets/img/lb/avatar/5.jpeg">
+                    </div>
+                    <div class="scrore">998</div>
+                    <div class="name">Seeta</div>
+                </div>
+        
+                <div class="top1 best3--c big-c">
+                    <div class="inner">
+                        <img src="../assets/img/lb/avatar/2.jpeg">
+                    </div>
+                    <div class="scrore">2233</div>
+                    <div class="name">Anvesh</div>
+                </div>
+                <div class="top2 best3--c small-c">
+                    <div class="inner">
+                        <img src="../assets/img/lb/avatar/3.jpeg">
+                    </div>
+                    <div class="scrore">557</div>
+                    <div class="name">Rama</div>
+                </div>
+            </div>
 
 
-<div class="best3">
-    <img class="bg-svg" src="../assets/img/bg-color-anime.svg">
-    <div class="cta-wrap">
-        <button class="active">All time</button>
-        <button>This week</button>
-        <button>This month</button>
+            <img class="trophy" src="../assets/img/trophy.png">
+        </div>
     </div>
-    <div class="best3__wrapper">
-        <div class="top3  best3--c small-c">
-            <div class="inner">
-                <img src="../assets/img/lb/avatar/5.jpeg">
-            </div>
-            <div class="scrore">998</div>
-            <div class="name">Seeta</div>
-        </div>
+    <div class="charts"></div>
+</section>
 
-        <div class="top1 best3--c big-c">
-            <div class="inner">
-                <img src="../assets/img/lb/avatar/2.jpeg">
+<section class="lb-ranking-table myrank">
+    <h6>My current rank</h6><br/>
+    <div  class="lb-ranking-row " >
+        <div class="row__inner">
+            <div class="badge"></div>
+            <div class="rank">22
+                <span>Rank</span>
             </div>
-            <div class="scrore">2233</div>
-            <div class="name">Anvesh</div>
-        </div>
-        <div class="top2 best3--c small-c">
-            <div class="inner">
-                <img src="../assets/img/lb/avatar/3.jpeg">
+            <div class="avatar">
+                <img src="../assets/img/lb/avatar/4.jpeg" alt="user name" title="user name">
             </div>
-            <div class="scrore">557</div>
-            <div class="name">Rama</div>
+            <div class="name">Pradeep</div>
+            <div class="challenge">
+                <i class="icon-foot"></i>
+                <div class="txt">
+                <span>Steps</span>
+                <span>2222</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section> 
+<section class="lb-ranking-table">
+    
+    <div class="lb-ranking-row " *ngFor="let item of leaderBoardData; index as i">
+        <div class="row__inner">
+        <div class="badge">
+            <img *ngIf="i+1 === 1" src="../assets/img/gold-medal.png" alt="gold medal">
+            <img *ngIf="i+1 === 2"  src="../assets/img/silver-medal.png" alt="silver medal">
+            <img *ngIf="i+1 === 3"  src="../assets/img/bronze-medal.png" alt="bronze medal">
+        </div>
+        <div class="rank">{{i+1}}
+            <span>Rank</span>
+        </div>
 
-<div class="lb">
-    <div class=" lb--row" *ngFor="let item of leaderBoardData">
-        <div class="lb--avatar">
+        <div class="avatar">
             <img src="../assets/img/lb/avatar/{{item.avatar}}" alt="{{item.name}}" title="{{item.name}}">
         </div>
-        <div >
-        <div class="name">
-            {{item.name}}
-        </div>
-        <div class="empid">
-            EMPID {{item.empid}}
-        </div>
-        </div>
+        <div class="name">{{item.name}}</div>
+        
         <div class="challenge">
-            <img src="../assets/icon-font/foot-prints.svg" class="icons">
-            <div class="challengetype">
-            {{item.challengeType}}
-            </div>
-            <div class="score">
-                {{item.scrore}}
+            <i class="icon-foot"></i>
+            <div class="txt">
+            <span>{{item.challengeType}}</span>
+            <span>{{item.scrore}}</span>
             </div>
         </div>
-        <div class="latest">
-            {{item.lastUpdated}}
         </div>
     </div>
-</div>
+</section>
+
