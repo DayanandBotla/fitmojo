@@ -26,12 +26,24 @@
                         <label for="email">Email</label>
                         <input id="email" class="form-control" type="email"
                             placeholder="Please enter your email" formControlName="emailId" name="emailId" required>
-                    </div>
+                            <p class="errortxt">Email id doesnot exist</p>
+                        </div>
+                    
+
                     <div class="form-group">
                         <label for="password">Password</label>
+                        <div class="inpwrap">
                         <input id="password" class="form-control" type="password"
-                            placeholder="Please enter your password" formControlName="password" name="password" required>
+                            placeholder="Please enter your password" formControlName="password" 
+                            name="password" required 
+                            [type]="showPassword ? 'password' : 'text'"
+                            >
+                            <i  [className]="!showPassword ? 'icon-eye-off' : 'icon-eye'" (click)="showPassword = !showPassword"> </i>
+                            
+                        </div>
+                        <p class="errortxt">Password did not match</p>
                     </div>
+
                 
                     <button class="btn-1 btn-md submit-btn" (click)="login()" >
                         Logn to Wellness <i class="icon-arrow-right "></i>

@@ -12,6 +12,8 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  
+  showPassword: boolean = true;
 
   registerForm = new FormGroup({
     emailId: new FormControl('', [Validators.required]),

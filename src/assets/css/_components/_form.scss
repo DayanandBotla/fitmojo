@@ -90,8 +90,13 @@ input[type="file"] {
     margin-bottom: 20px;
 }
 
+.errortxt{
+    color: #ee5253;
+    font-size: 12px;
+    padding: 4px 12px;
+}
+
 .btn-1 {
-    
     background:linear-gradient(90deg, #12CBC4, #1289A7 100%);
     color: #ffffff;
     box-shadow: rgba(#1289A7, .5) 0px 3px 10px;
