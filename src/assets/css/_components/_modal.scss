@@ -51,3 +51,35 @@ body.dialog-open {
         max-width: 600px;
     }
 }
+
+.small-dialog{
+    .close-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right:0;
+        background: #c8d6e5;
+        color: #1289A7;
+        font-size: 20px;
+        line-height: 1;
+        width: 24px;
+        height: 24px;
+        border-radius: 0 0 0 12px ;
+        padding: 0;
+        border: 0;
+        
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    
+        &:hover{
+            background: #1289A7;
+            color: #FFFFFF;
+        }
+    }
+  .nsm-body{  
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+  }
+}
