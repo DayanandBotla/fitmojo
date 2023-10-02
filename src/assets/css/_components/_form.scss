@@ -28,6 +28,10 @@ input:-webkit-autofill:active {
     border: 2px solid #c8d6e5;
     transition:  all .25s ease-in-out;
 
+    &.pwd{
+        padding-right: 35px;
+    }
+
     &:focus {
         color: #0a3d62;
         background-color: #fff;

@@ -1,5 +1,7 @@
 
-<ngx-smart-modal #LoginModal identifier="LoginModal" class="loginModal" customClass="LoginModal entryModal" [dismissable] = "false" >
+<ngx-smart-modal #LoginModal identifier="LoginModal" class="loginModal entryModal" customClass="LoginModal entryModal" [dismissable] = "false" >
+     
+
     <button class="close-btn" (click)="closeEntry()"><i class="icon-close"></i></button>
 
 
@@ -14,7 +16,7 @@
             </div>
         </div>
         <div class="form__fields"> 
-
+         
             <div class="form__container">
                 <form class="" [formGroup]="loginForm">
                     <h3 class="form--greet">Welcome back!</h3>
@@ -31,7 +33,7 @@
                     <div class="form-group" [ngClass]="getFormFiledClass('password',loginForm)">
                         <label for="password">Password</label>
                         <div class="inpwrap">
-                        <input id="password" class="form-control" type="password"
+                        <input id="password" class="form-control pwd" type="password"
                             placeholder="Please enter your password" formControlName="password" 
                             name="password" required 
                             [type]="showPassword ? 'password' : 'text'"

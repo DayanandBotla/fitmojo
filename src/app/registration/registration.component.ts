@@ -12,7 +12,13 @@ import { UserService } from '../user.service';
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss']
 })
+
+
+
 export class RegistrationComponent extends FormValidators{
+
+  showPassword: boolean = true;
+  
   registerForm = new FormGroup({
     name: new FormControl('', [Validators.required,ValidatorsService.validName(2,250)]),
     email: new FormControl('', [Validators.required,ValidatorsService.validateEmail()]),
