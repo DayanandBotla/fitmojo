@@ -5,6 +5,7 @@ import { ApiService } from 'src/app/api.service';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ValidatorsService } from '../validators.service';
 import {FormValidators} from 'src/app/FormValidators';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-registration',
@@ -24,6 +25,7 @@ export class RegistrationComponent extends FormValidators{
     private router:Router,
     private apiService:ApiService,
     public ngxSmartModalService: NgxSmartModalService,
+    private userService:UserService
     ) {
       super()
     }
@@ -64,7 +66,15 @@ export class RegistrationComponent extends FormValidators{
       formData.append("password",(this.registerForm?.get('password')?.value || ""))
       formData.append('image', (this.registerForm?.get('image')?.value || ""));
       this.apiService.post("createUser",formData).subscribe(apiResponse=>{
-        console.log(apiResponse);
+        if(apiResponse?.status === 'SUCCESS'){
+          this.apiService.post("loginUser",{emailId:this.registerForm?.get('email')?.value,password:this.registerForm?.get('password')?.value}).subscribe(apiResponse=>{
+            if(apiResponse?.status==="SUCCESS"){
+              this.userService.userId = apiResponse?.user?.userId;
+              this.userService.emailId = apiResponse?.user?.emailId;
+              this.router.navigate(['/home']);
+            }
+          })
+        }
       })
     } else {
       this.validateAllFormFields(this.registerForm);

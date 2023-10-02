@@ -5,6 +5,7 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/api.service';
 import { FormValidators } from '../FormValidators';
+import { UserService } from '../user.service';
 
 
 @Component({
@@ -26,7 +27,9 @@ export class LoginComponent extends FormValidators {
   constructor(
     private router:Router,
     private apiService:ApiService,
-    public ngxSmartModalService: NgxSmartModalService) {
+    public ngxSmartModalService: NgxSmartModalService,
+    private userService:UserService
+  ) {
       super()
     }
 
@@ -39,9 +42,26 @@ export class LoginComponent extends FormValidators {
   }
 
   login(){
-    this.apiService.post("loginUser",this.loginForm.value).subscribe(apiResponse=>{
-      console.log(apiResponse);
-    })
+    this.removeErrorMessage("loginErrorMsg")
+    if(this.loginForm.valid){
+      this.apiService.post("loginUser",this.loginForm.value).subscribe(apiResponse=>{
+        if(apiResponse?.status==="SUCCESS"){
+          this.userService.userId = apiResponse?.user?.userId;
+          this.userService.emailId = apiResponse?.user?.emailId;
+          this.router.navigate(['/home']);
+        } else {
+          if(apiResponse?.status==="FAILURE"){
+            if(apiResponse?.errorId === 1005){
+              this.setErrorMessage("loginErrorMsg","Invalid Credentials")
+            }
+          }
+        }
+      })
+    } else {
+      this.validateAllFormFields(this.loginForm)
+    }
   }
+
+  
 
 }

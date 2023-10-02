@@ -13,6 +13,7 @@ import {  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { TeamSelectionComponent } from './team-selection/team-selection.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { TeamSelectionComponent } from './team-selection/team-selection.componen
     LoginComponent,
     RegistrationComponent,
     MyProfileComponent,
-    TeamSelectionComponent
+    TeamSelectionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

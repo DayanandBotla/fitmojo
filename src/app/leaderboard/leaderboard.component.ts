@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-leaderboard',
@@ -69,4 +70,29 @@ export class LeaderboardComponent {
 
     },
   ];
+
+  isTeamAvailable = true;
+  isUserIntegrated = true;
+  constructor(
+    private userService: UserService
+  ){}
+
+  ngOnInit(){
+    this.getUserDetails();
+  }
+
+  getUserDetails(){
+    this.userService.getUserProfile().subscribe(
+      userDetails =>{
+        if(userDetails?.status === 'SUCCESS' && userDetails?.user){
+          if(userDetails?.user?.userClientDetails?.teamId === 0){
+            this.isTeamAvailable = false;
+          }
+          if(!userDetails?.user?.userIntegrationDetails?.integrationStatus){
+            this.isUserIntegrated = false;
+          }
+        }
+      }
+    )
+  }
 }

@@ -48,4 +48,8 @@ export class ApiService {
     return this.post("createUser",formData)
   }
 
+  getUserProfile(userDetails){
+    return this.post("getUserDetails",userDetails)
+  }
+
 }

@@ -81,4 +81,16 @@ export class FormValidators{
           }
         });
       }
+
+      removeErrorMessage(id){
+        const errorDiv = document.getElementById(id)
+        errorDiv.style['display'] = 'none';
+        errorDiv.innerText = ""
+      }
+    
+      setErrorMessage(id,message){
+        const errorDiv = document.getElementById(id)
+        errorDiv.style['display'] = 'block';
+        errorDiv.innerText = message
+      }
 }
