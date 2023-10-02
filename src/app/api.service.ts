@@ -7,18 +7,6 @@ import { catchError, map, Observable, retry, share, throwError } from 'rxjs';
 })
 export class ApiService {
 
-  httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json',
-    }),
-  };
-
-  httpOptionsUpload = {
-    headers: new HttpHeaders({
-      'Content-Type': 'mu',
-    }),
-  };
-
   constructor(
     private http:HttpClient
   ) { }
@@ -50,6 +38,18 @@ export class ApiService {
 
   getUserProfile(userDetails){
     return this.post("getUserDetails",userDetails)
+  }
+
+  updateUser(userDetails){
+    return this.post("updateUser",userDetails)
+  }
+
+  getLeaderBoard(leaderBoardDetails){
+    return this.post("getLeaderBoard",leaderBoardDetails)
+  }
+  
+  getIntegrationAuthUrl(authUrlDetails){
+    return this.post("getIntegrationAuthUrl",authUrlDetails)
   }
 
 }

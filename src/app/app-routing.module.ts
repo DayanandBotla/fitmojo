@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { RouterGuardService } from './router-guard.service';
 
 
 const routes: Routes = [
@@ -14,13 +16,18 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   },
   {
-    path: 'home', component: HomeComponent
+    path: 'home', 
+    component: HomeComponent,
+    canActivate: [RouterGuardService],
   },
   {
     path: 'register', component: RegistrationComponent
   },
   {
     path: 'myprofile', component: MyProfileComponent
+  },
+  { 
+    path: '**', redirectTo: "login", pathMatch: 'full'
   }
 ];
 

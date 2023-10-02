@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,16 +9,15 @@ import { Router } from '@angular/router';
 
 export class NavComponent {
 
+  @Output() navClicked = new EventEmitter<any>();
+
   constructor(private router:Router){}
 
-  login(){
-    this.router.navigate(['/login'])
+  connectAccount(){
+    this.navClicked.emit("connectAccount");
   }
 
-  register(){
-    this.router.navigate(['/register'])
-  }
-
+  
   myProfile(){
     this.router.navigate(['/myprofile'])
   }

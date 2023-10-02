@@ -15,6 +15,8 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { TeamSelectionComponent } from './team-selection/team-selection.component';
 import { HomeComponent } from './home/home.component';
 import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptorService } from './token-interceptor.service';
 
 
 @NgModule({
@@ -39,7 +41,13 @@ import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.co
 
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

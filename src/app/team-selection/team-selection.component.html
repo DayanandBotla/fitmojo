@@ -1,13 +1,13 @@
 
 <ngx-smart-modal #teamSelection identifier="teamSelection" class="teamSelection small-dialog" customClass="teamSelection" [dismissable] = "false" >
-    <button class="close-btn" (click)="closeEntry()"><i class="icon-close"></i></button>
+    
 
-<div class="select-team">
+<div class="select-team"  [formGroup]="teamSelectionForm">
     <div class="form-group">
         <label for="org">Select your organization</label>
         <div class="select select--disabled form-control">
-        <select id="org">
-            <option>Techmojo</option>
+        <select id="org" formControlName="teamId" name="teamId">
+            <option *ngFor="let client of clients" value="{{client.id}}">{{client.name}}</option>
         </select>
         </div>
     </div>
@@ -15,13 +15,13 @@
     <div class="form-group">
         <label for="internalteam">Select your organization</label>
         <div class="select form-control">
-        <select id="internalteam">
-            <option *ngFor="let item of internalTeam">{{item}}</option>
+        <select id="internalteam" formControlName="clientTeamId" name="clientTeamId">
+            <option *ngFor="let team of internalTeam" value="{{team.id}}">{{team.name}}</option>
         </select>
         </div>
     </div>
     <div class="form-group text-center">
-    <button class="btn-1 btn-md save-btn w-100" >
+    <button class="btn-1 btn-md save-btn w-100" (click)="saveTeamDetails()">
         Save
     </button>
     </div>

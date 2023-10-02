@@ -8,25 +8,25 @@
             <div class="best3__wrapper">
                 <div class="top3  best3--c small-c">
                     <div class="inner">
-                        <img src="../assets/img/lb/avatar/5.jpeg">
+                        <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[2]?.userId}}/{{leaderBoardData[2]?.profilePicUrl}}">
                     </div>
-                    <div class="scrore">998</div>
-                    <div class="name">Seeta</div>
+                    <div class="scrore">{{leaderBoardData[2]?.stepCount}}</div>
+                    <div class="name">{{leaderBoardData[2]?.name}}</div>
                 </div>
         
                 <div class="top1 best3--c big-c">
                     <div class="inner">
-                        <img src="../assets/img/lb/avatar/2.jpeg">
+                        <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[0]?.userId}}/{{leaderBoardData[0]?.profilePicUrl}}">
                     </div>
-                    <div class="scrore">2233</div>
-                    <div class="name">Anvesh</div>
+                    <div class="scrore">{{leaderBoardData[0]?.stepCount}}</div>
+                    <div class="name">{{leaderBoardData[0]?.name}}</div>
                 </div>
                 <div class="top2 best3--c small-c">
                     <div class="inner">
-                        <img src="../assets/img/lb/avatar/3.jpeg">
+                        <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[1]?.userId}}/{{leaderBoardData[1]?.profilePicUrl}}">
                     </div>
-                    <div class="scrore">557</div>
-                    <div class="name">Rama</div>
+                    <div class="scrore">{{leaderBoardData[1]?.stepCount}}</div>
+                    <div class="name">{{leaderBoardData[1]?.name}}</div>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
     <div class="charts"></div>
 </section>
 
-<section class="lb-ranking-table myrank">
+<section class="lb-ranking-table myrank" *ngIf="userCurrentRank >= 0">
     <h6>My current rank</h6><br/>
     <div  class="lb-ranking-row " >
         <div class="row__inner">
@@ -61,7 +61,7 @@
 </section> 
 <section class="lb-ranking-table">
     
-    <div class="lb-ranking-row " *ngFor="let item of leaderBoardData; index as i">
+    <div class="lb-ranking-row " *ngFor="let person of leaderBoardData; index as i">
         <div class="row__inner">
         <div class="badge">
             <img *ngIf="i+1 === 1" src="../assets/img/gold-medal.png" alt="gold medal">
@@ -73,21 +73,17 @@
         </div>
 
         <div class="avatar">
-            <img src="../assets/img/lb/avatar/{{item.avatar}}" alt="{{item.name}}" title="{{item.name}}">
+            <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person.userId}}/{{person.profilePicUrl}}" alt="{{person.name}}" title="{{person.name}}">
         </div>
-        <div class="name">{{item.name}}</div>
+        <div class="name">{{person.name}}</div>
         
         <div class="challenge">
             <i class="icon-foot"></i>
             <div class="txt">
-            <span>{{item.challengeType}}</span>
-            <span>{{item.scrore}}</span>
+            <span>Steps</span>
+            <span>{{person.stepCount}}</span>
             </div>
         </div>
         </div>
     </div>
 </section>
-
-<app-team-selection *ngIf="!isTeamAvailable"></app-team-selection>
-
-<app-connect-wellness *ngIf="isUserIntegrated"></app-connect-wellness>

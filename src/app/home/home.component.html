@@ -6,7 +6,7 @@
         </div>
   
         <div class="right">
-          <app-nav></app-nav>
+          <app-nav (navClicked)="navClicked($event)"></app-nav>
         </div>
       </header>
       <section class="appbody">
@@ -14,3 +14,7 @@
       </section>
     </main>
   </div>
+
+<app-team-selection *ngIf="!isTeamAvailable"></app-team-selection>
+
+<app-connect-wellness *ngIf="isUserIntegrationOpen" (closePopup)="navClicked($event)"></app-connect-wellness>

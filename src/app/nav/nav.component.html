@@ -1,5 +1,5 @@
 <section class="nav">
-    <div class="nav--list">
+    <div class="nav--list" (click)="connectAccount()">
         <i class="icon-connect"></i>
         <span>Connect Techmojo</span>
     </div>
@@ -20,17 +20,7 @@
         <span>Challenges</span>
     </div>
 
-    <div class="nav--list" (click)="login()">
-        <i class="icon-login"></i>
-        <span>Login</span>
-    </div>
-
-    <div class="nav--list" (click)="register()">
-        <i class="icon-account"></i>
-        <span>Register</span>
-    </div>
-
-    <div class="nav--list" (click)="login()">
+    <div class="nav--list" >
         <i class="icon-exit"></i>
         <span>Logout</span>
     </div>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
+import { ApiService } from '../api.service';
 import { UserService } from '../user.service';
 
 @Component({
@@ -7,92 +10,31 @@ import { UserService } from '../user.service';
   styleUrls: ['./leaderboard.component.scss']
 })
 export class LeaderboardComponent {
-  leaderBoardData = [
-    {
-      avatar: '1.jpeg',
-      name:'Pradeep',
-      empid: '1156',
-      challengeType: 'Steps',
-      scrore:'2344',
-      lastUpdated: 'Wed Sep 20 2023 06:04:36'
-    },
+  leaderBoardData=[];
+  userCurrentRank;
 
-   
-    {
-      avatar: '2.jpeg',
-      name:'Musheer',
-      empid: '1045',
-      challengeType: 'Steps',
-      scrore:'555',
-      lastUpdated: 'Wed Sep 19 2023 09:04:36'
-    },
-  
-    {
-      avatar: '3.jpeg',
-      name:'Anvesh',
-      empid: '1121',
-      challengeType: 'Steps',
-      scrore:'2001',
-      lastUpdated: 'Wed Sep 20 2023 07:04:36'
-    },
-    {
-      avatar: '4.jpeg',
-      name:'Daya',
-      empid: '1119',
-      challengeType: 'Steps',
-      scrore:'8978',
-      lastUpdated: 'Wed Sep 21 2023 09:04:36'
-    },
-  
-    {
-      avatar: '5.jpeg',
-      name:'Pradeep',
-      empid: '1156',
-      challengeType: 'Steps',
-      scrore:'2344',
-      lastUpdated: 'Wed Sep 20 2023 06:04:36'
-    },
-    {
-      avatar: '6.jpeg',
-      name:'Seeta',
-      empid: '1045',
-      challengeType: 'Steps',
-      scrore:'555',
-      lastUpdated: 'Wed Sep 19 2023 09:04:36'
-    },
-    {
-      avatar: '7.jpeg',
-      name:'Geeta',
-      empid: '1099',
-      challengeType: 'Steps',
-      scrore:'1232',
-      lastUpdated: 'Wed Sep 20 2023 09:04:36'
-
-    },
-  ];
-
-  isTeamAvailable = true;
-  isUserIntegrated = true;
   constructor(
-    private userService: UserService
+    private apiService:ApiService,
+    private userService:UserService
   ){}
 
+
   ngOnInit(){
-    this.getUserDetails();
+    
+    this.getLeaderBoard()
   }
 
-  getUserDetails(){
-    this.userService.getUserProfile().subscribe(
-      userDetails =>{
-        if(userDetails?.status === 'SUCCESS' && userDetails?.user){
-          if(userDetails?.user?.userClientDetails?.teamId === 0){
-            this.isTeamAvailable = false;
-          }
-          if(!userDetails?.user?.userIntegrationDetails?.integrationStatus){
-            this.isUserIntegrated = false;
-          }
-        }
+  getLeaderBoard(){
+    const userId = this.userService.userId
+    this.apiService.getLeaderBoard({
+      "userId": userId,
+      "summaryType" : "MONTHLY"
+  }).subscribe(
+      leaderBoardResponse =>{
+        this.leaderBoardData = leaderBoardResponse?.leaderBoardList || [];
+        this.userCurrentRank = leaderBoardResponse?.userCurrentRank ;
       }
     )
   }
+
 }
