@@ -12,6 +12,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import {  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { TeamSelectionComponent } from './team-selection/team-selection.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
     GetInComponent,
     LoginComponent,
     RegistrationComponent,
-    MyProfileComponent
+    MyProfileComponent,
+    TeamSelectionComponent
   ],
   imports: [
     BrowserModule,

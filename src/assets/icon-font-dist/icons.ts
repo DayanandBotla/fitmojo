@@ -2,6 +2,7 @@ export type IconsId =
   | "account"
   | "arrow_forward"
   | "arrow_forward2"
+  | "arrow-down"
   | "bike"
   | "calendar"
   | "category"
@@ -38,6 +39,7 @@ export type IconsKey =
   | "Account"
   | "ArrowForward"
   | "ArrowForward2"
+  | "ArrowDown"
   | "Bike"
   | "Calendar"
   | "Category"
@@ -74,6 +76,7 @@ export enum Icons {
   Account = "account",
   ArrowForward = "arrow_forward",
   ArrowForward2 = "arrow_forward2",
+  ArrowDown = "arrow-down",
   Bike = "bike",
   Calendar = "calendar",
   Category = "category",
@@ -111,35 +114,36 @@ export const ICONS_CODEPOINTS: { [key in Icons]: string } = {
   [Icons.Account]: "61697",
   [Icons.ArrowForward]: "61698",
   [Icons.ArrowForward2]: "61699",
-  [Icons.Bike]: "61700",
-  [Icons.Calendar]: "61701",
-  [Icons.Category]: "61702",
-  [Icons.Celebration]: "61703",
-  [Icons.ChangeCircle]: "61704",
-  [Icons.Close]: "61705",
-  [Icons.Connect]: "61706",
-  [Icons.Error]: "61707",
-  [Icons.Event]: "61708",
-  [Icons.Exit]: "61709",
-  [Icons.EyeOff]: "61710",
-  [Icons.Eye]: "61711",
-  [Icons.Foot]: "61712",
-  [Icons.Goal]: "61713",
-  [Icons.HeartPlus]: "61714",
-  [Icons.Help]: "61715",
-  [Icons.Home]: "61716",
-  [Icons.Img]: "61717",
-  [Icons.Info]: "61718",
-  [Icons.Key]: "61719",
-  [Icons.Leaderboard]: "61720",
-  [Icons.Leaderboard2]: "61721",
-  [Icons.Lock]: "61722",
-  [Icons.Login]: "61723",
-  [Icons.Logout]: "61724",
-  [Icons.Mail]: "61725",
-  [Icons.Medal]: "61726",
-  [Icons.Steps]: "61727",
-  [Icons.UploadFile]: "61728",
-  [Icons.Verified]: "61729",
-  [Icons.WaterDrop]: "61730",
+  [Icons.ArrowDown]: "61700",
+  [Icons.Bike]: "61701",
+  [Icons.Calendar]: "61702",
+  [Icons.Category]: "61703",
+  [Icons.Celebration]: "61704",
+  [Icons.ChangeCircle]: "61705",
+  [Icons.Close]: "61706",
+  [Icons.Connect]: "61707",
+  [Icons.Error]: "61708",
+  [Icons.Event]: "61709",
+  [Icons.Exit]: "61710",
+  [Icons.EyeOff]: "61711",
+  [Icons.Eye]: "61712",
+  [Icons.Foot]: "61713",
+  [Icons.Goal]: "61714",
+  [Icons.HeartPlus]: "61715",
+  [Icons.Help]: "61716",
+  [Icons.Home]: "61717",
+  [Icons.Img]: "61718",
+  [Icons.Info]: "61719",
+  [Icons.Key]: "61720",
+  [Icons.Leaderboard]: "61721",
+  [Icons.Leaderboard2]: "61722",
+  [Icons.Lock]: "61723",
+  [Icons.Login]: "61724",
+  [Icons.Logout]: "61725",
+  [Icons.Mail]: "61726",
+  [Icons.Medal]: "61727",
+  [Icons.Steps]: "61728",
+  [Icons.UploadFile]: "61729",
+  [Icons.Verified]: "61730",
+  [Icons.WaterDrop]: "61731",
 };
