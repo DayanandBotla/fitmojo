@@ -3,8 +3,6 @@
 
     <ngx-smart-modal #connectWellness identifier="connectWellness" class="connectWellness small-dialog" customClass="connectWellness" [dismissable] = "false" >
         <button class="close-btn" (click)="closeEntry()"><i class="icon-close"></i></button>
-
-        {{step}}
         <div *ngIf="step === 'SELECT_TYPE'">
             <h3>Connect us via below one of the app</h3>
 
@@ -29,7 +27,7 @@
             </div>
         </div>
         <div *ngIf="step === 'INTEGRATE'">
-            <iframe src="{{integrationUrl}}"></iframe>
+            <iframe [src]="integrationUrl | safe"></iframe>
 
         </div>
 

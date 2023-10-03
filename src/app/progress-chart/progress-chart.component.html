@@ -1,8 +1,8 @@
 <section class="userchart">
 
     <div class="userchart-time">
-        <span class="btn-chart active">Daily</span>
-        <span class="btn-chart">Monthly</span>
+        <span class="btn-chart " [ngClass]="{'active':summaryType==='DAILY'}" (click)="getUserStepsSummary('DAILY')">Daily</span>
+        <span class="btn-chart" [ngClass]="{'active':summaryType==='MONTHLY'}" (click)="getUserStepsSummary('MONTHLY')">Monthly</span>
     </div>
 <canvas class="userChartCanvas" id="userChartCanvas">
 

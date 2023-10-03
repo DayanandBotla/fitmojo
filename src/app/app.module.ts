@@ -18,6 +18,7 @@ import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.co
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { ProgressChartComponent } from './progress-chart/progress-chart.component';
+import { SafePipe } from './safe.pipe';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ProgressChartComponent } from './progress-chart/progress-chart.componen
     TeamSelectionComponent,
     HomeComponent,
     ConnectWellnessComponent,
-    ProgressChartComponent
+    ProgressChartComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

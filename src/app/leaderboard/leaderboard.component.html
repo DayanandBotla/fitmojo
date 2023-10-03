@@ -35,7 +35,8 @@
         </div>
     </div>
     <div class="charts">
-        <app-progress-chart></app-progress-chart>
+        <app-progress-chart *ngIf="!isUserIntegrationOpen"></app-progress-chart>
+        <p *ngIf="isUserIntegrationOpen">Please Conect yout Fitness Device to see your Progress</p>
     </div>
 </section>
 
@@ -44,18 +45,18 @@
     <div  class="lb-ranking-row " >
         <div class="row__inner">
             <div class="badge"></div>
-            <div class="rank">22
+            <div class="rank">{{userCurrentRank}}
                 <span>Rank</span>
             </div>
             <div class="avatar">
-                <img src="../assets/img/lb/avatar/4.jpeg" alt="user name" title="user name">
+                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="user name" title="user name">
             </div>
-            <div class="name">Pradeep</div>
+            <div class="name">{{leaderBoardData[userCurrentRank - 1].name}}</div>
             <div class="challenge">
                 <i class="icon-foot"></i>
                 <div class="txt">
                 <span>Steps</span>
-                <span>2222</span>
+                <span>{{leaderBoardData[userCurrentRank - 1].stepCount}}</span>
                 </div>
             </div>
         </div>

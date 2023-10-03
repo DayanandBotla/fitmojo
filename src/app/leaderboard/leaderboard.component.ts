@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { ApiService } from '../api.service';
@@ -12,24 +12,28 @@ import { UserService } from '../user.service';
 export class LeaderboardComponent {
   leaderBoardData=[];
   userCurrentRank;
-
+  @Input() isUserIntegrationOpen;
   constructor(
     private apiService:ApiService,
     private userService:UserService
   ){}
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['isUserIntegrationOpen']) {
+      this.isUserIntegrationOpen = changes['isUserIntegrationOpen'].currentValue;
+    }
+  }
 
   ngOnInit(){
-    
     this.getLeaderBoard()
   }
 
   getLeaderBoard(){
     const userId = this.userService.userId
     this.apiService.getLeaderBoard({
-      "userId": userId,
-      "summaryType" : "MONTHLY"
-  }).subscribe(
+        "userId": userId,
+        "summaryType" : "MONTHLY"
+    }).subscribe(
       leaderBoardResponse =>{
         this.leaderBoardData = leaderBoardResponse?.leaderBoardList || [];
         this.userCurrentRank = leaderBoardResponse?.userCurrentRank ;

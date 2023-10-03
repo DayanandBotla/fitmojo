@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Chart, registerables, Colors } from 'chart.js';
+import { ApiService } from '../api.service';
+import { UserService } from '../user.service';
 
 
 @Component({
@@ -12,34 +14,40 @@ export class ProgressChartComponent {
   width:any; 
   height:any;  
   gradient:any; 
-
-  constructor() {
+  summaryType = 'DAILY';
+  constructor(
+    private apiService:ApiService,
+    private userService:UserService
+  ) {
     Chart.register(...registerables);
 }
 
-  createChart(){
-    
-    
+  createChart(summaryType,stepsSummary){
 
     Chart.defaults.backgroundColor = '#99CC33';
     Chart.defaults.color = '#fff';
     Chart.defaults.borderColor = 'rgba(0, 0, 0, 0.1)';
+
+    let labels = [];
+    let stepsData = [];
+      Object.keys(stepsSummary).forEach(time =>{
+        labels.push(Number(time) + (summaryType === "DAILY" ? 1 : 0));
+        stepsData.push(stepsSummary[time])
+      })
+
+    if(this.chart){
+      this.chart.destroy();
+    }
  
     this.chart = new Chart("userChartCanvas", {
-      
       type: 'bar', //this denotes tha type of chart
-
-      
       data: {// values on X-Axis
-        labels: ['2022-05-10', '2022-05-11', '2022-05-12','2022-05-13',
-								 '2022-05-14', '2022-05-15', '2022-05-16','2022-05-17', ], 
+        labels: labels, 
 	       datasets: [
           {
-            label: "Sales",
-            data: ['467','576', '572', '79', '92',
-								 '574', '573', '576'],
+            label: "Steps",
+            data: stepsData,
             backgroundColor: Chart.defaults.backgroundColor,
-            
           } 
         ]
       },
@@ -47,17 +55,23 @@ export class ProgressChartComponent {
         aspectRatio:2.5,
         responsive: true,
         devicePixelRatio: 4,
-
-
       }
-      
     });
   }
+
+  ngOnInit(){
+    this.getUserStepsSummary("DAILY")
+  }
  
-
-
-  ngAfterViewInit() {
-    this.createChart();
+  getUserStepsSummary(summaryType){
+    const userId = this.userService.userId;
+    this.summaryType = summaryType;
+    this.apiService.getUserStepsSummary({userId,summaryType}).subscribe(
+      stepsSummary =>{
+        this.createChart(summaryType,stepsSummary)
+        
+      }
+    )
   }
 
 }

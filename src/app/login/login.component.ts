@@ -54,8 +54,10 @@ export class LoginComponent extends FormValidators {
           this.router.navigate(['/home']);
         } else {
           if(apiResponse?.status==="FAILURE"){
-            if(apiResponse?.errorId === 1005){
+            if(apiResponse?.errorId === 1005 || apiResponse?.errorId === 1004){
               this.setErrorMessage("loginErrorMsg","Invalid Credentials")
+            } else {
+              this.setErrorMessage("loginErrorMsg","Something Went Wrong. Try again in some time")
             }
           }
         }

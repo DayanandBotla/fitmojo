@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { NgxSmartModalService } from 'ngx-smart-modal';
 import { ApiService } from '../api.service';
@@ -17,7 +18,8 @@ export class ConnectWellnessComponent {
   constructor(
     public ngxSmartModalService: NgxSmartModalService,
     private userService: UserService,
-    private apiService:ApiService
+    private apiService:ApiService,
+    private sanitizer: DomSanitizer
     ) {}
 
 
@@ -34,9 +36,13 @@ export class ConnectWellnessComponent {
     const userId = this.userService.userId;
     this.apiService.getIntegrationAuthUrl({userId,integrationType:type}).subscribe(
       urlResponse =>{
-        console.log(urlResponse);
-        this.integrationUrl = urlResponse.replace("https: ","https:");
-        this.step = "INTEGRATE";  
+        if(urlResponse?.status === "SUCCESS"){
+          this.step = "INTEGRATE";
+          setTimeout(()=>{
+            this.integrationUrl = urlResponse?.url;
+          })  
+        }
+        
       }
     )
 

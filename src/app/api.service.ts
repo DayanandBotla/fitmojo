@@ -51,5 +51,13 @@ export class ApiService {
   getIntegrationAuthUrl(authUrlDetails){
     return this.post("getIntegrationAuthUrl",authUrlDetails)
   }
+  
+  getUserStepsSummary(stepsSumaryReq){
+    return this.post("getUserStepsSummary",stepsSumaryReq)
+  }
+  
+  checkToken(){
+    return this.post("checkToken",{})
+  }
 
 }
