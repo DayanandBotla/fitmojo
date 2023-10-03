@@ -24,9 +24,9 @@ export class ProgressChartComponent {
 
   createChart(summaryType,stepsSummary){
 
-    Chart.defaults.backgroundColor = '#99CC33';
+    Chart.defaults.backgroundColor = '#9c88ff';
     Chart.defaults.color = '#fff';
-    Chart.defaults.borderColor = 'rgba(0, 0, 0, 0.1)';
+    Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
 
     let labels = [];
     let stepsData = [];
@@ -52,7 +52,7 @@ export class ProgressChartComponent {
         ]
       },
       options: {
-        aspectRatio:2.5,
+        // aspectRatio:2.5,
         responsive: true,
         devicePixelRatio: 4,
       }

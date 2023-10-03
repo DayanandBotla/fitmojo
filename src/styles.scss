@@ -16,7 +16,8 @@ body{
     font-weight: 300;
     font-size: 14px;
     // background: #FFFFFF;
-    background: #0a3d62;
+    // background: #0a3d62;
+    background: #192a56;
     
     width: 100%;
 
@@ -63,7 +64,8 @@ app-root{
     // opacity: .2;
     margin-bottom: 20px;
 
-    background: linear-gradient(45deg, rgba(186, 220, 88, 1), #6ab04c 20%);
+    // background: linear-gradient(45deg, rgba(186, 220, 88, 1), #6ab04c 20%);
+    background: linear-gradient(0deg, #5f27cd, #9c88ff 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

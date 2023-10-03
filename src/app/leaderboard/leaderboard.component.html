@@ -1,10 +1,10 @@
 <h1 class="page-title" title="Leaderboard">Leaderboard</h1>
 
-<section class="lb-row">
+<section class="lb-row  w-80">
     <div class="heros">
         
         <div class="heros__inner best3">
-
+            <img class="bg-svg" src="../assets/img/bg-color-anime.svg">
             <div class="best3__wrapper">
                 <div class="top3  best3--c small-c">
 
@@ -38,13 +38,10 @@
             <img class="trophy" src="../assets/img/trophy.png">
         </div>
     </div>
-    <div class="charts">
-        <app-progress-chart *ngIf="!isUserIntegrationOpen"></app-progress-chart>
-        <p *ngIf="isUserIntegrationOpen">Please Conect yout Fitness Device to see your Progress</p>
-    </div>
+    
 </section>
 
-<section class="lb-ranking-table myrank" *ngIf="userCurrentRank >= 0">
+<section class="lb-ranking-table myrank" *ngIf="userCurrentRank >= 10">
     <h6>My current rank</h6><br/>
     <div  class="lb-ranking-row " >
         <div class="row__inner">
@@ -56,6 +53,7 @@
                 <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="{{leaderBoardData[userCurrentRank - 1].name}}" title="{{leaderBoardData[userCurrentRank - 1].name}}" (error)="onImgError($event)">
             </div>
             <div class="name">{{leaderBoardData[userCurrentRank - 1].name}}</div>
+            <div class="name teamname">{{leaderBoardData[userCurrentRank - 1].teamName}}</div>
             <div class="challenge">
                 <i class="icon-foot"></i>
                 <div class="txt">
@@ -69,7 +67,8 @@
 <section class="lb-ranking-table">
     
     <div class="lb-ranking-row " *ngFor="let person of leaderBoardData; index as i">
-        <div class="row__inner">
+        <div class="row__inner id__{{person.userId}}"  [class.myRank]="person.userId === userId">
+            <img class="bg-svg" src="../assets/img/bg-color-anime.svg" *ngIf="person.userId === userId">
         <div class="badge">
             <img *ngIf="i+1 === 1" src="../assets/img/gold-medal.png" alt="gold medal">
             <img *ngIf="i+1 === 2"  src="../assets/img/silver-medal.png" alt="silver medal">
@@ -83,6 +82,7 @@
             <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person.userId}}/{{person.profilePicUrl}}" alt="{{person.name}}" title="{{person.name}}" (error)="onImgError($event)">
         </div>
         <div class="name">{{person.name}}</div>
+        <div class="name teamname">{{person.teamName}}</div>
         
         <div class="challenge">
             <i class="icon-foot"></i>
@@ -93,4 +93,9 @@
         </div>
         </div>
     </div>
+</section>
+
+<section class="charts w-80">
+    <app-progress-chart *ngIf="!isUserIntegrationOpen"></app-progress-chart>
+    <p *ngIf="isUserIntegrationOpen">Please Conect yout Fitness Device to see your Progress</p>
 </section>

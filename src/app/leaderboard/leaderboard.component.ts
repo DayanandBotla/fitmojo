@@ -13,6 +13,8 @@ export class LeaderboardComponent {
   leaderBoardData=[];
   userCurrentRank;
   @Input() isUserIntegrationOpen;
+
+  userId;
   constructor(
     private apiService:ApiService,
     private userService:UserService
@@ -30,9 +32,9 @@ export class LeaderboardComponent {
   }
 
   getLeaderBoard(){
-    const userId = this.userService.userId
+    this.userId = this.userService.userId
     this.apiService.getLeaderBoard({
-        "userId": userId,
+        "userId": this.userId,
         "summaryType" : "MONTHLY"
     }).subscribe(
       leaderBoardResponse =>{

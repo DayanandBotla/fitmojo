@@ -15,7 +15,8 @@
         color: #fff;
         cursor: pointer;
         &.active, &:hover{
-            background: linear-gradient(0deg, rgb(186, 220, 88), #6ab04c 50%);
+            // background: linear-gradient(0deg, rgb(186, 220, 88), #6ab04c 50%);
+            background:  linear-gradient(0deg, #9c88ff, #9c88ff 50%);
         }
     }
     .btn-chart + .btn-chart{
@@ -23,7 +24,7 @@
     }
 
     .userChartCanvas{
-        width: 100%!important;
-        height: 100%!important;
+        // width: 100%!important;
+        // height: 100%!important;
     }
 }
