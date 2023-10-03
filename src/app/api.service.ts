@@ -59,5 +59,10 @@ export class ApiService {
   checkToken(){
     return this.post("checkToken",{})
   }
+  
+  logout(){
+    return this.post("logoutUser",{})
+
+  }
 
 }

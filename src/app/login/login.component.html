@@ -15,11 +15,16 @@
 
             </div>
         </div> -->
+        <div class="container">
+            <!--The actual text placeholder, which will be write with the js code.-->
+            <h1 id="text"></h1>
+        </div>
         <div class="form__fields"> 
          
             <div class="form__container">
                 <form class="" [formGroup]="loginForm">
                     <h3 class="form--greet">Welcome back!</h3>
+                    
                 
                     <div class="error" style="display: none;" id="loginErrorMsg"></div>
                     <div class="form-group" [ngClass]="getFormFiledClass('emailId',loginForm)">

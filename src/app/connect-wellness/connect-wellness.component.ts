@@ -40,6 +40,7 @@ export class ConnectWellnessComponent {
           this.step = "INTEGRATE";
           setTimeout(()=>{
             this.integrationUrl = urlResponse?.url;
+            window.open(urlResponse?.url,"_self")
           })  
         }
         

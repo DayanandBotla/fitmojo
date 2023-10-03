@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
+import { ApiService } from '../api.service';
+import { AuthService } from '../auth.service';
 import { UserService } from '../user.service';
 
 @Component({
@@ -14,7 +16,9 @@ export class HomeComponent {
   destroy$: Subject<boolean> = new Subject();
   constructor(
     private userService: UserService,
-    private router:Router
+    private router:Router,
+    private apiService:ApiService,
+    private authService:AuthService
   ){
     this.userService.isUserProfileUpdated$.pipe(takeUntil(this.destroy$)).subscribe(status => {
       if(status){
@@ -51,6 +55,14 @@ export class HomeComponent {
       this.isUserIntegrationOpen = true;
     } else if(event === "closeConnect"){
       this.isUserIntegrationOpen = false;
+    } else if(event === "Logout"){
+      this.apiService.logout().subscribe(
+        logoutResposne =>{
+            this.authService.removeToken();
+            this.router.navigate(["/login"])
+          
+        }
+      )
     }
   }
 

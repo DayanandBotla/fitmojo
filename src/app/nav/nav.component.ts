@@ -17,6 +17,10 @@ export class NavComponent {
     this.navClicked.emit("connectAccount");
   }
 
+  logout(){
+    this.navClicked.emit("Logout");
+
+  }
   
   myProfile(){
     this.router.navigate(['/myprofile'])
