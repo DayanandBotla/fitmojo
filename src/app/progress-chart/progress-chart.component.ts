@@ -24,7 +24,7 @@ export class ProgressChartComponent {
 
   createChart(summaryType,stepsSummary){
 
-    Chart.defaults.backgroundColor = '#9c88ff';
+    Chart.defaults.backgroundColor = '#4834d4';
     Chart.defaults.color = '#fff';
     Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
 
