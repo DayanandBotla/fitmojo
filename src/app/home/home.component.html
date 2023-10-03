@@ -1,18 +1,23 @@
 <div class="container">
+  <section class="left-nav">
+    <app-nav (navClicked)="navClicked($event)"></app-nav>
+    </section>
+
     <main>
       <header>
         <div class="logo" routerLink="/">
           <img class="logo-img" src="../assets/img/logo.svg" alt="logo">
         </div>
   
-        <div class="right">
+        <!-- <div class="right">
           <app-nav (navClicked)="navClicked($event)"></app-nav>
-        </div>
+        </div> -->
       </header>
       <section class="appbody">
         <app-leaderboard [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
       </section>
     </main>
+
   </div>
 
 <app-team-selection *ngIf="!isTeamAvailable"></app-team-selection>

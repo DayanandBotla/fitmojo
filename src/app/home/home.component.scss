@@ -28,7 +28,7 @@ header {
     position: sticky;
     top: 0;
 
-    background: #192a56;
+    background: #0c2461;
     z-index: 100;
 
     .right {
@@ -68,4 +68,11 @@ main,
         margin-right: 6px;
         object-fit: contain;
     }
+}
+
+
+.left-nav{
+    position: sticky;
+    top: 0;
+    padding: 20px;
 }

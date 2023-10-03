@@ -1,16 +1,24 @@
 .nav {
     display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg,#686de0,  #4834d4 80%);
+    box-shadow: inset 5px 15px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 80px;
+    padding: 20px;
 
     &--list{
         display: inline-flex;
         flex-direction: column;
         text-align: center;
-        padding: 4px;
+        margin: 20px auto;
+        
         color: #ffffff;
         // background: linear-gradient(0deg, rgba(186, 220, 88, 1), #6ab04c 50%);
-        background: linear-gradient(0deg, #9c88ff, #9c88ff 50%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // background: linear-gradient(0deg, #9c88ff, #9c88ff 50%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
         font-weight: 700;
         cursor: pointer;
         i{
@@ -18,10 +26,8 @@
             margin-bottom: 4px;
         }
         span{
-            font-size: 14px;
+            font-size: 12px;
         }
     }
-    &--list + &--list{
-        margin-left: 15px;
-    }
+    
 }
