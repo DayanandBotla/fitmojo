@@ -113,13 +113,14 @@ input[type="file"] {
 }
 
 .btn-1 {
-    background:linear-gradient(90deg, #12CBC4, #1289A7 100%);
+    // background:linear-gradient(90deg, #12CBC4, #5f27cd 100%);
+    background: linear-gradient(0deg, #5f27cd, #9c88ff 50%);
     color: #ffffff;
-    box-shadow: rgba(#1289A7, .5) 0px 3px 10px;
+    box-shadow: rgba(#5f27cd, .5) 0px 3px 10px;
     // border:2px solid #00ad91;
     border:2px solid transparent;
     &:hover{
-        background: #1289A7;
+        background: #5f27cd;
     }
 
 }
@@ -232,6 +233,6 @@ input[type="file"] {
     line-height: 20px;
 
     a{
-        color: #1289A7;
+        color: #5f27cd;
     }
   }

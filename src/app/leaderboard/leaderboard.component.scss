@@ -27,13 +27,13 @@ $circle-m-w: 100px;
         position: absolute;
         top: 7%;
         bottom: 0;
-        left: -20%;
+        left: -50px;
         object-fit: contain;
         width: 100%;
         height: 100%;
         object-position: left;
-        padding: 3%;
-        opacity: .04;
+        opacity: 0.05;
+        mix-blend-mode: darken;
     }
 
 
@@ -74,6 +74,22 @@ $circle-m-w: 100px;
         position: relative;
         box-shadow: inset 0px 4px 4px rgba(#fff, 1);
 
+        &.top1{
+            z-index: 5;
+        }
+        &.top2,
+        &.top3{
+            z-index: 4;
+            width: 170px;
+            height: 170px;
+        }
+        &.top4,
+        &.top5{
+            z-index: 3;
+            width: 120px;
+            height: 120px;
+        }
+
         .inner {
 
             width: 100%;
@@ -96,15 +112,14 @@ $circle-m-w: 100px;
         }
 
         &.small-c {
-            width: 150px;
-            height: 150px;
-            margin: -50px;
+            // width: 150px;
+            // height: 150px;
+            margin: -2%;
         }
 
         &.big-c {
-            width: 200px;
-            height: 200px;
-            z-index: 1;
+            width: 220px;
+            height: 220px;
         }
 
         img {

@@ -11,9 +11,13 @@
     
     
     .overlay{
-background:url('../../img/mascot.svg'), linear-gradient(-90deg, #12CBC4, #1289A7 100%) !important;
-background-blend-mode: luminosity;
+// background:url('../../img/mascot.svg'), linear-gradient(-90deg, #12CBC4, #5f27cd 100%) !important;
+ background:url('../../img/bg.jpeg'), linear-gradient(0deg, rgba(#5f27cd, 1), rgba(#9c88ff, .8) 50%) !important;
+ background-size: cover!important;
 
+background-blend-mode: luminosity;
+padding-right: 100px!important;
+    justify-content: end!important;
 }
 .nsm-body{
     box-shadow:rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px
@@ -70,8 +74,8 @@ body.dialog-open {
     }
 
     .entryModal, .LoginModal {
-        min-width: 600px;
-        max-width: 600px;
+        width: 100%;
+        max-width: 400px;
     }
 }
 
@@ -82,7 +86,7 @@ body.dialog-open {
         top: 0;
         right:0;
         background: #c8d6e5;
-        color: #1289A7;
+        color: #5f27cd;
         font-size: 20px;
         line-height: 1;
         width: 24px;
@@ -96,7 +100,7 @@ body.dialog-open {
         justify-content: center;
     
         &:hover{
-            background: #1289A7;
+            background: #5f27cd;
             color: #FFFFFF;
         }
     }
