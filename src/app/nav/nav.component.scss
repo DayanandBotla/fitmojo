@@ -3,7 +3,8 @@
     flex-direction: column;
     position: sticky;
     top: 0;
-    background: linear-gradient(180deg,#686de0,  #4834d4 80%);
+    // background: linear-gradient(180deg,#686de0,  #4834d4 80%);
+    background: linear-gradient(to bottom, #4834d4 20%, #0c2461 100%);
     box-shadow: inset 5px 15px 10px rgba(255, 255, 255, 0.2);
     border-radius: 80px;
     padding: 20px;
@@ -27,6 +28,7 @@
         }
         span{
             font-size: 12px;
+            display: none;
         }
     }
     
