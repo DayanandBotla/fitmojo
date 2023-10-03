@@ -113,14 +113,14 @@ input[type="file"] {
 }
 
 .btn-1 {
-    // background:linear-gradient(90deg, #12CBC4, #5f27cd 100%);
-    background: linear-gradient(0deg, #5f27cd, #9c88ff 50%);
+    // background:linear-gradient(90deg, #12CBC4, #4834d4 100%);
+    background: linear-gradient(to right, #4834d4 50%, #0c2461 100%);
     color: #ffffff;
-    box-shadow: rgba(#5f27cd, .5) 0px 3px 10px;
+    box-shadow: rgba(#4834d4, .5) 0px 3px 10px;
     // border:2px solid #00ad91;
     border:2px solid transparent;
     &:hover{
-        background: #5f27cd;
+        background: #4834d4;
     }
 
 }
@@ -233,6 +233,6 @@ input[type="file"] {
     line-height: 20px;
 
     a{
-        color: #5f27cd;
+        color: #4834d4;
     }
   }

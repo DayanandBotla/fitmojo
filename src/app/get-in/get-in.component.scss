@@ -46,13 +46,13 @@
 
 .btn-1 {
     
-    background:linear-gradient(90deg, #12CBC4, #5f27cd 100%);
+    background:linear-gradient(90deg, #12CBC4, #4834d4 100%);
     color: #ffffff;
-    box-shadow: rgba(#5f27cd, .5) 0px 3px 10px;
+    box-shadow: rgba(#4834d4, .5) 0px 3px 10px;
     // border:2px solid #00ad91;
     border:2px solid transparent;
     &:hover{
-        background: #5f27cd;
+        background: #4834d4;
     }
 
 }
@@ -94,7 +94,7 @@
     top: 0;
     right:0;
     background: #c8d6e5;
-    color: #5f27cd;
+    color: #4834d4;
     font-size: 20px;
     line-height: 1;
     width: 24px;
@@ -108,7 +108,7 @@
     justify-content: center;
 
     &:hover{
-        background: #5f27cd;
+        background: #4834d4;
         color: #FFFFFF;
     }
     

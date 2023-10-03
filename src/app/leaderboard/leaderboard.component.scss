@@ -185,7 +185,8 @@ $circle-m-w: 100px;
             box-shadow: inset 5px 15px 10px rgba(255, 255, 255, 0.2);
 
             &.myRank{
-                background:linear-gradient(180deg, #686de0, #4834d4 80%);
+                // background:linear-gradient(180deg, #686de0, #4834d4 80%);
+                background:linear-gradient(to right, #4834d4 50%, #0c2461 100%);
                 position: relative;
                 overflow: hidden;
                 .bg-svg {
@@ -277,8 +278,8 @@ $circle-m-w: 100px;
             font-size: 28px; 
             line-height: 0;
             // background: linear-gradient(0deg, rgba(186, 220, 88, 1), #6ab04c 50%);
-            background: linear-gradient(0deg, #5f27cd, #9c88ff 50%);
-            text-shadow:1px 0px #5f27cd;
+            background: linear-gradient(0deg, #4834d4, #9c88ff 50%);
+            text-shadow:1px 0px #4834d4;
             
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
