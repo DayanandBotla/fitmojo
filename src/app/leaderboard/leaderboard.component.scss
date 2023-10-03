@@ -335,3 +335,30 @@ $circle-m-w: 100px;
 .charts{
     margin-top: 100px;
 }
+
+
+    .lbtype{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 4px;
+
+        .btn-lb{
+            border-radius: 20px;
+            padding: 4px 8px;
+            font-size: 12px;
+            display: inline-flex;
+            background: rgba(0, 0, 0, 0.1);
+            color: #fff;
+            cursor: pointer;
+            border: 0;
+            &.active, &:hover{
+                // background: linear-gradient(0deg, rgb(186, 220, 88), #6ab04c 50%);
+                background:#4834d4;
+            }
+        }
+        .btn-lb + .btn-lb{
+            margin-left: 4px;
+        }
+    }
+
