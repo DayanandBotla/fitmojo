@@ -7,9 +7,18 @@
     width: 100%;
 }
 
-.entryModal .overlay{
-background:rgba(#0a3d62, .7) url('../../img/mascot.svg')!important;
+.entryModal {
+    
+    
+    .overlay{
+background:url('../../img/mascot.svg'), linear-gradient(-90deg, #12CBC4, #1289A7 100%) !important;
 background-blend-mode: luminosity;
+
+}
+.nsm-body{
+    box-shadow:rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px
+}
+
 
 }
 body.dialog-open {
@@ -94,7 +103,7 @@ body.dialog-open {
   .nsm-body{  
     background: #FFFFFF;
     padding: 30px;
-    border-radius: 8px;
+    // border-radius: 8px;
     min-width: 300px;
   }
 }

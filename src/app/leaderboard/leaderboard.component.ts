@@ -25,7 +25,8 @@ export class LeaderboardComponent {
   }
 
   ngOnInit(){
-    this.getLeaderBoard()
+    this.getLeaderBoard();
+    
   }
 
   getLeaderBoard(){
@@ -37,8 +38,14 @@ export class LeaderboardComponent {
       leaderBoardResponse =>{
         this.leaderBoardData = leaderBoardResponse?.leaderBoardList || [];
         this.userCurrentRank = leaderBoardResponse?.userCurrentRank ;
-      }
+      },
+      
     )
   }
+
+  onImgError(event:any){
+    event.target.src = '../assets/img/no-img.jpeg'
+    
+   }
 
 }

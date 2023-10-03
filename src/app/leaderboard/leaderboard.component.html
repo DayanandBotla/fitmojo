@@ -7,26 +7,30 @@
 
             <div class="best3__wrapper">
                 <div class="top3  best3--c small-c">
+
                     <div class="inner">
-                        <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[2]?.userId}}/{{leaderBoardData[2]?.profilePicUrl}}">
+                        <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[1]?.userId}}/{{leaderBoardData[1]?.profilePicUrl}}" (error)="onImgError($event)">
                     </div>
-                    <div class="scrore">{{leaderBoardData[2]?.stepCount}}</div>
-                    <div class="name">{{leaderBoardData[2]?.name}}</div>
+                    <div class="scrore">{{leaderBoardData[1]?.stepCount}}</div>
+                    <div class="name">{{leaderBoardData[1]?.name}}</div>
+
+                    
                 </div>
         
                 <div class="top1 best3--c big-c">
                     <div class="inner">
-                        <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[0]?.userId}}/{{leaderBoardData[0]?.profilePicUrl}}">
+                        <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[0]?.userId}}/{{leaderBoardData[0]?.profilePicUrl}}" (error)="onImgError($event)">
                     </div>
                     <div class="scrore">{{leaderBoardData[0]?.stepCount}}</div>
                     <div class="name">{{leaderBoardData[0]?.name}}</div>
                 </div>
                 <div class="top2 best3--c small-c">
+                    
                     <div class="inner">
-                        <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[1]?.userId}}/{{leaderBoardData[1]?.profilePicUrl}}">
+                        <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[2]?.userId}}/{{leaderBoardData[2]?.profilePicUrl}}" (error)="onImgError($event)">
                     </div>
-                    <div class="scrore">{{leaderBoardData[1]?.stepCount}}</div>
-                    <div class="name">{{leaderBoardData[1]?.name}}</div>
+                    <div class="scrore">{{leaderBoardData[2]?.stepCount}}</div>
+                    <div class="name">{{leaderBoardData[2]?.name}}</div>
                 </div>
             </div>
 
@@ -49,7 +53,7 @@
                 <span>Rank</span>
             </div>
             <div class="avatar">
-                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="user name" title="user name">
+                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="{{leaderBoardData[userCurrentRank - 1].name}}" title="{{leaderBoardData[userCurrentRank - 1].name}}" (error)="onImgError($event)">
             </div>
             <div class="name">{{leaderBoardData[userCurrentRank - 1].name}}</div>
             <div class="challenge">
@@ -76,7 +80,7 @@
         </div>
 
         <div class="avatar">
-            <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person.userId}}/{{person.profilePicUrl}}" alt="{{person.name}}" title="{{person.name}}">
+            <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person.userId}}/{{person.profilePicUrl}}" alt="{{person.name}}" title="{{person.name}}" (error)="onImgError($event)">
         </div>
         <div class="name">{{person.name}}</div>
         

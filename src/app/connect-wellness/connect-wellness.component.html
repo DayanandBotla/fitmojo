@@ -26,8 +26,9 @@
                 <img src="./assets/img/garmin.png" alt="Garmin" />
             </div>
         </div>
-        <div *ngIf="step === 'INTEGRATE'">
-            <iframe [src]="integrationUrl | safe"></iframe>
+
+        <div *ngIf="step === 'INTEGRATE'" class="iframeWrap">
+            <iframe [src]="integrationUrl | safe" target="_parent" height="100%" width="100%"></iframe>
 
         </div>
 
