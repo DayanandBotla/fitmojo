@@ -13,8 +13,9 @@ export class LeaderboardComponent {
   leaderBoardData=[];
   userCurrentRank;
   @Input() isUserIntegrationOpen;
-
+  leaderBoardInterval
   userId;
+  leaderBoardType = "MONTHLY"
   constructor(
     private apiService:ApiService,
     private userService:UserService
@@ -27,15 +28,19 @@ export class LeaderboardComponent {
   }
 
   ngOnInit(){
-    this.getLeaderBoard();
+    this.getLeaderBoard(this.leaderBoardType);
+    this.leaderBoardInterval = setInterval(()=>{
+      this.getLeaderBoard(this.leaderBoardType);
+    },5000)
     
   }
 
-  getLeaderBoard(){
+  getLeaderBoard(leaderBoardType){
+    this.leaderBoardType = leaderBoardType
     this.userId = this.userService.userId
     this.apiService.getLeaderBoard({
         "userId": this.userId,
-        "summaryType" : "MONTHLY"
+        "summaryType" : leaderBoardType
     }).subscribe(
       leaderBoardResponse =>{
         this.leaderBoardData = leaderBoardResponse?.leaderBoardList || [];
@@ -48,6 +53,12 @@ export class LeaderboardComponent {
   onImgError(event:any){
     event.target.src = '../assets/img/no-img.jpeg'
     
+   }
+
+   ngOnDestroy(){
+     if(this.leaderBoardInterval){
+       clearInterval(this.leaderBoardInterval)
+     }
    }
 
 }

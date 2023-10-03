@@ -15,6 +15,7 @@ export class ProgressChartComponent {
   height:any;  
   gradient:any; 
   summaryType = 'DAILY';
+  playerProgressInterval;
   constructor(
     private apiService:ApiService,
     private userService:UserService
@@ -60,7 +61,10 @@ export class ProgressChartComponent {
   }
 
   ngOnInit(){
-    this.getUserStepsSummary("DAILY")
+    this.getUserStepsSummary(this.summaryType)
+    this.playerProgressInterval = setInterval(()=>{
+      this.getUserStepsSummary(this.summaryType)
+    },5000)
   }
  
   getUserStepsSummary(summaryType){
@@ -72,6 +76,12 @@ export class ProgressChartComponent {
         
       }
     )
+  }
+
+  ngOnDestroy(){
+    if(this.playerProgressInterval){
+      clearInterval(this.playerProgressInterval);
+    }
   }
 
 }

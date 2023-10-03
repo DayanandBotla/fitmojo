@@ -24,8 +24,8 @@ export class LoginComponent extends FormValidators {
     password: new FormControl('', [Validators.required]),
   });
 
-
-  
+  deleting;
+  writing
   constructor(
     private router:Router,
     private apiService:ApiService,
@@ -89,13 +89,13 @@ type(word){
   let placeholder = document.getElementById("text");
     let i = 0;
 		//Set the interval that makes the writing animation.
-    let writing = setInterval(()=>{
+    this.writing = setInterval(()=>{
 				//Add the letter at the i index of the current word in the placeholder.
         placeholder.innerHTML += word.charAt(i);
         i ++;
 				//If the i index reaches the end of the current word, the writing animation interval stops and the deleting animation beggins after a defined time.
         if(i>=word.length){
-            clearInterval(writing);
+            clearInterval(this.writing);
             setTimeout(() =>{this.erase()}, 1000);
         }
     }, 75)
@@ -106,12 +106,12 @@ erase(){
 	//Set the interval that makes the deleting animation.
   const self = this;
   let placeholder = document.getElementById("text");
-    let deleting = setInterval(() => {
+    this.deleting = setInterval(() => {
 				//Pop off the last character of the previously written sentence.
         placeholder.innerHTML = placeholder.innerHTML.slice(0,-1);
 				//If no one single letter remains, the deleting animation interval stops.
         if(placeholder.innerHTML.length <= 0){
-            clearInterval(deleting);
+            clearInterval(this.deleting);
 						//The index var increases by 1, the writing animation is about to start with the next sentence.
             self.index++;
 						//If the index var reaches the end of the sentences array, set his value at 0 to looping from the first sentence of the array.
@@ -125,5 +125,14 @@ erase(){
     }, 25);
 
 }  
+
+ngOnDestroy(){
+  if(this.deleting){
+    clearInterval(this.deleting);
+  }
+  if(this.writing){
+    clearInterval(this.writing);
+  }
+}
 
 }
