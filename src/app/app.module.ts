@@ -19,6 +19,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { ProgressChartComponent } from './progress-chart/progress-chart.component';
 import { SafePipe } from './safe.pipe';
+import { ChallengesComponent } from './challenges/challenges.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { SafePipe } from './safe.pipe';
     HomeComponent,
     ConnectWellnessComponent,
     ProgressChartComponent,
-    SafePipe
+    SafePipe,
+    ChallengesComponent
   ],
   imports: [
     BrowserModule,
