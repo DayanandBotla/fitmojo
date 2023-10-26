@@ -1,5 +1,20 @@
 .challenges{
+.leadtxt{
+    font-size: 24px;
+    color: #FFF;
+    margin-bottom: 40px;
+    span{font-size: 40px;}
+}
 
+.cta-right{
+    text-align: right;
+    background: linear-gradient(to right, rgba(#4834d4, .5) 20%,rgba(#0c2461, .1)  100%);
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
 }
 
 
