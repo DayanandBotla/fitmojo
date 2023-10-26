@@ -7,7 +7,7 @@
 
     <div class="user">
         <div class="cta-right">
-        <button class="btn-1 btn-md">Give a challenge</button>
+        <button class="btn-1 btn-md"  (click)="createChallangeOpen()">Give a challenge</button>
         </div>
         <div class="user--list" *ngFor="let number of [].constructor(6)">
             <div class="avatar"><img src="../assets/img/no-img.jpeg"></div>
@@ -17,3 +17,41 @@
     </div>
 </div>
 </div>
+
+<ngx-smart-modal #createChallange identifier="createChallange" class="createChallange small-dialog" customClass="createChallange" [dismissable] = "false" >
+    <button class="close-btn" (click)="createChallangeClose()"><i class="icon-close"></i></button>
+    <div >
+        <div class="form__fields"> 
+
+            <div class="form__container">
+                <form class="" [formGroup]="createChallangeForm" >                
+                    <div class="form-group" [ngClass]="getFormFiledClass('name',createChallangeForm)">
+                        <label for="fullName">Full name</label>
+                        <input id="fullName" class="form-control" type="text"
+                            placeholder="Please enter your full name" formControlName="name" name="name" required>
+                        <p class="errortxt" *ngIf="shouldShowErrors('name',createChallangeForm)">{{getErrorMessage('name',createChallangeForm)}}</p>
+                    </div>
+                    <div class="form-group" [ngClass]="getFormFiledClass('email',createChallangeForm)">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="email"
+                            placeholder="Please enter your email" formControlName="email" name="email" required>
+                            <p class="errortxt" *ngIf="shouldShowErrors('email',createChallangeForm)">{{getErrorMessage('email',createChallangeForm)}}</p>
+                    </div>
+                    <div class="form-group" [ngClass]="getFormFiledClass('userDetails',createChallangeForm)">
+                        <label for="userDetails">UserList</label>
+                        <input id="userDetails" class="form-control" type="userDetails"
+                            placeholder="Please enter your userDetails" formControlName="userDetails" name="userDetails" required>
+                            <p class="errortxt" *ngIf="shouldShowErrors('userDetails',createChallangeForm)">{{getErrorMessage('userDetails',createChallangeForm)}}</p>
+                    </div>
+                
+                    <button class="btn-1 btn-md submit-btn">
+                        Step in <i class="icon-arrow_forward2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</ngx-smart-modal>

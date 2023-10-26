@@ -70,4 +70,8 @@ export class ApiService {
 
   }
 
+  getAllUserDetails(){
+    return this.post("getAllUserDetails",{})
+  }
+
 }

@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "chart.js": "^4.4.0",
+    "choices.js": "^10.2.0",
     "fantasticon": "1.2.3",
     "ngx-smart-modal": "^14.0.2",
     "rxjs": "~7.8.0",
