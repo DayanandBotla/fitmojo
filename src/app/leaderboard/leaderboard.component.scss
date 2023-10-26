@@ -29,11 +29,11 @@ $circle-m-w: 100px;
         bottom: 0;
         left: -50px;
         object-fit: contain;
-        width: 100%;
         height: 100%;
         object-position: left;
         opacity: 0.1;
         mix-blend-mode: overlay;
+        z-index: 0;
     }
 
 
@@ -214,6 +214,10 @@ $circle-m-w: 100px;
         width: 100%;
         max-width: 80%;
         justify-content: center;
+        @media(max-width: 767px) and (orientation: portrait) {
+            max-width: 100%;
+            padding: 6px 12px ;
+        }
         &:hover{
             transform: scale(1.05);
             box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
@@ -233,6 +237,11 @@ $circle-m-w: 100px;
             filter: drop-shadow(2px 4px 6px rgba(#0a3d62,.5));
 
         }
+        @media(max-width: 767px) and (orientation: portrait) {
+            width: 20px;
+            height: 20px;
+            img{max-height: 20px;}
+        }
     }
     .rank{
         color: #fff;
@@ -251,6 +260,14 @@ $circle-m-w: 100px;
         span{
             font-size: 10px;
         }
+        @media(max-width: 767px) and (orientation: portrait) {
+            width: 25px;
+            height: 25px;
+            font-size: 10px;
+            span{
+                font-size: 8px;
+            }
+        }
     }
     .avatar{
         min-width: 50px;
@@ -258,6 +275,11 @@ $circle-m-w: 100px;
         height: 50px;
         border-radius: 50%;
         overflow: hidden;
+        @media(max-width: 767px) and (orientation: portrait) {
+            min-width: 40px;
+        width: 40px;
+        height: 40px;
+        }
 
         img {
             width: 100%;
@@ -269,6 +291,10 @@ $circle-m-w: 100px;
     .name, .challenge{
         font-size: 14px;
         font-weight: 600;
+        @media(max-width: 767px) and (orientation: portrait) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
     .challenge{
         &,.txt{
@@ -305,6 +331,10 @@ $circle-m-w: 100px;
       -webkit-line-clamp: 2;
       word-break: break-word;
       text-transform: capitalize;
+      @media(max-width: 767px) and (orientation: portrait) {
+        min-width: 60px;
+        max-width: 60px;
+      }
 
     }
 
@@ -314,6 +344,9 @@ $circle-m-w: 100px;
     .name,
     .challenge{
         margin-right: 25px;
+        @media(max-width: 767px) and (orientation: portrait) {
+            margin-right: 5px;
+        }
     }
 
 
@@ -321,6 +354,9 @@ $circle-m-w: 100px;
     .name,
     .challenge{
        width: calc(100% / 6);
+    }
+    @media(max-width: 767px) and (orientation: portrait) {
+        .badge{max-width: 15px;}
     }
 
 

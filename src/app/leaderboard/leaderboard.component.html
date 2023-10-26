@@ -9,7 +9,7 @@
                 <button class="btn-lb" [ngClass]="{'active':leaderBoardType==='MONTHLY'}" (click)="getLeaderBoard('MONTHLY')">Monthly</button>
             </div>
             <div class="best3__wrapper">
-                <div class="  best3--c small-c top4">
+                <div class="  best3--c small-c top4 order4">
 
                     <div class="inner">
                         <img alt="{{leaderBoardData[3]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[3]?.userId}}/{{leaderBoardData[3]?.profilePicUrl}}" (error)="onImgError($event)">
@@ -21,7 +21,7 @@
                 </div>
         
 
-                <div class="  best3--c small-c top2">
+                <div class="  best3--c small-c top2 order2">
 
                     <div class="inner">
                         <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[1]?.userId}}/{{leaderBoardData[1]?.profilePicUrl}}" (error)="onImgError($event)">
@@ -32,23 +32,23 @@
                     
                 </div>
         
-                <div class=" best3--c big-c top1">
+                <div class=" best3--c big-c top1 order1">
                     <div class="inner">
                         <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[0]?.userId}}/{{leaderBoardData[0]?.profilePicUrl}}" (error)="onImgError($event)">
                     </div>
                     <div class="scrore">{{leaderBoardData[0]?.stepCount}}</div>
                     <div class="name">{{leaderBoardData[0]?.name}}</div>
                 </div>
-                <div class=" best3--c small-c top3">
+                <div class=" best3--c small-c top3 order2">
                     
                     <div class="inner">
-                        <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[2]?.userId}}/{{leaderBoardData[2]?.profilePicUrl}}" (error)="onImgError($event)">
+                        <img alt="{{leaderBoardData[2]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[2]?.userId}}/{{leaderBoardData[2]?.profilePicUrl}}" (error)="onImgError($event)">
                     </div>
                     <div class="scrore">{{leaderBoardData[2]?.stepCount}}</div>
                     <div class="name">{{leaderBoardData[2]?.name}}</div>
                 </div>
 
-                <div class="  best3--c small-c top5">
+                <div class="  best3--c small-c top5 order5">
 
                     <div class="inner">
                         <img alt="{{leaderBoardData[4]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[4]?.userId}}/{{leaderBoardData[4]?.profilePicUrl}}" (error)="onImgError($event)">
