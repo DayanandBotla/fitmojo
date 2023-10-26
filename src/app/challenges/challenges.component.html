@@ -24,6 +24,7 @@
         <div class="form__fields"> 
 
             <div class="form__container">
+                <h4 class="formtitle">Give a challenge</h4>
                 <form class="" [formGroup]="createChallangeForm" >                
                     <div class="form-group" [ngClass]="getFormFiledClass('name',createChallangeForm)">
                         <label for="fullName">Full name</label>
@@ -38,13 +39,13 @@
                             <p class="errortxt" *ngIf="shouldShowErrors('email',createChallangeForm)">{{getErrorMessage('email',createChallangeForm)}}</p>
                     </div>
                     <div class="form-group" [ngClass]="getFormFiledClass('userDetails',createChallangeForm)">
-                        <label for="userDetails">UserList</label>
+                        <label for="userDetails">User list</label>
                         <input id="userDetails" class="form-control" type="userDetails"
                             placeholder="Please enter your userDetails" formControlName="userDetails" name="userDetails" required>
                             <p class="errortxt" *ngIf="shouldShowErrors('userDetails',createChallangeForm)">{{getErrorMessage('userDetails',createChallangeForm)}}</p>
                     </div>
                 
-                    <button class="btn-1 btn-md submit-btn">
+                    <button class="btn-1 btn-md submit-btn m-20">
                         Step in <i class="icon-arrow_forward2"></i>
                     </button>
                 </form>
