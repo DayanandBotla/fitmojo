@@ -23,6 +23,7 @@ export class NavComponent {
   }
   
   myProfile(){
-    this.router.navigate(['/myprofile'])
+    this.navClicked.emit("myProfile");
+
   }
 }

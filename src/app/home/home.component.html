@@ -23,3 +23,5 @@
 <app-team-selection *ngIf="!isTeamAvailable"></app-team-selection>
 
 <app-connect-wellness *ngIf="isUserIntegrationOpen" (closePopup)="navClicked($event)"></app-connect-wellness>
+
+<app-my-profile *ngIf="openMyProfile" (closePopup)="navClicked($event)"></app-my-profile>

@@ -23,9 +23,6 @@ const routes: Routes = [
   {
     path: 'register', component: RegistrationComponent
   },
-  {
-    path: 'myprofile', component: MyProfileComponent
-  },
   { 
     path: '**', redirectTo: "login", pathMatch: 'full'
   }

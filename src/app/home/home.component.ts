@@ -13,6 +13,7 @@ import { UserService } from '../user.service';
 export class HomeComponent {
   isTeamAvailable = true;
   isUserIntegrationOpen = true;
+  openMyProfile = false
   destroy$: Subject<boolean> = new Subject();
   constructor(
     private userService: UserService,
@@ -56,6 +57,10 @@ export class HomeComponent {
       this.isUserIntegrationOpen = true;
     } else if(event === "closeConnect"){
       this.isUserIntegrationOpen = false;
+    } else if (event === "myProfile"){
+      this.openMyProfile = true;
+    } else if(event === "closeProfile"){
+      this.openMyProfile = false;
     } else if(event === "Logout"){
       this.apiService.logout().subscribe(
         logoutResposne =>{

@@ -19,7 +19,6 @@ export class RouterGuardService  implements CanActivate {
    ) {}
  
    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot){
-    const userId = this.userService.userId;
     let token = this.authService.getToken();
     let isMsLogin;
      if(window.location.search){
@@ -32,8 +31,12 @@ export class RouterGuardService  implements CanActivate {
         if(queryParam.includes("msLogin")){
           isMsLogin = queryParam.split("=")[1]
         }
+        if(queryParam.includes("userId")){
+          this.userService.userId = queryParam.split("=")[1];
+        }
       });
      }
+     const userId = this.userService.userId;
 
       if(isMsLogin){
         token = this.route.snapshot.queryParamMap.get('jwtToken');
