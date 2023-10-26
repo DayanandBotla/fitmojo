@@ -47,6 +47,10 @@ main,
 .appbody {
     overflow: auto;
     padding: 0 $gutterGap $gutterGap ;
+    @media(max-width: 767px) and (orientation: portrait) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 }
 

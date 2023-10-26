@@ -14,7 +14,8 @@
       </div> -->
     </header>
     <section class="appbody">
-      <app-leaderboard [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
+      <app-leaderboard *ngIf="!challengesPage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
+      <app-challenges *ngIf="challengesPage"></app-challenges>
     </section>
   </main>
 

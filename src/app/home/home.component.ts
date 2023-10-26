@@ -15,6 +15,7 @@ export class HomeComponent {
   isUserIntegrationOpen = true;
   openMyProfile = false
   destroy$: Subject<boolean> = new Subject();
+  challengesPage = false;
   constructor(
     private userService: UserService,
     private router:Router,
@@ -29,6 +30,16 @@ export class HomeComponent {
   }
 
   ngOnInit(){
+    const windowUrl = window.location.pathname;
+     if(windowUrl === "/challenges"){
+       this.challengesPage = true;
+       this.isUserIntegrationOpen = false;
+       this.openMyProfile = false
+     } else {
+      this.challengesPage = false;
+      this.isUserIntegrationOpen = false;
+      this.openMyProfile = false
+     }
     this.getUserDetails();
   }
 

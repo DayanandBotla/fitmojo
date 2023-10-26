@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChallengesComponent } from './challenges/challenges.component';
 import { ConnectWellnessComponent } from './connect-wellness/connect-wellness.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -17,6 +18,11 @@ const routes: Routes = [
   },
   {
     path: 'home', 
+    component: HomeComponent,
+    canActivate: [RouterGuardService],
+  },
+  {
+    path: 'challenges', 
     component: HomeComponent,
     canActivate: [RouterGuardService],
   },
