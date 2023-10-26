@@ -5,19 +5,23 @@
     </div>
 
 
-    <div class="nav--list">
+    <div class="nav--list"  routerLinkActive="active"
+    routerLink="/home"    >
         <i class="icon-medal"></i>
-        <span>Leaderboard</span>
+        <!-- <span>Leader board</span> -->
+        <span>Board</span>
     </div>
 
     <div class="nav--list" >
         <i class="icon-account"></i>
-        <span>My profile</span>
+        <!-- <span>My profile</span> -->
+        <span>Profile</span>
     </div>
 
     <div class="nav--list">
         <i class="icon-goal"></i>
-        <span>Challenges</span>
+        <!-- <span>Challenges</span> -->
+        <span>Contest</span>
     </div>
 
     <div class="nav--list" (click)="logout()">

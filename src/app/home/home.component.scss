@@ -72,7 +72,18 @@ main,
 
 
 .left-nav{
-    position: sticky;
-    top: 0;
-    padding: 20px;
+    @media  (min-width:1025px) {
+        position: sticky;
+        top: 0;
+        padding: 20px;
+    }
+    
+
+    @media  (max-width:1024px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
 }

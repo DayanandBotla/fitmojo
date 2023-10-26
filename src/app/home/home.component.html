@@ -1,22 +1,22 @@
 <div class="container">
   <section class="left-nav">
     <app-nav (navClicked)="navClicked($event)"></app-nav>
-    </section>
+  </section>
 
-    <main>
-      <header>
-        <div class="logo" routerLink="/">
-          <img class="logo-img" src="../assets/img/logo.svg" alt="logo">
-        </div>
-  
-        <!-- <div class="right">
-          <app-nav (navClicked)="navClicked($event)"></app-nav>
-        </div> -->
-      </header>
-      <section class="appbody">
-        <app-leaderboard [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
-      </section>
-    </main>
+  <main>
+    <header>
+      <div class="logo" routerLink="/">
+        <img class="logo-img" src="../assets/img/logo.svg" alt="logo">
+      </div>
+
+      <!-- <div class="right">
+        <app-nav (navClicked)="navClicked($event)"></app-nav>
+      </div> -->
+    </header>
+    <section class="appbody">
+      <app-leaderboard [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
+    </section>
+  </main>
 
   </div>
 

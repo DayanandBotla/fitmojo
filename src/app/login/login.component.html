@@ -1,7 +1,5 @@
 
 <ngx-smart-modal #LoginModal identifier="LoginModal" class="loginModal entryModal" customClass="LoginModal entryModal" [dismissable] = "false" >
-     
-
     <!-- <button class="close-btn" (click)="closeEntry()"><i class="icon-close"></i></button> -->
     
     <div class="text-anime">
@@ -19,15 +17,15 @@
 
             </div>
         </div> -->
-        <div class="container">
-            <!--The actual text placeholder, which will be write with the js code.-->
-            
-        </div>
         <div class="form__fields"> 
          
             <div class="form__container">
+                <h3 class="form--greet">Welcome back!</h3>
+
+                <button class="btn-1 btn-md ms-login"><img src="../assets/img/ms.png" alt="Microsoft logo">Sign in with Microsoft</button>
+                <div class="line linkTxt">Or login via custom email</div>
                 <form class="" [formGroup]="loginForm">
-                    <h3 class="form--greet">Welcome back!</h3>
+                   
                     
                 
                     <div class="error" style="display: none;" id="loginErrorMsg"></div>
@@ -59,7 +57,7 @@
                     </button>
                 </form>
 
-                <p class="linkTxt">Don’t have an account yet?<br/><a (click)="gotoSignUp()" href="javascript:void(0)"  ><strong>Connect us now!</strong></a></p>
+                <!-- <p class="linkTxt">Don’t have an account yet?<br/><a (click)="gotoSignUp()" href="javascript:void(0)"  ><strong>Connect us now!</strong></a></p> -->
               
             </div>
         </div>
