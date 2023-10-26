@@ -9,10 +9,15 @@
         <div class="cta-right">
         <button class="btn-1 btn-md"  (click)="createChallangeOpen()">Give a challenge</button>
         </div>
-        <div class="user--list" *ngFor="let number of [].constructor(6)">
-            <div class="avatar"><img src="../assets/img/no-img.jpeg"></div>
+        <div class="user--list" *ngFor="let number of [].constructor(6), index as i">
+            
+                <div class="icon"><i class="icon-goal"></i></div> 
+             
+            <div class="challenge">Challenge {{i+1}}</div>
+            <div class="avatar"><img src="../assets/img/trophy.png" alt="trophy"></div>
+            <!-- <div class="avatar"><img src="../assets/img/no-img.jpeg"></div>
             <div class="name">Praeep</div>
-            <div class="challenge">Steps</div>
+            <div class="challenge">Steps</div> -->
         </div>
     </div>
 </div>
