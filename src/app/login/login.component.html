@@ -22,7 +22,7 @@
             <div class="form__container">
                 <h3 class="form--greet">Welcome back!</h3>
 
-                <button class="btn-1 btn-md ms-login"><img src="../assets/img/ms.png" alt="Microsoft logo">Sign in with Microsoft</button>
+                <button class="btn-1 btn-md ms-login" (click)="getSSOUrl()"><img src="../assets/img/ms.png" alt="Microsoft logo">Sign in with Microsoft</button>
                 <div class="line linkTxt">Or login via custom email</div>
                 <form class="" [formGroup]="loginForm">
                    

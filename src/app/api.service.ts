@@ -65,4 +65,9 @@ export class ApiService {
 
   }
 
+  getSSOUrl(){
+    return this.get("getMicrosoftAuthUrl")
+
+  }
+
 }

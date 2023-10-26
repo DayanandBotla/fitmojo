@@ -35,6 +35,7 @@ export class HomeComponent {
     this.userService.getUserProfile().subscribe(
       userDetails =>{
         if(userDetails?.status === 'SUCCESS' && userDetails?.user){
+          this.userService.userProfile = userDetails?.user
           if(userDetails?.user?.userClientDetails?.teamId === 0){
             this.isTeamAvailable = false;
           } else {

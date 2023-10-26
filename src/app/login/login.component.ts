@@ -126,6 +126,17 @@ erase(){
 
 }  
 
+getSSOUrl(){
+  this.removeErrorMessage("loginErrorMsg")
+  this.apiService.getSSOUrl().subscribe( response =>{
+    if(response && response?.status === "SUCCESS" && response?.authUrl){
+      window.open(response?.authUrl,"_self")
+    } else {
+      this.setErrorMessage("loginErrorMsg","Something Went Wrong. Try again in some time")
+    }
+  })
+}
+
 ngOnDestroy(){
   if(this.deleting){
     clearInterval(this.deleting);

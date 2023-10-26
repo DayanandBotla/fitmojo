@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgxSmartModalService } from 'ngx-smart-modal';
 import { ApiService } from '../api.service';
@@ -40,23 +40,34 @@ export class TeamSelectionComponent {
     }
   ];
 
-  teamSelectionForm = new FormGroup({
-    userId: new FormControl('', [Validators.required]),
-    teamId:new FormControl(1, [Validators.required]),
-    clientTeamId: new FormControl(1, [Validators.required]),
+  uploadProfilePic = false;
+  teamSelectionForm:FormGroup = this.formBuilder.group({
+    userId:['', Validators.required],
+    teamId:[1, Validators.required],
+    clientTeamId:[1, Validators.required]
   });
 
   constructor(
     private router:Router,
     public ngxSmartModalService: NgxSmartModalService,
     private apiService:ApiService,
-    private userService:UserService
+    private userService:UserService,
+    private formBuilder:FormBuilder
   ) {}
 
   ngOnInit(){
     const userId = this.userService.userId;
     if(userId){
       this.teamSelectionForm.get('userId').setValue(userId);
+      const userProfile = this.userService.userProfile;
+      if(!userProfile?.profilePicUrl){
+        this.uploadProfilePic = true;
+        this.teamSelectionForm.addControl('image',new FormControl('',[Validators.required]))
+        this.teamSelectionForm.addControl('fileName',new FormControl('',[Validators.required]))
+
+    //     image: new FormControl('', [Validators.required]),
+    // fileName: new FormControl('', [Validators.required])
+      }
     } else {
       this.router.navigate(['/login'])
     }
@@ -71,7 +82,18 @@ export class TeamSelectionComponent {
   }
 
   saveTeamDetails(){
-    this.apiService.updateUser(this.teamSelectionForm.value).subscribe(
+    let formData
+    if(this.uploadProfilePic){
+      formData =  new FormData();
+      formData.append("userId",(this.teamSelectionForm?.get('userId')?.value || ""))
+      formData.append("teamId",(this.teamSelectionForm?.get('teamId')?.value || ""))
+      formData.append("clientTeamId",(this.teamSelectionForm?.get('clientTeamId')?.value || ""))
+      formData.append('image', (this.teamSelectionForm?.get('image')?.value || ""));
+    } else {
+      formData = this.teamSelectionForm.value;
+    }
+
+    this.apiService.updateUser(formData).subscribe(
       updateUserResponse =>{
         if(updateUserResponse?.status === "SUCCESS"){
           this.userService.broadcastIsUserProfileUpdated(true);
@@ -79,6 +101,25 @@ export class TeamSelectionComponent {
         }
       }
     )
+  }
+
+  onFileChange(event:any) {
+    if (event.target.files.length > 0) {
+      const file = event.target.files[0];
+      this.teamSelectionForm.patchValue({
+        image: file,
+        fileName: file.name
+      });
+    }
+  }
+
+  resetFile(){
+    const imageInput = document.getElementById("imgupload") as HTMLInputElement
+    imageInput.value = "";
+    this.teamSelectionForm.patchValue({
+      fileName: ""
+    });
+
   }
 }
 

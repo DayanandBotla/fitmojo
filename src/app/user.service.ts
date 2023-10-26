@@ -10,6 +10,8 @@ export class UserService {
   userId;
   emailId;
 
+  userProfile;
+
   private isUserProfileUpdated = new Subject<boolean>();
   isUserProfileUpdated$ = this.isUserProfileUpdated.asObservable();
   broadcastIsUserProfileUpdated(status: boolean) {

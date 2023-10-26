@@ -21,6 +21,15 @@
         </select>
         </div>
     </div>
+
+    <div class="form-group" *ngIf="uploadProfilePic">
+        <label for="imgupload">Your profile image</label>
+        <label class="custom-file-upload form-control">
+            <p *ngIf="teamSelectionForm.get('fileName')?.value" >{{(teamSelectionForm.get('fileName')?.value)}}</p>
+            <i *ngIf="!teamSelectionForm.get('fileName')?.value " class="icon-img"></i>
+            <input (click)="resetFile()" (change)="onFileChange($event)" id="imgupload" class="form-control" type="file"
+                placeholder="Please upload your profile image" name="image"></label>
+    </div>
     <div class="form-group text-center">
     <button class="btn-1 btn-md save-btn w-100" (click)="saveTeamDetails()">
         Save

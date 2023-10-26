@@ -6,6 +6,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ValidatorsService } from '../validators.service';
 import {FormValidators} from 'src/app/FormValidators';
 import { UserService } from '../user.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-registration',
@@ -31,7 +32,8 @@ export class RegistrationComponent extends FormValidators{
     private router:Router,
     private apiService:ApiService,
     public ngxSmartModalService: NgxSmartModalService,
-    private userService:UserService
+    private userService:UserService,
+    private authService: AuthService
     ) {
       super()
     }
@@ -77,6 +79,7 @@ export class RegistrationComponent extends FormValidators{
             if(apiResponse?.status==="SUCCESS"){
               this.userService.userId = apiResponse?.user?.userId;
               this.userService.emailId = apiResponse?.user?.emailId;
+              this.authService.setToken(apiResponse?.token)
               this.router.navigate(['/home']);
             }
           })
