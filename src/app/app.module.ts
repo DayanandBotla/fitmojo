@@ -20,7 +20,6 @@ import { TokenInterceptorService } from './token-interceptor.service';
 import { ProgressChartComponent } from './progress-chart/progress-chart.component';
 import { SafePipe } from './safe.pipe';
 import { ChallengesComponent } from './challenges/challenges.component';
-import { Select2Module } from 'ng-select2-component';
 
 @NgModule({
   declarations: [
@@ -43,8 +42,7 @@ import { Select2Module } from 'ng-select2-component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgxSmartModalModule.forRoot(),
-    Select2Module
+    NgxSmartModalModule.forRoot()
 
   ],
   providers: [

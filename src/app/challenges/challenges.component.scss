@@ -25,7 +25,8 @@
         align-items: center;
         margin-bottom: 10px;
         border-radius: 50px;
-        padding: 10px;
+        padding: 10px 20px;
+        position: relative;
 
         &:nth-child(odd){
             background: linear-gradient(to right, rgba(#4834d4, .5) 20%,rgba(#0c2461, .1)  100%);
@@ -36,11 +37,13 @@
             border: 2px solid rgba(#4834d4, .3);
         }
         .avatar{
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             overflow: hidden;
-            img{width: 100%; height: 100%;}
+            position: absolute;
+            right: 20px;
+            img{width: 100%; height: 100%; object-fit: contain;}
         }
 
         .name, .challenge{
@@ -49,6 +52,29 @@
             padding: 10px;
 
         }
+        .icon{color: #FFFFFF; font-size: 40px;}
 
+    }
+}
+
+
+.m-20{
+    margin: 20px auto;
+}
+.formtitle{
+    font-size: 20px;
+    color: #4834d4;
+    margin: 0px auto 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.choices__item.choices__item--choice.choices__item--selectable{
+    color: red;
+}
+
+::ng-deep{
+    .choices__list--dropdown {
+        background-color: red;
     }
 }

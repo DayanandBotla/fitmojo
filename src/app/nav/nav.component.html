@@ -12,18 +12,19 @@
         <span>Board</span>
     </div>
 
-    <div class="nav--list" (click)="myProfile()">
-        <i class="icon-account"></i>
-        <!-- <span>My profile</span> -->
-        <span>Profile</span>
-    </div>
-
     <div class="nav--list"  routerLinkActive="active"
     routerLink="/challenges">
         <i class="icon-goal"></i>
         <!-- <span>Challenges</span> -->
         <span>Contest</span>
     </div>
+
+    <div class="nav--list" (click)="myProfile()">
+        <i class="icon-account"></i>
+        <!-- <span>My profile</span> -->
+        <span>Profile</span>
+    </div>
+
 
     <div class="nav--list" (click)="logout()">
         <i class="icon-exit"></i>

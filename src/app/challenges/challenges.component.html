@@ -9,21 +9,27 @@
         <div class="cta-right">
         <button class="btn-1 btn-md"  (click)="createChallangeOpen()">Give a challenge</button>
         </div>
-        <div class="user--list" *ngFor="let number of [].constructor(6)">
-            <div class="avatar"><img src="../assets/img/no-img.jpeg"></div>
+        <div class="user--list" *ngFor="let number of [].constructor(6), index as i">
+            
+                <div class="icon"><i class="icon-goal"></i></div> 
+             
+            <div class="challenge">Challenge {{i+1}}</div>
+            <div class="avatar"><img src="../assets/img/trophy.png" alt="trophy"></div>
+            <!-- <div class="avatar"><img src="../assets/img/no-img.jpeg"></div>
             <div class="name">Praeep</div>
-            <div class="challenge">Steps</div>
+            <div class="challenge">Steps</div> -->
         </div>
     </div>
 </div>
 </div>
 
-<ngx-smart-modal #createChallange identifier="createChallange" class="createChallange small-dialog" customClass="createChallange" [dismissable] = "false" >
+<ngx-smart-modal #createChallangeModal identifier="createChallangeModal" class="createChallange small-dialog" customClass="createChallange" [dismissable] = "false" >
     <button class="close-btn" (click)="createChallangeClose()"><i class="icon-close"></i></button>
     <div >
         <div class="form__fields" > 
 
             <div class="form__container">
+                <h4 class="formtitle">Give a challenge</h4>
                 <form class="" [formGroup]="createChallangeForm" >                
                     <div class="form-group" [ngClass]="getFormFiledClass('name',createChallangeForm)">
                         <label for="fullName">Full name</label>
@@ -38,16 +44,14 @@
                             <p class="errortxt" *ngIf="shouldShowErrors('email',createChallangeForm)">{{getErrorMessage('email',createChallangeForm)}}</p>
                     </div>
                     <div class="form-group" [ngClass]="getFormFiledClass('userDetails',createChallangeForm)">
-                        <label for="userDetails">UserList</label>
-                        <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
-                          </select>
-
-                       <p class="errortxt" *ngIf="shouldShowErrors('userDetails',createChallangeForm)">{{getErrorMessage('userDetails',createChallangeForm)}}</p>
-                       
-                            
+                        <label for="userDetails">User list</label>
+                        <select id="userDetails" class="form-control" multiple placeholder="Please enter your userDetails" formControlName="userDetails" name="userDetails" required></select>
+                        <!-- <input id="userDetails" class="form-control" type="text"
+                            placeholder="Please enter your userDetails" formControlName="userDetails" name="userDetails" required> -->
+                            <p class="errortxt" *ngIf="shouldShowErrors('userDetails',createChallangeForm)">{{getErrorMessage('userDetails',createChallangeForm)}}</p>
                     </div>
                 
-                    <button class="btn-1 btn-md submit-btn">
+                    <button class="btn-1 btn-md submit-btn m-20" (click)="createChallange()">
                         Step in <i class="icon-arrow_forward2"></i>
                     </button>
                 </form>

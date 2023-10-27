@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import * as $ from 'jquery';
+import Choices from 'choices.js';
 import { NgxSmartModalService } from 'ngx-smart-modal';
 import { ApiService } from '../api.service';
 import { FormValidators } from '../FormValidators';
@@ -37,32 +37,46 @@ export class ChallengesComponent extends FormValidators{
           usersList.forEach(user => {
             if(user ){
               let userObj = {
-                value: user.id,
-                label: user.name,
-                data: { color: 'red', name: user.name },
+                value: user.userId,
+                label: `<img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/${user?.userId}/${user?.profilePicUrl}"/> ${user.name}`,
+                customProperties: {
+                  name: user.name,
+                  email: user.emailId
+                }
               }
               userData.push(userObj)
-                
-                // {
-                //     value: 'hibiscus',
-                //     label: 'Hibiscus',
-                //     data: { color: 'red', name: 'Hibiscus' },
-                // },
-
             }
           });
           this.data = [...userData]
-          // $('.js-example-basic-multiple').select2();
         }
       }
     )
   }
 
   createChallangeOpen(){
-    this.ngxSmartModalService.getModal('createChallange').open()
+    this.ngxSmartModalService.getModal('createChallangeModal').open();
+    setTimeout(()=>{
+      const element = document.querySelector('#userDetails');
+          const choices = new Choices(element,{
+            removeItems: true,
+            removeItemButton: true,
+            allowHTML: true,
+            searchEnabled: false,
+            itemSelectText: '',
+            searchFields: ['customProperties.name','customProperties.email'],
+            noResultsText: 'No results found',
+            noChoicesText: 'No choices to choose from',
+            choices:[...this.data]
+          });
+    })
   }
   createChallangeClose(){
-    this.ngxSmartModalService.getModal('createChallange').close()
+    this.ngxSmartModalService.getModal('createChallangeModal').close()
+  }
+
+  createChallange(){
+    console.log(this.createChallangeForm.value);
+    
   }
 
 }
