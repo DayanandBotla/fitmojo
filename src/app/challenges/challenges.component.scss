@@ -69,12 +69,78 @@
     font-weight: 700;
 }
 
-.choices__item.choices__item--choice.choices__item--selectable{
-    color: red;
-}
 
 ::ng-deep{
-    .choices__list--dropdown {
-        background-color: red;
+    $c-selector: "choices" !default;
+    $choices-border-radius:8px!default;
+    .#{$c-selector}{
+        &__item {
+            display: inline-flex!important;
+            align-items: center;
+            padding: 2px 4px!important;
+            border:1px solid #c8d6e5;
+            img{
+                width: 25px; 
+                min-width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 5px;
+            }
+
+            &--selectable{
+                background: rgba(#0a3d62, .03);
+                border-radius: 20px;
+                margin: 2px 4px;
+                color: rgba(10, 61, 98, 0.8);
+                font-size: 14px!important;
+
+            }
+
+            
+        }
+        &__button{
+            border-color: rgba(#FFF, .5) !important;
+        }
+        .#{$c-selector}__list--multiple .#{$c-selector}__item{
+            background:#4834d4;
+            color: #FFF;
+            border-color:transparent ;
+        }
+        
+        .#{$c-selector}__inner{
+            height: auto;
+            .is-focused &,
+  .is-open & {
+    border-color: #c8d6e5;
+  }
+
+  .is-open & {
+    border-radius: $choices-border-radius $choices-border-radius 0 0;
+  }
+
+  .is-flipped.is-open & {
+    border-radius: 0 0 $choices-border-radius $choices-border-radius;
+  }
+        }
+        &__list{
+        [role="listbox"]{
+            padding: 10px;
+        } 
     }
+    }
+    
+    // .choices__list--dropdown {
+        
+    // }
+
+    // .choices__list{
+    //     img{
+    //         width: 30px; height: 30px;
+    //         border-radius: 50%;
+    //         object-fit: cover;
+    //     }
+    // }
+    
 }
+

@@ -8,10 +8,6 @@
       <div class="logo" routerLink="/">
         <img class="logo-img" src="../assets/img/logo.svg" alt="logo">
       </div>
-
-      <!-- <div class="right">
-        <app-nav (navClicked)="navClicked($event)"></app-nav>
-      </div> -->
     </header>
     <section class="appbody">
       <app-leaderboard *ngIf="!challengesPage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
