@@ -51,7 +51,8 @@ export class LeaderboardComponent {
   }
 
   onImgError(event:any){
-    event.target.src = '../assets/img/no-img.jpeg'
+    event.target.src = '../assets/img/no-img.jpeg';
+    event.target.classList.add('xxxx');
     
    }
 

@@ -10,8 +10,9 @@
       </div>
     </header>
     <section class="appbody">
-      <app-leaderboard *ngIf="!challengesPage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
+      <app-leaderboard *ngIf="!challengesPage && !profilePage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
       <app-challenges *ngIf="challengesPage"></app-challenges>
+      <app-my-profile *ngIf="profilePage"  [userData]="userData" ></app-my-profile>
     </section>
   </main>
 
@@ -21,4 +22,4 @@
 
 <app-connect-wellness *ngIf="isUserIntegrationOpen" (closePopup)="navClicked($event)"></app-connect-wellness>
 
-<app-my-profile *ngIf="openMyProfile" (closePopup)="navClicked($event)"></app-my-profile>
+<!-- <app-my-profile *ngIf="openMyProfile" (closePopup)="navClicked($event)"></app-my-profile> -->

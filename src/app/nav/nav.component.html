@@ -19,15 +19,15 @@
         <span>Contest</span>
     </div>
 
-    <div class="nav--list" (click)="myProfile()">
+    <div class="nav--list" routerLinkActive="active"
+    routerLink="/profile" >
         <i class="icon-account"></i>
-        <!-- <span>My profile</span> -->
         <span>Profile</span>
     </div>
 
 
     <div class="nav--list" (click)="logout()">
-        <i class="icon-exit"></i>
+        <i class="icon-logout"></i>
         <span>Logout</span>
     </div>
 

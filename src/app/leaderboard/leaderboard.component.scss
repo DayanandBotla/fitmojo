@@ -159,6 +159,11 @@ $circle-m-w: 100px;
             object-position: center;
             filter: drop-shadow(5px 5px 5px rgba(#0c2461, .2)) brightness(1.5);
         }
+        img[src*="no-img"] {
+            mix-blend-mode: luminosity;
+            filter: none;
+
+        }
     }
 
 }

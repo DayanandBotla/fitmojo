@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { ApiService } from '../api.service';
@@ -16,6 +16,8 @@ export class HomeComponent {
   openMyProfile = false
   destroy$: Subject<boolean> = new Subject();
   challengesPage = false;
+  profilePage = false;
+  userData:any;
   constructor(
     private userService: UserService,
     private router:Router,
@@ -24,7 +26,7 @@ export class HomeComponent {
   ){
     this.userService.isUserProfileUpdated$.pipe(takeUntil(this.destroy$)).subscribe(status => {
       if(status){
-        this.getUserDetails()
+        this.getUserDetails();
       }
     });
   }
@@ -34,11 +36,15 @@ export class HomeComponent {
      if(windowUrl === "/challenges"){
        this.challengesPage = true;
        this.isUserIntegrationOpen = false;
-       this.openMyProfile = false
-     } else {
+       this.profilePage = false
+     } else if (windowUrl === "/profile"){
       this.challengesPage = false;
       this.isUserIntegrationOpen = false;
-      this.openMyProfile = false
+      this.profilePage = true
+     }else{
+      this.challengesPage = false;
+      this.isUserIntegrationOpen = false;
+      this.profilePage = false
      }
     this.getUserDetails();
   }
@@ -47,7 +53,9 @@ export class HomeComponent {
     this.userService.getUserProfile().subscribe(
       userDetails =>{
         if(userDetails?.status === 'SUCCESS' && userDetails?.user){
-          this.userService.userProfile = userDetails?.user
+          this.userService.userProfile = userDetails?.user;
+          this.userData = userDetails?.user;
+
           if(userDetails?.user?.userClientDetails?.teamId === 0){
             this.isTeamAvailable = false;
           } else {
@@ -68,10 +76,6 @@ export class HomeComponent {
       this.isUserIntegrationOpen = true;
     } else if(event === "closeConnect"){
       this.isUserIntegrationOpen = false;
-    } else if (event === "myProfile"){
-      this.openMyProfile = true;
-    } else if(event === "closeProfile"){
-      this.openMyProfile = false;
     } else if(event === "Logout"){
       this.apiService.logout().subscribe(
         logoutResposne =>{
