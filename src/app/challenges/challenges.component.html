@@ -1,54 +1,90 @@
 <!-- <span>💪</span> -->
 
 <div class="challenges">
-    <h1 class="page-title fadeIn" title="challenge">Challenges <span class="emoji"><img alt="Challenges" src="../assets/img/emoji/muscle.webp"></span></h1>
-    <h3 class="leadtxt fadeInUp">Engage Employees Through Total Wellness and Skill Development    </h3>
-    
+    <h1 class="page-title fadeIn" title="challenge">Challenges <span class="emoji"><img alt="Challenges"
+                src="../assets/img/emoji/muscle.webp"></span></h1>
+    <h3 class="leadtxt fadeInUp">Engage Employees Through Total Wellness and Skill Development </h3>
 
 
-    <div class="user">
-        <div class="cta-right">
-        <button class="btn-1 btn-md"  (click)="createChallangeOpen()">Give a challenge</button>
-        </div>
-        <div class="user--list" *ngFor="let challange of challangeList, index as i">
+    <div class="challenge-banner">
+        <img src="../assets/img/bg.jpeg" />
+        <button class="btn-1 btn-md" (click)="createChallangeOpen()">Give a challenge <i
+                class="icon-arrow_forward2"></i></button>
+    </div>
+
+    <div class="user" [@listAnimation]="challangeList.length">
+
+        <div class="user--list" *ngFor="let challange of challangeList">
+            <div class="user--list__row">
+            <div class="icon"><i class="icon-goal"></i></div>
+            <div class="challenge">
+                <div class="name">{{challange.challengeName}}</div>
+                <div class="desc">{{challange.challengeDesc}}</div>
+            </div>
             
-            <div class="icon"><i class="icon-goal"></i></div>  
-            <div class="challenge">{{challange.challengeName}}</div>
-            <div class="challenge">{{challange.challengeDesc}}</div>
-            <div class="avatar" (click)="viewChallangeLeaderboard(challange.challengeId)"><img src="../assets/img/trophy.png" alt="trophy"> <p>View Leaderboard</p></div>
+            <!-- <div class="userlist">{{challange | json}}</div> -->
+            <div class="userlist">
+                <span *ngFor="let person of challange.userDetailsList">
+                    <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person?.userId}}/{{person?.profilePicUrl}}" />
+                </span>
+            </div>
+            <!-- (click)="viewChallangeLeaderboard(challange.challengeId)" -->
+            <div class="view-cta" (click)="viewChallangeLeaderboard(challange.challengeId)">
+                <i class="icon-leaderboard2"></i>View Leaderboard <i class="icon-arrow-down"></i>
+            </div>
+            </div>
+            <ng-container *ngIf="challange.challengeId === showmore ">
+            <div class="showmore" *ngIf="challange.userDetailsList" [@listAnimation]="challange.userDetailsList.length">
+                <ng-container *ngFor="let person of challange.userDetailsList">
+                    <ul>
+                        <li class="avatar"><img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person?.userId}}/{{person?.profilePicUrl}}" /></li>
+                        <li class="name">{{person?.name}}</li>
+                        <li class="tname">{{person?.teamName}}</li>
+                        <li class="stepcount">Steps {{person?.stepCount}}</li>
+                    </ul>
+                </ng-container>
+            </div>
+        </ng-container>
         </div>
     </div>
 </div>
 
 
-<ngx-smart-modal #createChallangeModal identifier="createChallangeModal" class="createChallange small-dialog" customClass="createChallange" [dismissable] = "false" >
+<ngx-smart-modal #createChallangeModal identifier="createChallangeModal" class="createChallange small-dialog"
+    customClass="createChallange" [dismissable]="false">
     <button class="close-btn" (click)="createChallangeClose()"><i class="icon-close"></i></button>
-    <div >
-        <div class="form__fields" > 
+    <div>
+        <div class="form__fields">
 
             <div class="form__container">
                 <h4 class="formtitle">Give a challenge</h4>
-                <form class="" [formGroup]="createChallangeForm" >                
+                <form class="" [formGroup]="createChallangeForm">
                     <div class="form-group" [ngClass]="getFormFiledClass('challengeName',createChallangeForm)">
                         <label for="challengeName">Name</label>
                         <input id="challengeName" class="form-control" type="text"
-                            placeholder="Please enter your full name" formControlName="challengeName" name="challengeName" required>
-                        <p class="errortxt" *ngIf="shouldShowErrors('challengeName',createChallangeForm)">{{getErrorMessage('challengeName',createChallangeForm)}}</p>
+                            placeholder="Please enter your full name" formControlName="challengeName"
+                            name="challengeName" required>
+                        <p class="errortxt" *ngIf="shouldShowErrors('challengeName',createChallangeForm)">
+                            {{getErrorMessage('challengeName',createChallangeForm)}}</p>
                     </div>
                     <div class="form-group" [ngClass]="getFormFiledClass('challengeDesc',createChallangeForm)">
                         <label for="challengeDesc">Description</label>
                         <input id="challengeDesc" class="form-control" type="email"
-                            placeholder="Please enter your email" formControlName="challengeDesc" name="challengeDesc" required>
-                            <p class="errortxt" *ngIf="shouldShowErrors('challengeDesc',createChallangeForm)">{{getErrorMessage('challengeDesc',createChallangeForm)}}</p>
+                            placeholder="Please enter your email" formControlName="challengeDesc" name="challengeDesc"
+                            required>
+                        <p class="errortxt" *ngIf="shouldShowErrors('challengeDesc',createChallangeForm)">
+                            {{getErrorMessage('challengeDesc',createChallangeForm)}}</p>
                     </div>
                     <div class="form-group" [ngClass]="getFormFiledClass('userList',createChallangeForm)">
                         <label for="userList">User list</label>
-                        <select id="userList" class="form-control" multiple placeholder="Please enter your userList" formControlName="userList" name="userList" required></select>
+                        <select id="userList" class="form-control" multiple placeholder="Please enter your userList"
+                            formControlName="userList" name="userList" required></select>
                         <!-- <input id="userList" class="form-control" type="text"
                             placeholder="Please enter your userList" formControlName="userList" name="userList" required> -->
-                            <p class="errortxt" *ngIf="shouldShowErrors('userList',createChallangeForm)">{{getErrorMessage('userList',createChallangeForm)}}</p>
+                        <p class="errortxt" *ngIf="shouldShowErrors('userList',createChallangeForm)">
+                            {{getErrorMessage('userList',createChallangeForm)}}</p>
                     </div>
-                
+
                     <button class="btn-1 btn-md submit-btn m-20" (click)="createChallange()">
                         Step in <i class="icon-arrow_forward2"></i>
                     </button>

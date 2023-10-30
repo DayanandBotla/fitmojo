@@ -7,11 +7,26 @@ import { ApiService } from '../api.service';
 import { FormValidators } from '../FormValidators';
 import { UserService } from '../user.service';
 import { ValidatorsService } from '../validators.service';
+import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
+
+export const listAnimation = trigger('listAnimation', [
+  transition('* <=> *', [
+    query(':enter',
+      [style({ opacity: 0 }), stagger('60ms', animate('600ms ease-out', style({ opacity: 1 })))],
+      { optional: true }
+    ),
+    query(':leave',
+      animate('200ms', style({ opacity: 0 })),
+      { optional: true}
+    )
+  ])
+]);
 
 @Component({
   selector: 'app-challenges',
   templateUrl: './challenges.component.html',
-  styleUrls: ['./challenges.component.scss']
+  styleUrls: ['./challenges.component.scss'],
+  animations: [ listAnimation]
 })
 export class ChallengesComponent extends FormValidators{
 
@@ -24,6 +39,7 @@ export class ChallengesComponent extends FormValidators{
   data = [];
   challangeList = []
   choicesDropdown;
+  showmore;
   constructor(
     public ngxSmartModalService: NgxSmartModalService,
     private apiService:ApiService,
@@ -142,7 +158,9 @@ export class ChallengesComponent extends FormValidators{
   viewChallangeLeaderboard(challangeId){
     this.apiService.getChallengeLeaderBoard(challangeId).subscribe(
       challangeLeaderboard =>{
-        console.log(challangeLeaderboard)
+        this.showmore =challangeId;
+        console.log(challangeLeaderboard, this.showmore, 'sss');
+        
       }
     )
   }

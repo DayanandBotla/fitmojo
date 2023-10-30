@@ -17,25 +17,35 @@
 .user {
     &--list {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         margin-bottom: 10px;
         border-radius: 50px;
         padding: 10px 20px;
         position: relative;
+        background: linear-gradient(to right, rgba(#4834d4, .2) 20%, rgba(#0c2461, .1) 100%);
+            box-shadow:inset  5px 5px 10px rgba(#FFF, 0.1);
+        
 
-        &:nth-child(odd) {
-            background: linear-gradient(to right, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
-            border: 2px solid rgba(#4834d4, .3);
+
+            
+
+        // &:nth-child(odd) {
+        //     background: linear-gradient(to right, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
+        //     border: 2px solid rgba(#4834d4, .3);
+        // }
+
+        // &:nth-child(even) {
+        //     background: linear-gradient(to left, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
+        //     border: 2px solid rgba(#4834d4, .3);
+        // }
+
+        &__row{
+            display: flex;
+            align-items: center;
         }
-
-        &:nth-child(even) {
-            background: linear-gradient(to left, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
-            border: 2px solid rgba(#4834d4, .3);
-        }
-
-        .avatar {
-            width: 150px;
-            height: 30px;
+        .view-cta {
+            
+            
             overflow: hidden;
             position: absolute;
             right: 20px;
@@ -51,19 +61,91 @@
             }
         }
 
-        .name,
-        .challenge {
-            font-size: 16px;
-            color: #fff;
-            padding: 10px;
-
+        .challenge{
+            
+            margin: 0 20px;
+            .name{font-size: 14px; color: #FFF;}
+            .desc{font-size: 10px;     padding-top: 4px;
+                color: rgba(#FFF, .5);
+            }
         }
+
+     
 
         .icon {
             color: #FFFFFF;
             font-size: 40px;
         }
 
+    }
+    .userlist{
+        color: #FFF;
+        margin: 0 20px;
+
+        span{
+            width: 40px; height: 40px; 
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-flex;
+            border: 2px solid #fff;
+            
+            margin-left: -10px;
+
+            img{object-fit: cover; width: 100%; height: 100%;}
+        }
+        
+    }
+    .showmore{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto 10px;
+    width: 100%;
+        ul{
+            display: flex;
+            align-items: center;
+            margin: 5px auto;
+            width: 100%;
+            border: 2px solid;
+    border-radius: 20px;
+
+          &:nth-child(odd) {
+            background: linear-gradient(to right, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
+            border: 2px solid rgba(#4834d4, .3);
+        }
+
+        &:nth-child(even) {
+            background: linear-gradient(to left, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
+            border: 2px solid rgba(#4834d4, .3);
+        }
+        }
+            .name, .tname, .stepcount{
+                padding: 0 15px;
+            }
+
+        .avatar{
+            margin-right: 10px;
+            width: 40px; height: 40px; 
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-flex;
+            img{object-fit: cover; width: 100%; height: 100%;}
+        }
+        .name, .tname, .stepcount{
+            font-size: 14px;
+            color: #fff;
+        }
+        
+
+    }
+    .view-cta{
+        background:rgba(#a5b2ff, .7);
+        color:#0c2461;
+        border-radius: 20px;
+    font-size: 12px;
+    padding: 10px;
+    .icon-leaderboard2{margin-right: 5px; font-size: 18px;}
+    .icon-arrow-down{margin-left: 5px; font-size: 14px;}
+    
     }
 }
 
@@ -152,4 +234,41 @@
 .is-flipped.is-open .choices__inner {
 	border-radius: 0 0 $choices-border-radius $choices-border-radius;
 }
+}
+
+
+
+
+.challenge-banner{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #0c2461;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    mix-blend-mode: screen;
+    border: 2px solid rgba(#4834d4, .3);
+
+    button{
+        position: relative;
+        z-index: 1;
+        min-height: 60px;
+        border: 2px solid #4834d4;
+        width: 100%;
+        max-width: 240px;
+    }
+    img{
+        position: absolute; 
+        width: 100%; height: 100%; 
+        object-fit: cover;
+        opacity: 0.8;
+        z-index: 0;
+        inset: 0;
+    }
 }
