@@ -99,7 +99,7 @@
 </section> 
 
 
-<section class="lb-ranking-table">
+<section class="lb-ranking-table" [@listAnimation]="leaderBoardData.length">
     
     <div class="lb-ranking-row " *ngFor="let person of leaderBoardData; index as i">
         <div class="row__inner  id__{{person?.userId}}"  [class.myRank]="person?.userId === userId">

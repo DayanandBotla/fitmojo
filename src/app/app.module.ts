@@ -20,6 +20,7 @@ import { TokenInterceptorService } from './token-interceptor.service';
 import { ProgressChartComponent } from './progress-chart/progress-chart.component';
 import { SafePipe } from './safe.pipe';
 import { ChallengesComponent } from './challenges/challenges.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ChallengesComponent } from './challenges/challenges.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,

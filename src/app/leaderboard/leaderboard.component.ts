@@ -3,11 +3,26 @@ import { Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { ApiService } from '../api.service';
 import { UserService } from '../user.service';
+import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 
+export const listAnimation = trigger('listAnimation', [
+  transition('* <=> *', [
+    query(':enter',
+      [style({ opacity: 0 }), stagger('60ms', animate('600ms ease-out', style({ opacity: 1 })))],
+      { optional: true }
+    ),
+    query(':leave',
+      animate('200ms', style({ opacity: 0 })),
+      { optional: true}
+    )
+  ])
+]);
 @Component({
   selector: 'app-leaderboard',
   templateUrl: './leaderboard.component.html',
-  styleUrls: ['./leaderboard.component.scss']
+  styleUrls: ['./leaderboard.component.scss'],
+  animations: [ listAnimation]
+
 })
 export class LeaderboardComponent {
   leaderBoardData=[];
@@ -16,6 +31,9 @@ export class LeaderboardComponent {
   leaderBoardInterval
   userId;
   leaderBoardType = "MONTHLY"
+
+
+  
   constructor(
     private apiService:ApiService,
     private userService:UserService
