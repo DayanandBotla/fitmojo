@@ -74,8 +74,8 @@
     
 </section>
 
-<section class="lb-ranking-table myrank" *ngIf="userCurrentRank >= 10">
-    <h3 style="color: #fff; text-align: center;">My current rank</h3>
+<section class="myrank-row" *ngIf="userCurrentRank >= 10">
+    <h3 >My current rank {{userCurrentRank}}</h3>
     <div  class="lb-ranking-row " >
         <div class="row__inner myRank">
             <div class="badge"></div>
@@ -83,7 +83,7 @@
                 <span>Rank</span>
             </div>
             <div class="avatar">
-                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="{{leaderBoardData[userCurrentRank - 1].name}}" title="{{leaderBoardData[userCurrentRank - 1].name}}" (error)="onImgError($event)">
+                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="{{leaderBoardData[userCurrentRank - 1]?.name}}" title="{{leaderBoardData[userCurrentRank - 1]?.name}}" (error)="onImgError($event)">
             </div>
             <div class="name">{{leaderBoardData[userCurrentRank - 1]?.name}}</div>
             <div class="name teamname">{{leaderBoardData[userCurrentRank - 1]?.teamName}}</div>
@@ -97,11 +97,13 @@
         </div>
     </div>
 </section> 
+
+
 <section class="lb-ranking-table">
     
     <div class="lb-ranking-row " *ngFor="let person of leaderBoardData; index as i">
-        <div class="row__inner  id__{{person.userId}}"  [class.myRank]="person.userId === userId">
-            <img class="bg-svg" src="../assets/img/bg-color-anime.svg" *ngIf="person.userId === userId">
+        <div class="row__inner  id__{{person?.userId}}"  [class.myRank]="person?.userId === userId">
+            <img class="bg-svg" src="../assets/img/bg-color-anime.svg" *ngIf="person?.userId === userId">
         <div class="badge">
             <img *ngIf="i+1 === 1" src="../assets/img/gold-medal.png" alt="gold medal">
             <img *ngIf="i+1 === 2"  src="../assets/img/silver-medal.png" alt="silver medal">
@@ -128,7 +130,7 @@
     </div>
 </section>
 
-<section class="charts w-80">
+<section class="charts">
     <app-progress-chart *ngIf="!isUserIntegrationOpen"></app-progress-chart>
     <p *ngIf="isUserIntegrationOpen">Please Conect yout Fitness Device to see your Progress</p>
 </section>

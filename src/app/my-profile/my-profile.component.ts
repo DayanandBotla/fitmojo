@@ -15,6 +15,7 @@ export class MyProfileComponent {
   @Input() userData;
   greetingTxt;
   daymoods = ['Grateful', 'Blessed', 'Excited', 'Relaxed', 'Stressed', 'Sad' ]
+  steps = ['1k', '5k', '10k', '25k', '50k', '100k' ]
   constructor(
     private router: Router,
     private userService: UserService,

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { ApiService } from '../api.service';
@@ -18,6 +18,27 @@ export class HomeComponent {
   challengesPage = false;
   profilePage = false;
   userData:any;
+
+  appSettingsOpen = false;
+  appSettingBtnClick = false;
+
+  appSettingsLists = ['Pause my feed', 'Resume my feed', 'Disconnect me']
+
+  @HostListener('document:click', ['$event'])
+  onClick() {
+    if (!this.appSettingBtnClick) {
+      this.appSettingsOpen = false;
+    }
+    this.appSettingBtnClick = false;
+  }
+  @HostListener('window:scroll', ['$event']) onScroll() {
+    const ww = document.body.clientWidth;
+    if (ww <= 1199) {
+      this.appSettingsOpen = false;
+    }
+  }
+
+  
   constructor(
     private userService: UserService,
     private router:Router,
@@ -85,6 +106,15 @@ export class HomeComponent {
         }
       )
     }
+  }
+
+  toggleAppSettingButton() {
+    this.appSettingsOpen = !this.appSettingsOpen;
+  }
+
+  preventCloseOnClick() {
+    this.appSettingBtnClick = true;
+
   }
 
 }

@@ -49,7 +49,7 @@ main,
 .logo {
     //width: 150px;
     cursor: pointer;
-    height: 50px;
+    height: 44px;
     position: sticky;
     top: 0;
 
@@ -66,6 +66,35 @@ main,
     }
 }
 
+.wellness-dd{
+    position: relative;
+    &__btn{
+        height: 40px;
+        border: 2px solid #4834d4;
+    }
+    &__wrap{
+        margin-top: 5px;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(to bottom, #4834d4 20%, #0c2461 100%);
+        border-radius: 10px;
+        border: 2px solid #4834d4;
+
+    }
+    &--list{
+        font-size: 14px;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        &:hover,&.active{
+            background: #4834d4;
+            border-color: rgba(#FFF, .2);
+        }
+    }
+    &--list+&--list{margin-top: 5px;}
+}
 
 .left-nav{
     @media  (min-width:1025px) {

@@ -1,7 +1,10 @@
 <h1 class="page-title fadeIn" title="{{greetingTxt}}, {{userData?.name}}">{{greetingTxt}}, {{userData?.name}}</h1>
-<h3 class="leadtxt fadeIn">How are you feeeling today?</h3>
 
-<section class="mood">
+<section class="section-gap">
+    <h3 class="leadtxt fadeIn">How are you feeeling today?</h3>
+    <div class="mood ">
+    
+    
     <div class="mood--list fadeInUp" *ngFor="let todaymood of daymoods">
         <div class="inside">
         <span class="emoji">
@@ -10,4 +13,19 @@
         <span class="txt">{{todaymood}}</span>
         </div>
     </div>
+</div>
 </section>
+<section class="section-gap">
+    <h3 class="leadtxt gradText fadeIn ">My badges</h3>
+
+    <div class="badge mood">
+        
+        <div class="badge--list mood--list fadeInUp" *ngFor="let step of steps">
+            <div class="inside">
+            <img src="../assets/img/badge/{{step}}-steps.png" alt="{{step}} steps" >
+        </div>
+        </div>
+    </div>
+    
+</section>
+

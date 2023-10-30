@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.eot?8d8e8bb34829b19150b407d55e5e09c7#iefix") format("embedded-opentype"),
-url("./icons.woff2?8d8e8bb34829b19150b407d55e5e09c7") format("woff2"),
-url("./icons.woff?8d8e8bb34829b19150b407d55e5e09c7") format("woff");
+    src: url("./icons.eot?210eae6e285a3ddee4c1dfe44d52f96f#iefix") format("embedded-opentype"),
+url("./icons.woff2?210eae6e285a3ddee4c1dfe44d52f96f") format("woff2"),
+url("./icons.woff?210eae6e285a3ddee4c1dfe44d52f96f") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -34,90 +34,96 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-calendar:before {
     content: "\f106";
 }
-.icon-category:before {
+.icon-camera:before {
     content: "\f107";
 }
-.icon-celebration:before {
+.icon-category:before {
     content: "\f108";
 }
-.icon-change_circle:before {
+.icon-celebration:before {
     content: "\f109";
 }
-.icon-close:before {
+.icon-change_circle:before {
     content: "\f10a";
 }
-.icon-connect:before {
+.icon-close:before {
     content: "\f10b";
 }
-.icon-error:before {
+.icon-connect:before {
     content: "\f10c";
 }
-.icon-event:before {
+.icon-error:before {
     content: "\f10d";
 }
-.icon-exit:before {
+.icon-event:before {
     content: "\f10e";
 }
-.icon-eye-off:before {
+.icon-exit:before {
     content: "\f10f";
 }
-.icon-eye:before {
+.icon-eye-off:before {
     content: "\f110";
 }
-.icon-foot:before {
+.icon-eye:before {
     content: "\f111";
 }
-.icon-goal:before {
+.icon-foot:before {
     content: "\f112";
 }
-.icon-heart_plus:before {
+.icon-goal:before {
     content: "\f113";
 }
-.icon-help:before {
+.icon-heart_plus:before {
     content: "\f114";
 }
-.icon-home:before {
+.icon-help:before {
     content: "\f115";
 }
-.icon-img:before {
+.icon-home:before {
     content: "\f116";
 }
-.icon-info:before {
+.icon-img:before {
     content: "\f117";
 }
-.icon-key:before {
+.icon-info:before {
     content: "\f118";
 }
-.icon-leaderboard:before {
+.icon-key:before {
     content: "\f119";
 }
-.icon-leaderboard2:before {
+.icon-leaderboard:before {
     content: "\f11a";
 }
-.icon-lock:before {
+.icon-leaderboard2:before {
     content: "\f11b";
 }
-.icon-login:before {
+.icon-lock:before {
     content: "\f11c";
 }
-.icon-logout:before {
+.icon-login:before {
     content: "\f11d";
 }
-.icon-mail:before {
+.icon-logout:before {
     content: "\f11e";
 }
-.icon-medal:before {
+.icon-mail:before {
     content: "\f11f";
 }
-.icon-steps:before {
+.icon-medal:before {
     content: "\f120";
 }
-.icon-upload_file:before {
+.icon-setting:before {
     content: "\f121";
 }
-.icon-verified:before {
+.icon-steps:before {
     content: "\f122";
 }
-.icon-water_drop:before {
+.icon-upload_file:before {
     content: "\f123";
+}
+.icon-verified:before {
+    content: "\f124";
+}
+.icon-water_drop:before {
+    content: "\f125";
 }
