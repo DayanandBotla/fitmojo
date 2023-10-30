@@ -69,12 +69,15 @@
     .userlist{
         color: #FFF;
         margin: 0 20px;
+        display: inline-flex;
 
         span{
             width: 40px; height: 40px; 
             border-radius: 50%;
             overflow: hidden;
             display: inline-flex;
+            align-items: center;
+            justify-content: center;
             border: 2px solid #fff;
             
             margin-left: -10px;
