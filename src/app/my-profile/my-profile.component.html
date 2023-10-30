@@ -56,9 +56,7 @@
 
                 <div class="user-detail--field c-team">
                     <label>{{userData?.userIntegrationDetails?.integrationType}} feed status : <strong
-                            class="integration-status"
-                            [class.active]="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'">
-                            {{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
+                            class="integration-status {{userData?.userIntegrationDetails?.integrationStatus}}" >{{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
 
                 </div>
             </div>

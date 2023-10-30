@@ -72,7 +72,10 @@
 .user-detail{
     border-radius: 10px;
     padding: 20px;
-    .col + .col{margin-top: 10px;}
+    @media(max-width: 767px) and (orientation: portrait),(max-width: 992px) and (orientation: landscape) {
+        .col + .col{margin-top: 30px;}
+    }
+    
     hr{
         height: 2px;
         width: 100%;
@@ -131,9 +134,21 @@
     .integration-status{
         font-size: 16px;
         font-weight: 700;
-        color: grey;
-        &.active{
-            color: lime;
+        padding: 2px 4px!important;
+        border-radius: 4px;
+        color: #0c2461!important;
+        margin-left: 10px;
+        &.ACTIVE{
+            background: lime;
+        }
+        &.PAUSE{
+            background: red;
+        }
+        &.RESUME{
+            background: orange;
+        }
+        &.INACTIVE{
+            background:  grey;
         }
     }
 }
