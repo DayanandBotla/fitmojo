@@ -64,20 +64,20 @@
                             {{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
 
                     <label *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'INACTIVE'" >Integration feed status : <strong
-                                class="integration-status"
+                                class="integration-status {{userData?.userIntegrationDetails?.integrationStatus}}"
                                 [class.active]="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'">
                                 {{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
-                    <div>
-                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'" (click)="updateIntegrationDetails('PAUSE',userData?.userIntegrationDetails?.integrationType)">
+                    <div class="btn-group">
+                        <button class="btn-md btn-1 pause" *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'" (click)="updateIntegrationDetails('PAUSE',userData?.userIntegrationDetails?.integrationType)">
                             Pause
                         </button>
-                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'PAUSE'" (click)="updateIntegrationDetails('RESUME',userData?.userIntegrationDetails?.integrationType)">
+                        <button class="btn-md btn-1 resume" *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'PAUSE'" (click)="updateIntegrationDetails('RESUME',userData?.userIntegrationDetails?.integrationType)">
                             Resume
                         </button>
-                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus !== 'INACTIVE'"  (click)="updateIntegrationDetails('INACTIVE',userData?.userIntegrationDetails?.integrationType)">
+                        <button class="btn-md btn-1 disconnect" *ngIf="userData?.userIntegrationDetails?.integrationStatus !== 'INACTIVE'"  (click)="updateIntegrationDetails('INACTIVE',userData?.userIntegrationDetails?.integrationType)">
                             Disconnect
                         </button>
-                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'INACTIVE'"  (click)="updateIntegrationDetails('CONNECT',userData?.userIntegrationDetails?.integrationType)">
+                        <button class="btn-md btn-1 connect" *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'INACTIVE'"  (click)="updateIntegrationDetails('CONNECT',userData?.userIntegrationDetails?.integrationType)">
                             Connect Now
                         </button>
                         

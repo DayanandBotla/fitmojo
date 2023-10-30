@@ -8,18 +8,6 @@
       <div class="logo" routerLink="/">
         <img class="logo-img" src="../assets/img/logo.svg" alt="logo">
       </div>
-      <div class="wellness-dd">
-
-    
-        <button class="wellness-dd__btn btn-1 btn-md" (click)="toggleAppSettingButton(); preventCloseOnClick()">App Settings
-          <i class="icon-setting"></i></button>
-
-        <div class="wellness-dd__wrap" *ngIf="appSettingsOpen" [class.open]="appSettingsOpen" (click)="preventCloseOnClick()">
-          <div class="wellness-dd--list" *ngFor="let appSettingsList of appSettingsLists">
-            {{appSettingsList}}
-          </div>
-        </div>
-      </div>
     </header>
     <section class="appbody">
       <app-leaderboard *ngIf="!challengesPage && !profilePage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>

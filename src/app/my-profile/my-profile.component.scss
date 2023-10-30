@@ -130,6 +130,24 @@
                 // color: #a5b2ff;
             }
         }
+
+        .btn-group{
+         display: flex;   
+         button{height: 40px;}
+         .pause{
+            background: rgba(orange, .5);
+         }
+         .disconnect{
+            background: rgba(red, .5);
+         }
+         .resume{
+            background: rgba(orange, .8);
+         }
+         .connect{
+            background: rgba(lime, .8);
+         }
+         button + button{margin-left: 10px;}
+        }
     }
     .integration-status{
         font-size: 16px;
@@ -148,7 +166,8 @@
             background: orange;
         }
         &.INACTIVE{
-            background:  grey;
+            background:  slategrey;
+            color: #000!important;
         }
     }
 }
