@@ -76,7 +76,7 @@ export class HomeComponent {
         if(userDetails?.status === 'SUCCESS' && userDetails?.user){
           this.userService.userProfile = userDetails?.user;
           this.userData = userDetails?.user;
-
+          console.log(this.userData)
           if(userDetails?.user?.userClientDetails?.teamId === 0){
             this.isTeamAvailable = false;
           } else {

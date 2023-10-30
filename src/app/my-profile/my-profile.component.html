@@ -3,29 +3,97 @@
 <section class="section-gap">
     <h3 class="leadtxt fadeIn">How are you feeeling today?</h3>
     <div class="mood ">
-    
-    
-    <div class="mood--list fadeInUp" *ngFor="let todaymood of daymoods">
-        <div class="inside">
-        <span class="emoji">
-            <img src="../assets/img/emoji/{{todaymood | lowercase}}.webp" alt="{{todaymood}}" title="{{todaymood}}">
-        </span>
-        <span class="txt">{{todaymood}}</span>
+
+
+        <div class="mood--list fadeInUp" *ngFor="let todaymood of daymoods">
+            <div class="inside">
+                <span class="emoji">
+                    <img src="../assets/img/emoji/{{todaymood | lowercase}}.webp" alt="{{todaymood}}"
+                        title="{{todaymood}}">
+                </span>
+                <span class="txt">{{todaymood}}</span>
+            </div>
         </div>
     </div>
-</div>
+</section>
+<section class="section-gap">
+    <h3 class="leadtxt gradText fadeIn ">My details</h3>
+    <div class="user-detail bg">
+
+        <h5 class="user-detail--title">Team details</h5>
+        <div class="row">
+            <div class="col">
+                <div class="c-team">
+                    <label>Organization - <strong> {{userData?.userClientDetails?.clientName}}</strong></label>
+                    <p><img class="c-logo" alt="{{userData?.userClientDetails?.clientProfilePicUrl.split('.')[0]}}"
+                            src="../assets/img/clientlogo/{{userData?.userClientDetails?.clientProfilePicUrl.split('.')[0]}}.png" />
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="c-team">
+                    <label>Team name : <strong> {{userData?.userClientDetails?.teamName}}</strong></label>
+                    <p><img class="c-logo" alt="{{userData?.userClientDetails?.teamProfilePicUrl.split('.')[0]}}"
+                            src="../assets/img/clientlogo/{{userData?.userClientDetails?.teamProfilePicUrl.split('.')[0]}}.png" />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <h5 class="user-detail--title">Integration details</h5>
+        <div class="row">
+            <div class="col">
+                <div class="user-detail--field c-team">
+                    <label>Integration type :
+                        <strong>{{userData?.userIntegrationDetails?.integrationType}}</strong></label>
+                    <p><img class="c-logo"
+                            src="../assets/img/clientlogo/{{userData?.userIntegrationDetails?.integrationType}}.png"
+                            alt="{{userData?.userIntegrationDetails?.integrationType}}" /></p>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="user-detail--field c-team">
+                    <label>{{userData?.userIntegrationDetails?.integrationType}} feed status : <strong
+                            class="integration-status"
+                            [class.active]="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'">
+                            {{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
+
+                </div>
+            </div>
+        </div>
+        <hr />
+        <h5 class="user-detail--title">Personal details</h5>
+        <div class="row">
+            <div class="col">
+                <div class="user-detail--field c-team">
+                    <!-- <label>Profile photo</label> -->
+                    <p><img class="user-photo" src="http://10.0.4.51:8080/FitMojo-v1{{userData?.profilePicUrl}}" /></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="user-detail--field c-team">
+                    <label>Name : <strong> {{userData?.name}}</strong></label>
+
+                </div>
+                <div class="user-detail--field c-team">
+                    <label>Email : <strong>{{userData?.emailId}}</strong></label>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="section-gap">
     <h3 class="leadtxt gradText fadeIn ">My badges</h3>
-
     <div class="badge mood">
-        
+
         <div class="badge--list mood--list fadeInUp" *ngFor="let step of steps">
             <div class="inside">
-            <img src="../assets/img/badge/{{step}}-steps.png" alt="{{step}} steps" >
-        </div>
+                <img src="../assets/img/badge/{{step}}-steps.png" alt="{{step}} steps">
+            </div>
         </div>
     </div>
-    
-</section>
 
+</section>
