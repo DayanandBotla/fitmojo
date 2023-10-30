@@ -24,11 +24,11 @@
             
             <!-- <div class="userlist">{{challange | json}}</div> -->
             <div class="userlist">
-                <span *ngFor="let person of challange.userDetailsList">
+                <span *ngFor="let person of challange.userDetailsList.slice(0,5)">
                     <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person?.userId}}/{{person?.profilePicUrl}}" />
                 </span>
-                <span class="noBg">
-                    +6
+                <span class="noBg" *ngIf="challange.userDetailsList.length > 5">
+                    +{{challange.userDetailsList.length - 5}}
                 </span>
             </div>
             <!-- (click)="viewChallangeLeaderboard(challange.challengeId)" -->
@@ -37,9 +37,9 @@
             </div>
             </div>
             <ng-container *ngIf="challange.challengeId === showmore ">
-            <div class="showmore" *ngIf="challange.userDetailsList" [@listAnimation]="challange.userDetailsList.length">
-                <ng-container *ngFor="let person of challange.userDetailsList">
-                    <ul>
+            <div class="showmore" *ngIf="leaderBoardData" [@listAnimation]="leaderBoardData.length">
+                <ng-container *ngFor="let person of leaderBoardData">
+                    <ul [class.active]="userId === person?.userId">
                         <li class="avatar"><img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person?.userId}}/{{person?.profilePicUrl}}" /></li>
                         <li class="name">{{person?.name}}</li>
                         <li class="tname">{{person?.teamName}}</li>

@@ -43,20 +43,45 @@
 
         <h5 class="user-detail--title">Integration details</h5>
         <div class="row">
-            <div class="col">
+            <div class="col" *ngIf="userData?.userIntegrationDetails?.integrationStatus !== 'INACTIVE'">
                 <div class="user-detail--field c-team">
-                    <label>Integration type :
-                        <strong>{{userData?.userIntegrationDetails?.integrationType}}</strong></label>
-                    <p><img class="c-logo"
-                            src="../assets/img/clientlogo/{{userData?.userIntegrationDetails?.integrationType}}.png"
-                            alt="{{userData?.userIntegrationDetails?.integrationType}}" /></p>
+                    <div>
+                        <label >Integration type :
+                            <strong >{{userData?.userIntegrationDetails?.integrationType }}</strong></label>
+                            
+                        <p><img  class="c-logo"
+                                src="../assets/img/clientlogo/{{userData?.userIntegrationDetails?.integrationType}}.png"
+                                alt="{{userData?.userIntegrationDetails?.integrationType}}" /></p>
+                    </div>
+                    
                 </div>
             </div>
             <div class="col">
 
                 <div class="user-detail--field c-team">
-                    <label>{{userData?.userIntegrationDetails?.integrationType}} feed status : <strong
-                            class="integration-status {{userData?.userIntegrationDetails?.integrationStatus}}" >{{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
+                    <label *ngIf="userData?.userIntegrationDetails?.integrationStatus !== 'INACTIVE'" >{{userData?.userIntegrationDetails?.integrationType}} feed status : <strong
+                            class="integration-status {{userData?.userIntegrationDetails?.integrationStatus}}">
+                            {{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
+
+                    <label *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'INACTIVE'" >Integration feed status : <strong
+                                class="integration-status"
+                                [class.active]="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'">
+                                {{userData?.userIntegrationDetails?.integrationStatus}}</strong></label>
+                    <div>
+                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'ACTIVE'" (click)="updateIntegrationDetails('PAUSE',userData?.userIntegrationDetails?.integrationType)">
+                            Pause
+                        </button>
+                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'PAUSE'" (click)="updateIntegrationDetails('RESUME',userData?.userIntegrationDetails?.integrationType)">
+                            Resume
+                        </button>
+                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus !== 'INACTIVE'"  (click)="updateIntegrationDetails('INACTIVE',userData?.userIntegrationDetails?.integrationType)">
+                            Disconnect
+                        </button>
+                        <button *ngIf="userData?.userIntegrationDetails?.integrationStatus === 'INACTIVE'"  (click)="updateIntegrationDetails('CONNECT',userData?.userIntegrationDetails?.integrationType)">
+                            Connect Now
+                        </button>
+                        
+                    </div>
 
                 </div>
             </div>

@@ -40,6 +40,8 @@ export class ChallengesComponent extends FormValidators{
   challangeList = []
   choicesDropdown;
   showmore;
+  leaderBoardData = [];
+  userId;
   constructor(
     public ngxSmartModalService: NgxSmartModalService,
     private apiService:ApiService,
@@ -49,10 +51,10 @@ export class ChallengesComponent extends FormValidators{
   }
 
   ngOnInit(){
-    let userId = this.userService.userId;
+    this.userId = this.userService.userId;
 
     forkJoin({
-      userChallanges: this.apiService.getUserChallenges({userId:userId}),
+      userChallanges: this.apiService.getUserChallenges({userId:this.userId}),
       allUserDetails: this.apiService.getAllUserDetails()
     }).subscribe(({userChallanges, allUserDetails}) =>{
       if(userChallanges && userChallanges?.status=== "SUCCESS"){
@@ -158,9 +160,10 @@ export class ChallengesComponent extends FormValidators{
   viewChallangeLeaderboard(challangeId){
     this.apiService.getChallengeLeaderBoard(challangeId).subscribe(
       challangeLeaderboard =>{
-        this.showmore =challangeId;
-        console.log(challangeLeaderboard, this.showmore, 'sss');
-        
+        if(challangeLeaderboard?.status === "SUCCESS"){
+          this.showmore =challangeId;
+          this.leaderBoardData = challangeLeaderboard?.leaderBoardList || []
+        }
       }
     )
   }

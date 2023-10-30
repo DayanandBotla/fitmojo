@@ -40,7 +40,7 @@ export class TeamSelectionComponent {
     }
   ];
 
-  uploadProfilePic = true;
+  uploadProfilePic = false;
   teamSelectionForm:FormGroup = this.formBuilder.group({
     userId:['', Validators.required],
     teamId:[1, Validators.required],
@@ -60,9 +60,11 @@ export class TeamSelectionComponent {
     if(userId){
       this.teamSelectionForm.get('userId').setValue(userId);
       const userProfile = this.userService.userProfile;
+      if(!userProfile?.profilePicUrl){
         this.uploadProfilePic = true;
         this.teamSelectionForm.addControl('image',new FormControl('',[Validators.required]))
         this.teamSelectionForm.addControl('fileName',new FormControl('',[Validators.required]))
+      }
 
     //     image: new FormControl('', [Validators.required]),
     // fileName: new FormControl('', [Validators.required])
@@ -81,20 +83,18 @@ export class TeamSelectionComponent {
 
   saveTeamDetails(){
     let formData
-    if(this.uploadProfilePic){
-      formData =  new FormData();
+    formData =  new FormData();
       formData.append("userId",(this.teamSelectionForm?.get('userId')?.value || ""))
       formData.append("teamId",(this.teamSelectionForm?.get('teamId')?.value || ""))
       formData.append("clientTeamId",(this.teamSelectionForm?.get('clientTeamId')?.value || ""))
+    if(this.uploadProfilePic){
       formData.append('image', (this.teamSelectionForm?.get('image')?.value || ""));
-    } else {
-      formData = this.teamSelectionForm.value;
     }
 
     this.apiService.updateUser(formData).subscribe(
       updateUserResponse =>{
         if(updateUserResponse?.status === "SUCCESS"){
-          this.userService.broadcastIsUserProfileUpdated(true);
+          this.userService.broadcastIsUserProfileUpdated("forceCall");
           this.router.navigate(['/home'])
         }
       }

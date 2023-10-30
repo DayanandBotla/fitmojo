@@ -1,10 +1,10 @@
 import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { ApiService } from '../api.service';
 import { AuthService } from '../auth.service';
 import { UserService } from '../user.service';
-
+import { NgxSmartModalService } from 'ngx-smart-modal';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -43,11 +43,18 @@ export class HomeComponent {
     private userService: UserService,
     private router:Router,
     private apiService:ApiService,
-    private authService:AuthService
+    private authService:AuthService,
+    private activatedRoute:ActivatedRoute,
+    public ngxSmartModalService: NgxSmartModalService,
   ){
     this.userService.isUserProfileUpdated$.pipe(takeUntil(this.destroy$)).subscribe(status => {
+      let isForceCall = status === "forceCall"? true : status;
+      this.getUserDetails(isForceCall);
+
+    });
+    this.userService.openConnect$.pipe(takeUntil(this.destroy$)).subscribe(status => {
       if(status){
-        this.getUserDetails();
+        this.navClicked("connectAccount");
       }
     });
   }
@@ -70,23 +77,58 @@ export class HomeComponent {
     this.getUserDetails();
   }
 
-  getUserDetails(){
-    this.userService.getUserProfile().subscribe(
+  ngAfterViewInit(){
+    this.activatedRoute.queryParams
+      .subscribe(params => {
+        setTimeout(()=>{
+          if(params['connectsuccess']){
+            this.ngxSmartModalService.getModal('connectSuccess').open()
+            // setTimeout(()=>{
+            //   this.closeConnectSuccess()
+            // },3000)
+          }
+          this.removeQueryParams()
+        })
+        
+      }
+    );
+  }
+
+  removeQueryParams(){
+    this.router.navigate(
+      [],
+      {
+        queryParams: {
+          connectSuccess: null,  
+          jwtToken: null, 
+          msLogin: null, 
+          userId: null, 
+
+        },
+      }
+    )
+  }
+
+  closeConnectSuccess(){
+    this.ngxSmartModalService.getModal('connectSuccess').close()
+
+  }
+
+  getUserDetails(status = false){
+    this.userService.getUserProfile(status).subscribe(
       userDetails =>{
-        if(userDetails?.status === 'SUCCESS' && userDetails?.user){
-          this.userService.userProfile = userDetails?.user;
-          this.userData = userDetails?.user;
-          if(userDetails?.user?.userClientDetails?.teamId === 0){
+          this.userData = userDetails;
+          if(userDetails['userClientDetails']?.teamId === 0){
             this.isTeamAvailable = false;
           } else {
             this.isTeamAvailable = true;
-            if(!userDetails?.user?.userIntegrationDetails?.integrationStatus){
+            if(!userDetails['userIntegrationDetails']?.integrationStatus){
               this.isUserIntegrationOpen = true
             } else{
               this.isUserIntegrationOpen = false
             }
           }
-        }
+
       }
     )
   }

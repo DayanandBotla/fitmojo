@@ -85,7 +85,10 @@ export class ApiService {
   getChallengeLeaderBoard(challangeId){
     return this.post("getChallengeLeaderBoard",challangeId)
   }
-
   
+  updateUserIntegrationDetails(statusReq){
+    return this.post("updateUserIntegrationDetails",statusReq)
+
+  }
 
 }

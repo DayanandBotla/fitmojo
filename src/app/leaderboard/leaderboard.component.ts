@@ -31,9 +31,7 @@ export class LeaderboardComponent {
   leaderBoardInterval
   userId;
   leaderBoardType = "MONTHLY"
-
-
-  
+  userProfile;
   constructor(
     private apiService:ApiService,
     private userService:UserService
@@ -55,12 +53,13 @@ export class LeaderboardComponent {
 
   getLeaderBoard(leaderBoardType){
     this.leaderBoardType = leaderBoardType
-    this.userId = this.userService.userId
+    this.userId = this.userService.userId;
     this.apiService.getLeaderBoard({
         "userId": this.userId,
         "summaryType" : leaderBoardType
     }).subscribe(
       leaderBoardResponse =>{
+        this.userProfile = this.userService.userProfile
         this.leaderBoardData = leaderBoardResponse?.leaderBoardList || [];
         this.userCurrentRank = leaderBoardResponse?.userCurrentRank ;
       },
