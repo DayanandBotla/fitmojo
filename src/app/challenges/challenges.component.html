@@ -7,7 +7,7 @@
 
 
     <div class="challenge-banner">
-        <img src="../assets/img/bg.jpeg" />
+        <img src="../assets/img/group-walk.jpeg" />
         <button class="btn-1 btn-md" (click)="createChallangeOpen()">Give a challenge <i
                 class="icon-arrow_forward2"></i></button>
     </div>
@@ -29,8 +29,8 @@
                 </span>
             </div>
             <!-- (click)="viewChallangeLeaderboard(challange.challengeId)" -->
-            <div class="view-cta" (click)="viewChallangeLeaderboard(challange.challengeId)">
-                <i class="icon-leaderboard2"></i>View Leaderboard <i class="icon-arrow-down"></i>
+            <div class="view-cta " (click)="viewChallangeLeaderboard(challange.challengeId)">
+                <i class="icon-leaderboard2"></i>View Leaderboard <i class="icon-arrow-down btn-1"></i>
             </div>
             </div>
             <ng-container *ngIf="challange.challengeId === showmore ">
