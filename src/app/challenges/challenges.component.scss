@@ -1,26 +1,21 @@
-.challenges{
-.leadtxt{
-    font-size: 24px;
-    color: #FFF;
-    margin-bottom: 40px;
-    span{font-size: 40px;}
-}
+.challenges {
 
-.cta-right{
-    text-align: right;
-    background: linear-gradient(to right, rgba(#4834d4, .5) 20%,rgba(#0c2461, .1)  100%);
-    border-radius: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    border: 2px solid rgba(#4834d4, .5);
-}
+
+    .cta-right {
+        text-align: right;
+        background: linear-gradient(to right, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        border: 2px solid rgba(#4834d4, .5);
+    }
 }
 
 
-.user{
-    &--list{
+.user {
+    &--list {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
@@ -28,40 +23,53 @@
         padding: 10px 20px;
         position: relative;
 
-        &:nth-child(odd){
-            background: linear-gradient(to right, rgba(#4834d4, .5) 20%,rgba(#0c2461, .1)  100%);
+        &:nth-child(odd) {
+            background: linear-gradient(to right, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
             border: 2px solid rgba(#4834d4, .3);
         }
-        &:nth-child(even){
-            background: linear-gradient(to left, rgba(#4834d4, .5) 20%,rgba(#0c2461, .1)  100%);
+
+        &:nth-child(even) {
+            background: linear-gradient(to left, rgba(#4834d4, .5) 20%, rgba(#0c2461, .1) 100%);
             border: 2px solid rgba(#4834d4, .3);
         }
-        .avatar{
+
+        .avatar {
             width: 30px;
             height: 30px;
             border-radius: 50%;
             overflow: hidden;
             position: absolute;
             right: 20px;
-            img{width: 100%; height: 100%; object-fit: contain;}
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
 
-        .name, .challenge{
+        .name,
+        .challenge {
             font-size: 16px;
             color: #fff;
             padding: 10px;
 
         }
-        .icon{color: #FFFFFF; font-size: 40px;}
+
+        .icon {
+            color: #FFFFFF;
+            font-size: 40px;
+        }
 
     }
 }
 
 
-.m-20{
+.m-20 {
     margin: 20px auto;
 }
-.formtitle{
+
+.formtitle {
     font-size: 20px;
     color: #4834d4;
     margin: 0px auto 20px;
@@ -69,12 +77,76 @@
     font-weight: 700;
 }
 
-.choices__item.choices__item--choice.choices__item--selectable{
-    color: red;
+
+::ng-deep {
+    $c-selector: "choices" !default;
+    $choices-border-radius: 8px !default;
+
+    .#{$c-selector} {
+        &__item {
+            display: inline-flex !important;
+            align-items: center;
+            padding: 2px 4px !important;
+            border: 1px solid #c8d6e5;
+
+            img {
+                width: 25px;
+                min-width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 5px;
+            }
+
+            &--selectable {
+                background: rgba(#0a3d62, .03);
+                border-radius: 20px;
+                margin: 2px 4px;
+                color: rgba(10, 61, 98, 0.8);
+                font-size: 14px !important;
+
+            }
+
+
+        }
+
+        &__button {
+            border-color: rgba(#FFF, .5) !important;
+        }
+
+        .#{$c-selector}__list--multiple .#{$c-selector}__item {
+            background: #4834d4;
+            color: #FFF;
+            border-color: transparent;
+        }
+
+        .#{$c-selector}__inner {
+            height: auto;
+
+            &__list {
+                [role="listbox"] {
+                    padding: 10px;
+                }
+            }
+        }
+
+    }
+
+
+.is-focused .choices__inner,
+.is-open .choices__inner,
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+	border: 2px solid #c8d6e5;
 }
 
-::ng-deep{
-    .choices__list--dropdown {
-        background-color: red;
-    }
+.is-open .choices__inner,
+.is-flipped .choices__list--dropdown,
+.is-flipped .choices__list[aria-expanded] {
+	border-radius: $choices-border-radius $choices-border-radius 0 0;
+}
+
+.is-flipped.is-open .choices__inner {
+	border-radius: 0 0 $choices-border-radius $choices-border-radius;
+}
 }

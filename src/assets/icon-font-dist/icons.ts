@@ -5,6 +5,7 @@ export type IconsId =
   | "arrow-down"
   | "bike"
   | "calendar"
+  | "camera"
   | "category"
   | "celebration"
   | "change_circle"
@@ -30,6 +31,7 @@ export type IconsId =
   | "logout"
   | "mail"
   | "medal"
+  | "setting"
   | "steps"
   | "upload_file"
   | "verified"
@@ -42,6 +44,7 @@ export type IconsKey =
   | "ArrowDown"
   | "Bike"
   | "Calendar"
+  | "Camera"
   | "Category"
   | "Celebration"
   | "ChangeCircle"
@@ -67,6 +70,7 @@ export type IconsKey =
   | "Logout"
   | "Mail"
   | "Medal"
+  | "Setting"
   | "Steps"
   | "UploadFile"
   | "Verified"
@@ -79,6 +83,7 @@ export enum Icons {
   ArrowDown = "arrow-down",
   Bike = "bike",
   Calendar = "calendar",
+  Camera = "camera",
   Category = "category",
   Celebration = "celebration",
   ChangeCircle = "change_circle",
@@ -104,6 +109,7 @@ export enum Icons {
   Logout = "logout",
   Mail = "mail",
   Medal = "medal",
+  Setting = "setting",
   Steps = "steps",
   UploadFile = "upload_file",
   Verified = "verified",
@@ -117,33 +123,35 @@ export const ICONS_CODEPOINTS: { [key in Icons]: string } = {
   [Icons.ArrowDown]: "61700",
   [Icons.Bike]: "61701",
   [Icons.Calendar]: "61702",
-  [Icons.Category]: "61703",
-  [Icons.Celebration]: "61704",
-  [Icons.ChangeCircle]: "61705",
-  [Icons.Close]: "61706",
-  [Icons.Connect]: "61707",
-  [Icons.Error]: "61708",
-  [Icons.Event]: "61709",
-  [Icons.Exit]: "61710",
-  [Icons.EyeOff]: "61711",
-  [Icons.Eye]: "61712",
-  [Icons.Foot]: "61713",
-  [Icons.Goal]: "61714",
-  [Icons.HeartPlus]: "61715",
-  [Icons.Help]: "61716",
-  [Icons.Home]: "61717",
-  [Icons.Img]: "61718",
-  [Icons.Info]: "61719",
-  [Icons.Key]: "61720",
-  [Icons.Leaderboard]: "61721",
-  [Icons.Leaderboard2]: "61722",
-  [Icons.Lock]: "61723",
-  [Icons.Login]: "61724",
-  [Icons.Logout]: "61725",
-  [Icons.Mail]: "61726",
-  [Icons.Medal]: "61727",
-  [Icons.Steps]: "61728",
-  [Icons.UploadFile]: "61729",
-  [Icons.Verified]: "61730",
-  [Icons.WaterDrop]: "61731",
+  [Icons.Camera]: "61703",
+  [Icons.Category]: "61704",
+  [Icons.Celebration]: "61705",
+  [Icons.ChangeCircle]: "61706",
+  [Icons.Close]: "61707",
+  [Icons.Connect]: "61708",
+  [Icons.Error]: "61709",
+  [Icons.Event]: "61710",
+  [Icons.Exit]: "61711",
+  [Icons.EyeOff]: "61712",
+  [Icons.Eye]: "61713",
+  [Icons.Foot]: "61714",
+  [Icons.Goal]: "61715",
+  [Icons.HeartPlus]: "61716",
+  [Icons.Help]: "61717",
+  [Icons.Home]: "61718",
+  [Icons.Img]: "61719",
+  [Icons.Info]: "61720",
+  [Icons.Key]: "61721",
+  [Icons.Leaderboard]: "61722",
+  [Icons.Leaderboard2]: "61723",
+  [Icons.Lock]: "61724",
+  [Icons.Login]: "61725",
+  [Icons.Logout]: "61726",
+  [Icons.Mail]: "61727",
+  [Icons.Medal]: "61728",
+  [Icons.Setting]: "61729",
+  [Icons.Steps]: "61730",
+  [Icons.UploadFile]: "61731",
+  [Icons.Verified]: "61732",
+  [Icons.WaterDrop]: "61733",
 };

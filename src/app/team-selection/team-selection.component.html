@@ -14,7 +14,7 @@
     </div>
 
     <div class="form-group">
-        <label for="internalteam">Select your organization</label>
+        <label for="internalteam">Select your team</label>
         <div class="select form-control">
         <select id="internalteam" formControlName="clientTeamId" name="clientTeamId">
             <option *ngFor="let team of internalTeam" value="{{team.id}}">{{team.name}}</option>

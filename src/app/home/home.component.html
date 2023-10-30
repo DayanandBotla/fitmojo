@@ -8,14 +8,23 @@
       <div class="logo" routerLink="/">
         <img class="logo-img" src="../assets/img/logo.svg" alt="logo">
       </div>
+      <div class="wellness-dd">
 
-      <!-- <div class="right">
-        <app-nav (navClicked)="navClicked($event)"></app-nav>
-      </div> -->
+    
+        <button class="wellness-dd__btn btn-1 btn-md" (click)="toggleAppSettingButton(); preventCloseOnClick()">App Settings
+          <i class="icon-setting"></i></button>
+
+        <div class="wellness-dd__wrap" *ngIf="appSettingsOpen" [class.open]="appSettingsOpen" (click)="preventCloseOnClick()">
+          <div class="wellness-dd--list" *ngFor="let appSettingsList of appSettingsLists">
+            {{appSettingsList}}
+          </div>
+        </div>
+      </div>
     </header>
     <section class="appbody">
-      <app-leaderboard *ngIf="!challengesPage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
+      <app-leaderboard *ngIf="!challengesPage && !profilePage" [isUserIntegrationOpen]="isUserIntegrationOpen"></app-leaderboard>
       <app-challenges *ngIf="challengesPage"></app-challenges>
+      <app-my-profile *ngIf="profilePage"  [userData]="userData" ></app-my-profile>
     </section>
   </main>
 
@@ -25,4 +34,4 @@
 
 <app-connect-wellness *ngIf="isUserIntegrationOpen" (closePopup)="navClicked($event)"></app-connect-wellness>
 
-<app-my-profile *ngIf="openMyProfile" (closePopup)="navClicked($event)"></app-my-profile>
+<!-- <app-my-profile *ngIf="openMyProfile" (closePopup)="navClicked($event)"></app-my-profile> -->

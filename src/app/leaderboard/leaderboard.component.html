@@ -1,4 +1,4 @@
-<h1 class="page-title" title="Leaderboard">Leaderboard</h1>
+<h1 class="page-title fadeIn" title="Leader board">Leader board <i class="icon-leaderboard2"></i></h1>
 
 <section class="lb-row  ">
     <div class="heros">
@@ -9,7 +9,7 @@
                 <button class="btn-lb" [ngClass]="{'active':leaderBoardType==='MONTHLY'}" (click)="getLeaderBoard('MONTHLY')">Monthly</button>
             </div>
             <div class="best3__wrapper">
-                <div class="  best3--c small-c top4 order4">
+                <div class="  best3--c small-c top4 order4 fadeInUp">
 
                     <div class="inner">
                         <img alt="{{leaderBoardData[3]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[3]?.userId}}/{{leaderBoardData[3]?.profilePicUrl}}" (error)="onImgError($event)">
@@ -22,7 +22,7 @@
                 </div>
         
 
-                <div class="  best3--c small-c top2 order2">
+                <div class="  best3--c small-c top2 order2 fadeInUp">
 
                     <div class="inner">
                         <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[1]?.userId}}/{{leaderBoardData[1]?.profilePicUrl}}" (error)="onImgError($event)">
@@ -34,16 +34,16 @@
                 </div>
                 </div>
         
-                <div class=" best3--c big-c top1 order1">
+                <div class=" best3--c big-c top1 order1 fadeInUp">
                     <div class="inner">
-                        <img alt="{{leaderBoardData[1]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[0]?.userId}}/{{leaderBoardData[0]?.profilePicUrl}}" (error)="onImgError($event)">
+                        <img alt="{{leaderBoardData[0]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[0]?.userId}}/{{leaderBoardData[0]?.profilePicUrl}}" (error)="onImgError($event)">
                     </div>
                     <div>
                     <div class="scrore">{{leaderBoardData[0]?.stepCount}}</div>
                     <div class="name">{{leaderBoardData[0]?.name}}</div>
                 </div>
                 </div>
-                <div class=" best3--c small-c top3 order2">
+                <div class=" best3--c small-c top3 order2 fadeInUp">
                     
                     <div class="inner">
                         <img alt="{{leaderBoardData[2]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[2]?.userId}}/{{leaderBoardData[2]?.profilePicUrl}}" (error)="onImgError($event)">
@@ -54,7 +54,7 @@
                 </div>
                 </div>
 
-                <div class="  best3--c small-c top5 order5">
+                <div class="  best3--c small-c top5 order5 fadeInUp">
 
                     <div class="inner">
                         <img alt="{{leaderBoardData[4]?.name}}" src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[4]?.userId}}/{{leaderBoardData[4]?.profilePicUrl}}" (error)="onImgError($event)">
@@ -74,8 +74,8 @@
     
 </section>
 
-<section class="lb-ranking-table myrank" *ngIf="userCurrentRank >= 10">
-    <h3 style="color: #fff; text-align: center;">My current rank</h3>
+<section class="myrank-row" *ngIf="userCurrentRank >= 10">
+    <h3 >My current rank {{userCurrentRank}}</h3>
     <div  class="lb-ranking-row " >
         <div class="row__inner myRank">
             <div class="badge"></div>
@@ -83,25 +83,27 @@
                 <span>Rank</span>
             </div>
             <div class="avatar">
-                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="{{leaderBoardData[userCurrentRank - 1].name}}" title="{{leaderBoardData[userCurrentRank - 1].name}}" (error)="onImgError($event)">
+                <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{leaderBoardData[userCurrentRank - 1]?.userId}}/{{leaderBoardData[userCurrentRank - 1]?.profilePicUrl}}" alt="{{leaderBoardData[userCurrentRank - 1]?.name}}" title="{{leaderBoardData[userCurrentRank - 1]?.name}}" (error)="onImgError($event)">
             </div>
-            <div class="name">{{leaderBoardData[userCurrentRank - 1].name}}</div>
-            <div class="name teamname">{{leaderBoardData[userCurrentRank - 1].teamName}}</div>
+            <div class="name">{{leaderBoardData[userCurrentRank - 1]?.name}}</div>
+            <div class="name teamname">{{leaderBoardData[userCurrentRank - 1]?.teamName}}</div>
             <div class="challenge">
                 <i class="icon-foot"></i>
                 <div class="txt">
                 <span>Steps</span>
-                <span>{{leaderBoardData[userCurrentRank - 1].stepCount}}</span>
+                <span>{{leaderBoardData[userCurrentRank - 1]?.stepCount}}</span>
                 </div>
             </div>
         </div>
     </div>
 </section> 
+
+
 <section class="lb-ranking-table">
     
     <div class="lb-ranking-row " *ngFor="let person of leaderBoardData; index as i">
-        <div class="row__inner id__{{person.userId}}"  [class.myRank]="person.userId === userId">
-            <img class="bg-svg" src="../assets/img/bg-color-anime.svg" *ngIf="person.userId === userId">
+        <div class="row__inner  id__{{person?.userId}}"  [class.myRank]="person?.userId === userId">
+            <img class="bg-svg" src="../assets/img/bg-color-anime.svg" *ngIf="person?.userId === userId">
         <div class="badge">
             <img *ngIf="i+1 === 1" src="../assets/img/gold-medal.png" alt="gold medal">
             <img *ngIf="i+1 === 2"  src="../assets/img/silver-medal.png" alt="silver medal">
@@ -112,23 +114,23 @@
         </div>
 
         <div class="avatar">
-            <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person.userId}}/{{person.profilePicUrl}}" alt="{{person.name}}" title="{{person.name}}" (error)="onImgError($event)">
+            <img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/{{person?.userId}}/{{person?.profilePicUrl}}" alt="{{person?.name}}" title="{{person?.name}}" (error)="onImgError($event)">
         </div>
-        <div class="name">{{person.name}}</div>
-        <div class="name teamname">{{person.teamName}}</div>
+        <div class="name">{{person?.name}}</div>
+        <div class="name teamname">{{person?.teamName}}</div>
         
         <div class="challenge">
             <i class="icon-foot"></i>
             <div class="txt">
             <span>Steps</span>
-            <span>{{person.stepCount}}</span>
+            <span>{{person?.stepCount}}</span>
             </div>
         </div>
         </div>
     </div>
 </section>
 
-<section class="charts w-80">
+<section class="charts">
     <app-progress-chart *ngIf="!isUserIntegrationOpen"></app-progress-chart>
     <p *ngIf="isUserIntegrationOpen">Please Conect yout Fitness Device to see your Progress</p>
 </section>

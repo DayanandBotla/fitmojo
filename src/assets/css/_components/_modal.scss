@@ -26,7 +26,7 @@ body.dialog-open {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        background: rgba(#0a3d62, .7);
+        background: rgba(#0c2461, .8);
     }
         .entryModal {
             .overlay {
@@ -75,7 +75,7 @@ body.dialog-open {
 
     }
 
-    .entryModal, .LoginModal {
+    .entryModal, .LoginModal, .createChallange {
         width: 100%;
         max-width: 400px;
     }

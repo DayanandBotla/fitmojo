@@ -27,6 +27,11 @@ const routes: Routes = [
     canActivate: [RouterGuardService],
   },
   {
+    path: 'profile', 
+    component: HomeComponent,
+    canActivate: [RouterGuardService],
+  },
+  {
     path: 'register', component: RegistrationComponent
   },
   { 
