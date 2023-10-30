@@ -70,6 +70,10 @@ export class ApiService {
 
   }
 
+  getUserChallenges(userId){
+    return this.post("getUserChallenges",userId)
+  }
+
   getAllUserDetails(){
     return this.post("getAllUserDetails",{})
   }
