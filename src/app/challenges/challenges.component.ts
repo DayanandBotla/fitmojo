@@ -17,13 +17,13 @@ export class ChallengesComponent extends FormValidators{
 
   createChallangeForm = new FormGroup({
     challengeName: new FormControl('', [Validators.required,ValidatorsService.validName(2,250)]),
-    description: new FormControl('', [Validators.required,ValidatorsService.validName(2,250)]),
-    userDetails: new FormControl('', [Validators.required]),
+    challengeDesc: new FormControl('', [Validators.required,ValidatorsService.validName(2,250)]),
+    userList: new FormControl([], [Validators.required]),
   });
 
   data = [];
   challangeList = []
-
+  choicesDropdown;
   constructor(
     public ngxSmartModalService: NgxSmartModalService,
     private apiService:ApiService,
@@ -47,7 +47,7 @@ export class ChallengesComponent extends FormValidators{
   }
 
   userListDropdownStructure(usersList){
-    console.log(usersList);
+    let userId = this.userService.userId;
     if(usersList && usersList.length > 0){
       let userData = []
       usersList.forEach(user => {
@@ -55,6 +55,8 @@ export class ChallengesComponent extends FormValidators{
           let userObj = {
             value: user.userId,
             label: `<img src="http://10.0.4.51:8080/FitMojo-v1/profilePic/${user?.userId}/${user?.profilePicUrl}"/> ${user.name}`,
+            selected: user?.userId === userId ? true : false,
+            disabled: user?.userId === userId ? true : false,
             customProperties: {
               name: user.name,
               email: user.emailId
@@ -71,28 +73,78 @@ export class ChallengesComponent extends FormValidators{
 
   createChallangeOpen(){
     this.ngxSmartModalService.getModal('createChallangeModal').open();
+    let userId = this.userService.userId;
     setTimeout(()=>{
-      const element = document.querySelector('#userDetails');
-          const choices = new Choices(element,{
-            removeItems: true,
-            removeItemButton: true,
-            allowHTML: true,
-            searchEnabled: false,
-            itemSelectText: '',
-            searchFields: ['customProperties.name','customProperties.email'],
-            noResultsText: 'No results found',
-            noChoicesText: 'No choices to choose from',
-            choices:[...this.data]
-          });
+      if(!this.choicesDropdown){
+        const element = document.querySelector('#userList');
+        this.choicesDropdown = new Choices(element,{
+          removeItems: true,
+          removeItemButton: true,
+          allowHTML: true,
+          searchEnabled: false,
+          itemSelectText: '',
+          searchFields: ['customProperties.name','customProperties.email'],
+          noResultsText: 'No results found',
+          noChoicesText: 'No choices to choose from',
+          choices:[...this.data]
+        });
+
+        this.choicesDropdown.passedElement.element.addEventListener(
+          'change',
+          (value)  => {
+            // do something creative here...
+            console.log(value)
+            const userList = [...this.createChallangeForm.value.userList];
+            if(!userList.includes(userId)){
+              userList.push(userId)
+              this.choicesDropdown.setChoiceByValue(userList);
+              this.createChallangeForm.get("userList").setValue(userList)
+            }
+            
+          },
+          false,
+        );
+        this.choicesDropdown.init();
+        this.createChallangeForm.get("userList").setValue([userId])
+        console.log(this.createChallangeForm.value); 
+      }
+      
     })
   }
   createChallangeClose(){
-    this.ngxSmartModalService.getModal('createChallangeModal').close()
+    this.ngxSmartModalService.getModal('createChallangeModal').close();
+    // closing form re initialise everything
+    // if(this.choicesDropdown){
+    //   this.createChallangeForm.get("userList").setValue([this.userService.userId]);
+    //   this.createChallangeForm.get("challengeName").setValue("");
+    //   this.createChallangeForm.get("challengeDesc").setValue("");
+    // }
   }
 
   createChallange(){
-    console.log(this.createChallangeForm.value);
-    
+    let userId = this.userService.userId;
+    this.apiService.createChallenge(this.createChallangeForm.value).subscribe(
+      createResponse =>{
+        if(createResponse?.status === "SUCCESS"){
+          this.apiService.getUserChallenges({userId:userId}).subscribe(
+            userChallanges =>{
+              if(userChallanges && userChallanges?.status=== "SUCCESS"){
+                this.challangeList = userChallanges?.challegeBasicDataList || []
+                this.createChallangeClose();
+              }
+            }
+          )
+        }
+      }
+    )
+  }
+
+  viewChallangeLeaderboard(challangeId){
+    this.apiService.getChallengeLeaderBoard(challangeId).subscribe(
+      challangeLeaderboard =>{
+        console.log(challangeLeaderboard)
+      }
+    )
   }
 
 }

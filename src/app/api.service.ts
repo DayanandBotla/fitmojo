@@ -78,4 +78,14 @@ export class ApiService {
     return this.post("getAllUserDetails",{})
   }
 
+  createChallenge(challangeReqData){
+    return this.post("createChallenge",challangeReqData)
+  }
+
+  getChallengeLeaderBoard(challangeId){
+    return this.post("getChallengeLeaderBoard",challangeId)
+  }
+
+  
+
 }

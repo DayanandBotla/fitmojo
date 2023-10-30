@@ -10,12 +10,12 @@
         <div class="cta-right">
         <button class="btn-1 btn-md"  (click)="createChallangeOpen()">Give a challenge</button>
         </div>
-        <div class="user--list" *ngFor="let number of [].constructor(6), index as i">
+        <div class="user--list" *ngFor="let challange of challangeList, index as i">
             
-                <div class="icon"><i class="icon-goal"></i></div> 
-             
-            <div class="challenge">Challenge {{i+1}}</div>
-            <div class="avatar"><img src="../assets/img/trophy.png" alt="trophy"></div>
+            <div class="icon"><i class="icon-goal"></i></div>  
+            <div class="challenge">{{challange.challengeName}}</div>
+            <div class="challenge">{{challange.challengeDesc}}</div>
+            <div class="avatar" (click)="viewChallangeLeaderboard(challange.challengeId)"><img src="../assets/img/trophy.png" alt="trophy"> <p>View Leaderboard</p></div>
         </div>
     </div>
 </div>
@@ -35,18 +35,18 @@
                             placeholder="Please enter your full name" formControlName="challengeName" name="challengeName" required>
                         <p class="errortxt" *ngIf="shouldShowErrors('challengeName',createChallangeForm)">{{getErrorMessage('challengeName',createChallangeForm)}}</p>
                     </div>
-                    <div class="form-group" [ngClass]="getFormFiledClass('description',createChallangeForm)">
-                        <label for="description">Email</label>
-                        <input id="description" class="form-control" type="email"
-                            placeholder="Please enter your email" formControlName="description" name="description" required>
-                            <p class="errortxt" *ngIf="shouldShowErrors('description',createChallangeForm)">{{getErrorMessage('description',createChallangeForm)}}</p>
+                    <div class="form-group" [ngClass]="getFormFiledClass('challengeDesc',createChallangeForm)">
+                        <label for="challengeDesc">Description</label>
+                        <input id="challengeDesc" class="form-control" type="email"
+                            placeholder="Please enter your email" formControlName="challengeDesc" name="challengeDesc" required>
+                            <p class="errortxt" *ngIf="shouldShowErrors('challengeDesc',createChallangeForm)">{{getErrorMessage('challengeDesc',createChallangeForm)}}</p>
                     </div>
-                    <div class="form-group" [ngClass]="getFormFiledClass('userDetails',createChallangeForm)">
-                        <label for="userDetails">User list</label>
-                        <select id="userDetails" class="form-control" multiple placeholder="Please enter your userDetails" formControlName="userDetails" name="userDetails" required></select>
-                        <!-- <input id="userDetails" class="form-control" type="text"
-                            placeholder="Please enter your userDetails" formControlName="userDetails" name="userDetails" required> -->
-                            <p class="errortxt" *ngIf="shouldShowErrors('userDetails',createChallangeForm)">{{getErrorMessage('userDetails',createChallangeForm)}}</p>
+                    <div class="form-group" [ngClass]="getFormFiledClass('userList',createChallangeForm)">
+                        <label for="userList">User list</label>
+                        <select id="userList" class="form-control" multiple placeholder="Please enter your userList" formControlName="userList" name="userList" required></select>
+                        <!-- <input id="userList" class="form-control" type="text"
+                            placeholder="Please enter your userList" formControlName="userList" name="userList" required> -->
+                            <p class="errortxt" *ngIf="shouldShowErrors('userList',createChallangeForm)">{{getErrorMessage('userList',createChallangeForm)}}</p>
                     </div>
                 
                     <button class="btn-1 btn-md submit-btn m-20" (click)="createChallange()">
